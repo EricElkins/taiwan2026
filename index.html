@@ -1290,14 +1290,11 @@ tr.pick td{background:#fff9f9}
 </div>
 
 <script>
-// Timestamps
-const now = new Date();
-const fmt = now.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
-const fmtTime = now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZoneName:'short'});
+// Timestamps — hardcoded build time (Mountain Time)
 const elUp = document.getElementById('updated');
-if(elUp) elUp.textContent = fmt + ' · ' + fmtTime;
+if(elUp) elUp.textContent = 'June 11, 2026 · 8:48 PM MDT';
 const elFt = document.getElementById('footer-ts');
-if(elFt) elFt.textContent = 'Last updated ' + fmt;
+if(elFt) elFt.textContent = 'Last updated June 11, 2026';
 
 // Currency converter
 async function fetchRate(){
