@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taiwan 2026 · Eric &amp; Joseph</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1208;background:#faf8f4;line-height:1.7;font-size:16px}
+a{color:#C8102E;text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ── Nav ── */
+nav{background:#fff;border-bottom:1px solid #e8e2d9;position:sticky;top:0;z-index:200;padding:0 1.5rem;box-shadow:0 1px 8px rgba(0,0,0,.05)}
+.nav-inner{max-width:920px;margin:0 auto;display:flex;flex-wrap:wrap;gap:0;align-items:center}
+nav a{display:inline-block;padding:.65rem .7rem;font-size:.78rem;color:#555;font-weight:600;white-space:nowrap;border-bottom:2px solid transparent;letter-spacing:.02em;text-transform:uppercase}
+nav a:hover{color:#C8102E;text-decoration:none;border-bottom-color:#C8102E}
+.nav-logo{font-weight:800;color:#1a1208;font-size:1rem;margin-right:.5rem;padding:.65rem 0;border-bottom:none!important;letter-spacing:-.01em}
+
+/* ── Hero ── */
+.hero{position:relative;background:#080c1e;overflow:hidden;border-bottom:3px solid #C8102E}
+.hero-art{display:block;width:100%;height:auto}
+.hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem 2rem 1.8rem}
+.hero-inner{max-width:920px;width:100%}
+.hero h1{font-size:2.2rem;font-weight:900;color:#fff;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.7);letter-spacing:-.02em}
+.hero h1 span{color:#f59e0b}
+.hero .subtitle{color:rgba(255,255,255,.8);font-size:.95rem;margin-top:.4rem;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.meta-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.9rem}
+.meta-pill{background:rgba(0,0,0,.45);color:rgba(255,255,255,.9);font-size:.78rem;font-weight:600;padding:.25rem .7rem;border-radius:20px;border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(4px)}
+.timestamp{font-size:.74rem;color:rgba(255,255,255,.45);margin-top:.7rem}
+
+/* ── Share bar ── */
+.share-bar{background:#fff7ed;border-bottom:1px solid #fed7aa;padding:.65rem 1.5rem;font-size:.82rem;color:#92400e;text-align:center}
+.share-bar strong{color:#7c2d12}
+
+/* ── Layout ── */
+.wrap{max-width:920px;margin:0 auto;padding:2.2rem 1.5rem}
+section{margin-bottom:3.5rem}
+h2{font-size:1.3rem;font-weight:800;margin:2rem 0 1rem;color:#1a0505;padding-top:.5rem;display:flex;align-items:center;gap:.5rem}
+h2::before{content:'';display:inline-block;width:4px;height:1.15em;background:#C8102E;border-radius:2px;flex-shrink:0}
+h3{font-size:1rem;font-weight:700;margin:1.5rem 0 .6rem;color:#1a0505}
+p{margin-bottom:.85rem}
+
+/* ── Cards ── */
+.card{background:#fff;border:1px solid #e8e2d9;border-radius:12px;padding:1.3rem 1.5rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.card.accent{border-left:4px solid #C8102E}
+.card.gold{border-left:4px solid #f59e0b}
+
+/* ── Josh card ── */
+.josh-card{background:linear-gradient(135deg,#fff7ed 0%,#fef3c7 100%);border:1.5px solid #fbbf24;border-radius:12px;padding:1.2rem 1.5rem;margin:1rem 0;display:flex;gap:1rem;align-items:flex-start}
+.josh-icon{font-size:2rem;flex-shrink:0;line-height:1}
+.josh-content h4{font-size:.95rem;font-weight:700;color:#92400e;margin-bottom:.35rem}
+.josh-content p{font-size:.88rem;color:#78350f;margin:0}
+
+/* ── Route timeline ── */
+.route-row{display:grid;grid-template-columns:90px 1fr;gap:.4rem 1rem;align-items:start;padding:.6rem 0;border-bottom:1px solid #f5f0e8}
+.route-row:last-child{border-bottom:none}
+.route-date{font-size:.78rem;color:#888;font-weight:700;white-space:nowrap;padding-top:.15rem;text-transform:uppercase;letter-spacing:.04em}
+.route-detail strong{font-weight:700}
+.route-detail .sub{font-size:.84rem;color:#666}
+.tag-holiday{display:inline-block;background:#fef2f2;color:#991b1b;font-size:.72rem;font-weight:700;padding:.1rem .5rem;border-radius:12px;margin-left:.35rem;border:1px solid #fecaca}
+
+/* ── Tables ── */
+table{width:100%;border-collapse:collapse;font-size:.87rem;margin:1rem 0}
+th{background:#faf5f0;text-align:left;padding:.55rem .75rem;font-weight:700;border-bottom:2px solid #e8e2d9;color:#4a2020;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+td{padding:.6rem .75rem;border-bottom:1px solid #f5f0e8;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr.pick td{background:#fff9f9}
+.pick-badge{display:inline-block;background:#C8102E;color:#fff;font-size:.68rem;font-weight:800;padding:.1rem .45rem;border-radius:4px;margin-right:.3rem;vertical-align:middle;letter-spacing:.03em}
+.splurge-badge{display:inline-block;background:#7c3aed;color:#fff;font-size:.68rem;font-weight:800;padding:.1rem .45rem;border-radius:4px;margin-right:.3rem;vertical-align:middle}
+.tag{display:inline-block;background:#f5f0e8;color:#5a3a1a;font-size:.7rem;font-weight:600;padding:.1rem .4rem;border-radius:3px;margin:.1rem .1rem 0 0}
+.tag.red{background:#fef2f2;color:#991b1b}
+.tag.gold{background:#fffbeb;color:#92400e}
+.tag.green{background:#f0fdf4;color:#14532d}
+
+/* ── Itinerary rhythm ── */
+.rhythm-grid{display:grid;grid-template-columns:100px 1fr;gap:.4rem 1rem;margin:.75rem 0}
+.rhythm-label{font-size:.75rem;font-weight:700;color:#C8102E;text-transform:uppercase;letter-spacing:.05em;padding-top:.2rem}
+.rhythm-content{font-size:.9rem}
+
+/* ── Status dots ── */
+.status-grid{display:grid;grid-template-columns:14px 1fr auto;gap:.55rem 1rem;align-items:center;font-size:.88rem}
+.dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.dot.green{background:#22c55e;box-shadow:0 0 0 3px #dcfce7}
+.dot.amber{background:#f59e0b;box-shadow:0 0 0 3px #fef3c7}
+.dot.grey{background:#cbd5e1;box-shadow:0 0 0 3px #f1f5f9}
+
+/* ── Currency ── */
+.currency-box{background:#fff;border:1px solid #e8e2d9;border-radius:12px;padding:1.5rem;max-width:400px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.currency-box label{font-size:.82rem;color:#666;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.currency-box input[type=number]{border:2px solid #e8e2d9;border-radius:8px;padding:.55rem .8rem;font-size:1.1rem;width:100%;margin:.4rem 0 .75rem;color:#1a1208;outline:none;transition:border-color .15s}
+.currency-box input[type=number]:focus{border-color:#C8102E}
+.currency-result{font-size:1.7rem;font-weight:900;color:#C8102E;margin:.3rem 0;letter-spacing:-.02em}
+.rate-note{font-size:.76rem;color:#999}
+
+/* ── Words ── */
+.words-grid{display:grid;grid-template-columns:1fr 1fr;gap:.4rem 2rem}
+.word-row{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:.2rem;padding:.4rem .3rem;border-bottom:1px solid #f5f0e8;font-size:.88rem;cursor:pointer;border-radius:4px;transition:background .12s}
+.word-row:hover{background:rgba(200,16,46,.07)}
+.word-row.word-flash{background:rgba(200,16,46,.18)}
+.word-en{color:#888;font-size:.8rem}
+.word-zh{font-weight:700;color:#1a1208}
+.word-py{color:#C8102E;font-size:.8rem}
+.word-speak{background:none;border:none;cursor:pointer;font-size:.82rem;opacity:.35;padding:0;line-height:1;transition:opacity .12s;align-self:center}
+.word-row:hover .word-speak{opacity:.9}
+
+/* ── Packing ── */
+.pack-section{margin-bottom:1.3rem}
+.pack-section h3{font-size:.9rem;margin-bottom:.45rem;color:#4a2020}
+.pack-section ul{padding-left:1.2rem}
+.pack-section li{font-size:.88rem;margin-bottom:.3rem;color:#333}
+
+/* ── Alerts ── */
+.alert{border-radius:8px;padding:1rem 1.2rem;font-size:.88rem;margin:1rem 0;display:flex;gap:.75rem;align-items:flex-start}
+.alert.red{background:#fef2f2;border:1px solid #fecaca}
+.alert.gold{background:#fffbeb;border:1px solid #fde68a}
+.alert.blue{background:#eff6ff;border:1px solid #bfdbfe}
+.alert-icon{font-size:1.1rem;flex-shrink:0;padding-top:.05rem}
+.alert p{margin:0}
+.alert strong{font-weight:700}
+
+/* ── City headers ── */
+.city-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid #f5f0e8}
+.city-header h2{margin:0;padding:0;border:none}
+.city-header h2::before{display:none}
+.city-left h2{color:#C8102E}
+.city-meta{font-size:.82rem;color:#777;text-align:right;line-height:1.6}
+
+/* ── Confirmation table ── */
+.conf-table td{font-size:.83rem}
+
+/* ── Decorative divider ── */
+.divider{text-align:center;color:#e8e2d9;font-size:1.1rem;letter-spacing:.3em;margin:2.5rem 0;user-select:none}
+
+/* ── Choose Your Own Adventure ── */
+.adventure-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:1rem}
+.adventure-card{background:#fff;border:1px solid #e8e2d9;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.adventure-card-header{padding:1.1rem 1.4rem .9rem;border-bottom:1px solid #f5f0e8;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem}
+.adventure-card-header.josh{background:linear-gradient(135deg,#fff7ed,#fef3c7);border-bottom-color:#fde68a}
+.adventure-card-header.gorge{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-bottom-color:#bbf7d0}
+.adventure-card-header.lake{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-bottom-color:#bfdbfe}
+.adventure-card-body{padding:1.1rem 1.4rem}
+.adventure-card-body p{font-size:.9rem;margin-bottom:.7rem}
+.adventure-card-body p:last-child{margin-bottom:0}
+.adventure-title{font-size:1.05rem;font-weight:800;color:#1a0505}
+.adventure-subtitle{font-size:.8rem;color:#888;margin-top:.15rem;font-weight:500}
+.adventure-meta{font-size:.78rem;font-weight:600;text-align:right;line-height:1.7}
+.plug-in-box{background:#faf8f4;border:1px dashed #d4c9b0;border-radius:8px;padding:.8rem 1rem;margin-top:.9rem;font-size:.84rem;color:#5a3a1a}
+.plug-in-box strong{color:#C8102E}
+.bar-callout{background:#1a0505;color:#fff;border-radius:8px;padding:.85rem 1.1rem;margin:.9rem 0;font-size:.88rem;display:flex;gap:.8rem;align-items:flex-start}
+.bar-callout-icon{font-size:1.3rem;flex-shrink:0}
+.bar-callout strong{color:#f59e0b}
+.bar-callout a{color:#f59e0b}
+
+/* ── Footer ── */
+.footer{text-align:center;font-size:.78rem;color:#bbb;padding:2.5rem 0 1.5rem;border-top:1px solid #e8e2d9;margin-top:1rem}
+
+/* ── Destination Briefer ── */
+.briefer-form{background:#fff;border:1px solid #e8e2d9;border-radius:14px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.briefer-fields{display:grid;grid-template-columns:2fr 1.5fr 1.5fr 1fr;gap:1rem;margin-bottom:1.25rem;align-items:end}
+.bf-group{display:flex;flex-direction:column;gap:.35rem}
+.bf-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#888}
+.bf-sel,.bf-date{border:2px solid #e8e2d9;border-radius:8px;padding:.52rem .7rem;font-size:.9rem;color:#1a1208;outline:none;transition:border-color .15s;background:#fff;font-family:inherit;width:100%}
+.bf-sel:focus,.bf-date:focus{border-color:#C8102E}
+.bf-go{background:#C8102E;color:#fff;border:none;border-radius:8px;padding:.7rem 1.5rem;font-size:.9rem;font-weight:800;cursor:pointer;letter-spacing:.03em;transition:background .15s;width:100%}
+.bf-go:hover{background:#a80e26}
+.bf-out{margin-top:1.75rem}
+.bf-result-header{background:linear-gradient(135deg,#1a0505 0%,#3a100a 100%);border-radius:12px;padding:1.3rem 1.5rem;margin-bottom:1.25rem;color:#fff}
+.bf-rt{font-size:1.25rem;font-weight:900;letter-spacing:-.01em}
+.bf-rs{font-size:.85rem;color:rgba(255,255,255,.6);margin-top:.25rem}
+.bf-rpills{display:flex;gap:.6rem;margin-top:.8rem;flex-wrap:wrap}
+.bf-pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);padding:.2rem .65rem;border-radius:12px;font-size:.76rem;font-weight:600;color:rgba(255,255,255,.85)}
+.bf-pill.warn{background:rgba(245,158,11,.25);border-color:rgba(245,158,11,.4);color:#fde68a}
+.bf-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.bf-card{background:#fff;border:1px solid #e8e2d9;border-radius:12px;overflow:hidden}
+.bf-card.full{grid-column:1/-1}
+.bf-ch{background:#faf5f0;padding:.6rem 1rem;font-size:.74rem;font-weight:800;color:#4a2020;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid #f0ece4}
+.bf-cb{padding:1rem 1.1rem}
+.bf-t-mode{font-weight:800;font-size:.92rem;color:#1a0505;margin-bottom:.3rem}
+.bf-t-stats{display:flex;gap:.9rem;margin:.2rem 0;font-size:.82rem;color:#555}
+.bf-t-book{font-size:.79rem;color:#888;margin-top:.3rem;font-style:italic}
+.bf-t-alt{border-top:1px dashed #e8e2d9;padding-top:.75rem;margin-top:.75rem}
+.bf-t-alt-label{font-size:.7rem;font-weight:800;color:#bbb;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.35rem}
+.bf-item{margin-bottom:.85rem;padding-bottom:.85rem;border-bottom:1px solid #f5f0e8}
+.bf-item:last-child{margin:0;padding:0;border:none}
+.bf-item-name{font-weight:700;font-size:.88rem;color:#1a0505;display:flex;align-items:center;gap:.35rem;flex-wrap:wrap}
+.bf-star{display:inline-block;background:#C8102E;color:#fff;font-size:.65rem;font-weight:800;padding:.05rem .38rem;border-radius:3px}
+.bf-item-desc{font-size:.82rem;color:#555;line-height:1.55;margin-top:.2rem}
+.bf-item-note{font-size:.76rem;color:#C8102E;font-weight:600;margin-top:.15rem}
+.bf-ul{list-style:none;padding:0;margin:0}
+.bf-ul li{font-size:.83rem;color:#444;padding:.32rem 0;border-bottom:1px solid #f5f0e8;padding-left:1.2rem;position:relative;line-height:1.5}
+.bf-ul li::before{content:'→';position:absolute;left:0;color:#C8102E;font-weight:700;font-size:.8rem}
+.bf-ul li:last-child{border:none}
+.bf-empty{color:#aaa;font-style:italic;font-size:.88rem;padding:.5rem 0}
+.bf-warn-box{background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:.8rem 1rem;font-size:.85rem;color:#92400e;margin-bottom:1rem}
+.bf-warn-box strong{color:#78350f}
+
+@media(max-width:640px){
+  .words-grid{grid-template-columns:1fr}
+  .city-header{flex-direction:column}
+  .city-meta{text-align:left}
+  nav a{padding:.55rem .4rem;font-size:.7rem}
+  .hero h1{font-size:1.5rem}
+  .hero-overlay{padding:1.2rem 1.2rem 1.4rem}
+  .hero-art{min-height:200px}
+  .word-row{grid-template-columns:1fr 1fr auto}
+  .word-py{display:none}
+  .rhythm-grid{grid-template-columns:80px 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">🇹🇼 Taiwan 2026</span>
+    <a href="#route">Route</a>
+    <a href="#flights">Flights</a>
+    <a href="#stays">Stays</a>
+    <a href="#todo">Do · Eat</a>
+    <a href="#itinerary">Itinerary</a>
+    <a href="#adventure">🎲 Detours</a>
+    <a href="#briefer">🗺 Briefer</a>
+    <a href="#booking">Status</a>
+    <a href="#confirmations">Confirm</a>
+    <a href="#currency">Currency</a>
+    <a href="#words">Words</a>
+    <a href="#packing">Packing</a>
+  </div>
+</nav>
+
+<!-- ═══ SHARE BAR ═══ -->
+<div class="share-bar">
+  <strong>Sharing this with Joseph?</strong> Email him the <code>taiwan2026.html</code> file — it opens in any browser, no login needed. Or host it on GitHub Pages the same way Rachael did.
+</div>
+
+<!-- ═══ HERO WITH SVG ART ═══ -->
+<div class="hero">
+  <!-- Taiwan Night Cityscape Illustration -->
+  <svg class="hero-art" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#030712"/>
+        <stop offset="55%" stop-color="#0c1445"/>
+        <stop offset="100%" stop-color="#1e0a02"/>
+      </linearGradient>
+      <linearGradient id="glow101" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#fff8dc"/>
+        <stop offset="100%" stop-color="#e8c55a"/>
+      </linearGradient>
+      <linearGradient id="cityglow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ff6020" stop-opacity=".0"/>
+        <stop offset="100%" stop-color="#ff4010" stop-opacity=".22"/>
+      </linearGradient>
+      <radialGradient id="lanternglow1" cx="50%" cy="45%" r="60%">
+        <stop offset="0%" stop-color="#ff4422" stop-opacity=".5"/>
+        <stop offset="100%" stop-color="#C8102E" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="2.5" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <filter id="softglow">
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+
+    <!-- Sky -->
+    <rect width="900" height="260" fill="url(#sky)"/>
+
+    <!-- City ambient glow on horizon -->
+    <ellipse cx="450" cy="240" rx="500" ry="80" fill="#ff6020" opacity=".07"/>
+    <ellipse cx="680" cy="248" rx="200" ry="50" fill="#f59e0b" opacity=".06"/>
+
+    <!-- Stars -->
+    <g fill="#fff" opacity=".7">
+      <circle cx="28" cy="18" r="1"/><circle cx="65" cy="42" r=".8"/>
+      <circle cx="112" cy="12" r="1.1"/><circle cx="155" cy="32" r=".7"/>
+      <circle cx="188" cy="8" r="1"/><circle cx="240" cy="28" r=".8"/>
+      <circle cx="285" cy="15" r="1.2"/><circle cx="320" cy="38" r=".7"/>
+      <circle cx="370" cy="10" r=".9"/><circle cx="410" cy="25" r="1"/>
+      <circle cx="450" cy="14" r=".8"/><circle cx="490" cy="35" r="1.1"/>
+      <circle cx="530" cy="8" r=".7"/><circle cx="570" cy="22" r="1"/>
+      <circle cx="600" cy="42" r=".8"/><circle cx="50" cy="68" r=".7"/>
+      <circle cx="140" cy="55" r=".9"/><circle cx="215" cy="72" r=".6"/>
+      <circle cx="330" cy="58" r=".8"/><circle cx="420" cy="68" r=".7"/>
+      <circle cx="820" cy="18" r="1"/><circle cx="855" cy="35" r=".8"/>
+      <circle cx="878" cy="12" r=".9"/><circle cx="840" cy="52" r=".7"/>
+    </g>
+
+    <!-- Moon -->
+    <circle cx="88" cy="40" r="14" fill="#fff9e8" opacity=".85" filter="url(#softglow)"/>
+    <circle cx="93" cy="36" r="11" fill="#080c1e" opacity=".7"/>
+
+    <!-- Far mountains -->
+    <path d="M0,195 Q80,130 160,170 Q230,120 310,158 Q380,105 455,148 Q510,95 575,140 Q640,115 700,138 Q760,100 820,135 Q855,115 900,130 L900,260 L0,260 Z" fill="#0d1028" opacity=".9"/>
+
+    <!-- ─── City Buildings left ─── -->
+    <g fill="#111422">
+      <rect x="0" y="205" width="55" height="55"/>
+      <rect x="58" y="185" width="40" height="75"/>
+      <rect x="100" y="215" width="30" height="45"/>
+      <rect x="132" y="198" width="50" height="62"/>
+      <rect x="184" y="220" width="25" height="40"/>
+      <rect x="210" y="192" width="45" height="68"/>
+      <rect x="256" y="210" width="30" height="50"/>
+      <rect x="287" y="200" width="38" height="60"/>
+      <rect x="326" y="215" width="28" height="45"/>
+      <rect x="355" y="195" width="42" height="65"/>
+      <rect x="398" y="212" width="32" height="48"/>
+      <rect x="430" y="200" width="38" height="60"/>
+      <rect x="468" y="218" width="25" height="42"/>
+      <rect x="493" y="205" width="40" height="55"/>
+      <rect x="533" y="215" width="30" height="45"/>
+      <rect x="563" y="198" width="48" height="62"/>
+    </g>
+
+    <!-- Building windows (left city) -->
+    <g fill="#f59e0b" opacity=".5">
+      <rect x="10" y="210" width="3" height="3"/><rect x="16" y="210" width="3" height="3"/>
+      <rect x="10" y="217" width="3" height="3"/><rect x="16" y="217" width="3" height="3"/>
+      <rect x="62" y="190" width="3" height="3"/><rect x="68" y="190" width="3" height="3"/>
+      <rect x="62" y="198" width="3" height="3"/>
+      <rect x="137" y="204" width="3" height="3"/><rect x="143" y="204" width="3" height="3"/>
+      <rect x="215" y="198" width="3" height="3"/><rect x="221" y="198" width="3" height="3"/>
+      <rect x="215" y="206" width="3" height="3"/>
+      <rect x="293" y="206" width="3" height="3"/><rect x="299" y="206" width="3" height="3"/>
+      <rect x="360" y="201" width="3" height="3"/><rect x="366" y="201" width="3" height="3"/>
+      <rect x="360" y="209" width="3" height="3"/>
+      <rect x="436" y="206" width="3" height="3"/>
+      <rect x="498" y="210" width="3" height="3"/><rect x="504" y="210" width="3" height="3"/>
+      <rect x="568" y="204" width="3" height="3"/><rect x="574" y="204" width="3" height="3"/>
+    </g>
+
+    <!-- ─── Taipei 101 ─── -->
+    <!-- Podium / Base -->
+    <rect x="618" y="222" width="104" height="12" fill="#1e2240"/>
+    <rect x="628" y="215" width="84" height="8" fill="#222648"/>
+    <!-- Segment 1 -->
+    <polygon points="629,215 631,210 719,210 721,215" fill="#1e2240"/>
+    <rect x="631" y="198" width="88" height="12" fill="#242850"/>
+    <!-- Segment 1 cap/eave -->
+    <polygon points="627,198 631,193 719,193 723,198" fill="#1e2240"/>
+    <!-- Segment 2 -->
+    <rect x="635" y="181" width="80" height="12" fill="#252952"/>
+    <polygon points="631,181 635,176 715,176 719,181" fill="#1e2240"/>
+    <!-- Segment 3 -->
+    <rect x="640" y="165" width="70" height="11" fill="#272b54"/>
+    <polygon points="636,165 640,160 710,160 714,165" fill="#1e2240"/>
+    <!-- Segment 4 -->
+    <rect x="645" y="150" width="60" height="10" fill="#282c56"/>
+    <polygon points="641,150 645,145 705,145 709,150" fill="#1e2240"/>
+    <!-- Segment 5 -->
+    <rect x="650" y="136" width="50" height="9" fill="#2a2e58"/>
+    <polygon points="646,136 650,131 700,131 704,136" fill="#1e2240"/>
+    <!-- Segment 6 -->
+    <rect x="655" y="123" width="40" height="8" fill="#2a2e58"/>
+    <polygon points="651,123 655,118 695,118 699,123" fill="#1e2240"/>
+    <!-- Segment 7 -->
+    <rect x="659" y="111" width="32" height="7" fill="#2c3060"/>
+    <polygon points="655,111 659,106 691,106 695,111" fill="#1e2240"/>
+    <!-- Segment 8 (top) -->
+    <rect x="663" y="100" width="24" height="6" fill="#2c3060"/>
+    <polygon points="659,100 663,95 687,95 691,100" fill="#1e2240"/>
+    <!-- Upper observation floors -->
+    <rect x="665" y="82" width="20" height="13" fill="#2a2e58"/>
+    <rect x="668" y="78" width="14" height="5" fill="#242850"/>
+    <!-- Antenna / spire -->
+    <rect x="674" y="32" width="2" height="47" fill="#9ca3c8"/>
+    <circle cx="675" cy="32" r="2" fill="#f59e0b" filter="url(#glow)" opacity=".9"/>
+
+    <!-- 101 lit windows (golden) -->
+    <g fill="#f8d87a" opacity=".6">
+      <rect x="640" y="169" width="3" height="3"/><rect x="646" y="169" width="3" height="3"/><rect x="706" y="169" width="3" height="3"/>
+      <rect x="645" y="154" width="3" height="3"/><rect x="651" y="154" width="3" height="3"/>
+      <rect x="650" y="140" width="3" height="3"/><rect x="696" y="140" width="3" height="3"/>
+      <rect x="655" y="127" width="3" height="3"/>
+      <rect x="660" y="115" width="3" height="3"/><rect x="686" y="115" width="3" height="3"/>
+      <rect x="664" y="104" width="3" height="3"/>
+    </g>
+
+    <!-- 101 glow -->
+    <rect x="618" y="80" width="104" height="155" fill="url(#glow101)" opacity=".06"/>
+
+    <!-- ─── Right city ─── -->
+    <g fill="#111422">
+      <rect x="748" y="210" width="32" height="50"/>
+      <rect x="781" y="200" width="45" height="60"/>
+      <rect x="827" y="215" width="28" height="45"/>
+      <rect x="856" y="202" width="44" height="58"/>
+    </g>
+    <g fill="#f59e0b" opacity=".45">
+      <rect x="753" y="214" width="3" height="3"/><rect x="759" y="214" width="3" height="3"/>
+      <rect x="786" y="206" width="3" height="3"/>
+      <rect x="861" y="208" width="3" height="3"/>
+    </g>
+
+    <!-- Ground horizon line -->
+    <rect x="0" y="232" width="900" height="2" fill="#C8102E" opacity=".18"/>
+    <rect x="0" y="234" width="900" height="26" fill="url(#cityglow)"/>
+
+    <!-- ─── Lanterns ─── -->
+    <!-- Lantern 1 -->
+    <g filter="url(#glow)" opacity=".9">
+      <line x1="90" y1="65" x2="90" y2="82" stroke="#FFD700" stroke-width=".8"/>
+      <ellipse cx="90" cy="96" rx="10" ry="16" fill="#C8102E"/>
+      <line x1="79" y1="96" x2="100" y2="96" stroke="#8B0000" stroke-width=".6"/>
+      <line x1="80" y1="88" x2="100" y2="88" stroke="#8B0000" stroke-width=".6"/>
+      <line x1="80" y1="104" x2="100" y2="104" stroke="#8B0000" stroke-width=".6"/>
+      <line x1="90" y1="112" x2="87" y2="121" stroke="#FFD700" stroke-width=".8"/>
+      <line x1="90" y1="112" x2="90" y2="121" stroke="#FFD700" stroke-width=".8"/>
+      <line x1="90" y1="112" x2="93" y2="121" stroke="#FFD700" stroke-width=".8"/>
+      <ellipse cx="90" cy="96" rx="10" ry="16" fill="#ff4422" opacity=".25"/>
+    </g>
+    <!-- Lantern 2 -->
+    <g filter="url(#glow)" opacity=".85">
+      <line x1="210" y1="52" x2="210" y2="68" stroke="#FFD700" stroke-width=".8"/>
+      <ellipse cx="210" cy="82" rx="8" ry="13" fill="#C8102E"/>
+      <line x1="202" y1="82" x2="218" y2="82" stroke="#8B0000" stroke-width=".5"/>
+      <line x1="202" y1="76" x2="218" y2="76" stroke="#8B0000" stroke-width=".5"/>
+      <line x1="202" y1="88" x2="218" y2="88" stroke="#8B0000" stroke-width=".5"/>
+      <line x1="210" y1="95" x2="208" y2="103" stroke="#FFD700" stroke-width=".7"/>
+      <line x1="210" y1="95" x2="210" y2="103" stroke="#FFD700" stroke-width=".7"/>
+      <line x1="210" y1="95" x2="212" y2="103" stroke="#FFD700" stroke-width=".7"/>
+      <ellipse cx="210" cy="82" rx="8" ry="13" fill="#ff4422" opacity=".2"/>
+    </g>
+    <!-- Lantern 3 -->
+    <g filter="url(#glow)" opacity=".9">
+      <line x1="360" y1="42" x2="360" y2="60" stroke="#FFD700" stroke-width=".8"/>
+      <ellipse cx="360" cy="75" rx="11" ry="17" fill="#C8102E"/>
+      <line x1="348" y1="75" x2="371" y2="75" stroke="#8B0000" stroke-width=".6"/>
+      <line x1="349" y1="67" x2="371" y2="67" stroke="#8B0000" stroke-width=".6"/>
+      <line x1="349" y1="83" x2="371" y2="83" stroke="#8B0000" stroke-width=".6"/>
+      <line x1="360" y1="92" x2="357" y2="101" stroke="#FFD700" stroke-width=".8"/>
+      <line x1="360" y1="92" x2="360" y2="101" stroke="#FFD700" stroke-width=".8"/>
+      <line x1="360" y1="92" x2="363" y2="101" stroke="#FFD700" stroke-width=".8"/>
+      <ellipse cx="360" cy="75" rx="11" ry="17" fill="#ff4422" opacity=".25"/>
+    </g>
+    <!-- Lantern 4 (gold) -->
+    <g filter="url(#glow)" opacity=".8">
+      <line x1="510" y1="48" x2="510" y2="63" stroke="#FFD700" stroke-width=".8"/>
+      <ellipse cx="510" cy="76" rx="9" ry="14" fill="#d97706"/>
+      <line x1="501" y1="76" x2="519" y2="76" stroke="#92400e" stroke-width=".5"/>
+      <line x1="501" y1="69" x2="519" y2="69" stroke="#92400e" stroke-width=".5"/>
+      <line x1="501" y1="83" x2="519" y2="83" stroke="#92400e" stroke-width=".5"/>
+      <line x1="510" y1="90" x2="508" y2="98" stroke="#FFD700" stroke-width=".7"/>
+      <line x1="510" y1="90" x2="510" y2="98" stroke="#FFD700" stroke-width=".7"/>
+      <line x1="510" y1="90" x2="512" y2="98" stroke="#FFD700" stroke-width=".7"/>
+      <ellipse cx="510" cy="76" rx="9" ry="14" fill="#fbbf24" opacity=".2"/>
+    </g>
+    <!-- Lantern 5 -->
+    <g filter="url(#glow)" opacity=".75">
+      <line x1="820" y1="58" x2="820" y2="75" stroke="#FFD700" stroke-width=".8"/>
+      <ellipse cx="820" cy="89" rx="9" ry="14" fill="#C8102E"/>
+      <line x1="810" y1="89" x2="829" y2="89" stroke="#8B0000" stroke-width=".5"/>
+      <line x1="811" y1="82" x2="829" y2="82" stroke="#8B0000" stroke-width=".5"/>
+      <line x1="811" y1="96" x2="829" y2="96" stroke="#8B0000" stroke-width=".5"/>
+      <line x1="820" y1="103" x2="818" y2="111" stroke="#FFD700" stroke-width=".7"/>
+      <line x1="820" y1="103" x2="820" y2="111" stroke="#FFD700" stroke-width=".7"/>
+      <line x1="820" y1="103" x2="822" y2="111" stroke="#FFD700" stroke-width=".7"/>
+      <ellipse cx="820" cy="89" rx="9" ry="14" fill="#ff4422" opacity=".18"/>
+    </g>
+    <!-- Lantern 6 small -->
+    <g filter="url(#glow)" opacity=".65">
+      <line x1="775" y1="80" x2="775" y2="92" stroke="#FFD700" stroke-width=".7"/>
+      <ellipse cx="775" cy="101" rx="6" ry="10" fill="#C8102E"/>
+      <ellipse cx="775" cy="101" rx="6" ry="10" fill="#ff4422" opacity=".15"/>
+      <line x1="775" y1="111" x2="775" y2="118" stroke="#FFD700" stroke-width=".6"/>
+    </g>
+
+    <!-- Red accent band at very bottom -->
+    <rect x="0" y="256" width="900" height="4" fill="#C8102E" opacity=".6"/>
+  </svg>
+
+  <!-- Text overlay -->
+  <div class="hero-overlay">
+    <div class="hero-inner">
+      <h1>Taiwan — <span>Where We're Staying</span></h1>
+      <div class="subtitle">A 9-night food-first adventure · Taipei → Tainan → Kaohsiung</div>
+      <div class="meta-row">
+        <span class="meta-pill">🗓 Oct 9 – 18, 2026</span>
+        <span class="meta-pill">👥 Eric · Joseph</span>
+        <span class="meta-pill">🍜 Eat everything · see great art</span>
+        <span class="meta-pill">🌙 No early bedtimes</span>
+      </div>
+      <div class="timestamp">🕓 Last updated <span id="updated"></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CONTENT ═══ -->
+<div class="wrap">
+
+  <!-- Who we are -->
+  <section>
+    <div class="card accent">
+      <h3>The two of us</h3>
+      <p><strong>Eric</strong> — food obsessive, Korean cuisine devotee, Taiwan first-timer. Night markets, late nights, anything fermented or spicy. Three trips to Japan, multiple to Korea; this island is entirely new territory.</p>
+      <p><strong>Joseph</strong> — equally adventurous eater, art history background that unlocks every museum in a country, nightlife enthusiast. Will want to linger in every gallery and eat at every stall. Also a Taiwan first-timer.</p>
+      <h3 style="margin-top:1rem">What we're after</h3>
+      <p><strong>One room, two beds — in the thick of it in every city.</strong> We travel rougher than the Joan-and-Rachael tier: value over luxury, interesting over polished. But we do want a real bed, a hot shower, and working air conditioning. No corporate chains unless the location earns it. Interesting beats expensive every time.</p>
+      <p><strong>No agenda except eating, drinking, looking at art, and staying out late.</strong> Good Wi-Fi for the inevitable midnight research spirals about what to eat tomorrow.</p>
+    </div>
+  </section>
+
+  <!-- ROUTE -->
+  <section id="route">
+    <h2>The Route</h2>
+    <div class="card">
+      <div class="route-row">
+        <div class="route-date">Oct 7</div>
+        <div class="route-detail"><strong>Fly Denver → Taipei</strong> <span class="sub">· depart DEN</span></div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 9</div>
+        <div class="route-detail"><strong>Arrive Taipei (TPE)</strong> <span class="sub">· check in · decompress · eat immediately</span></div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 9 – 13</div>
+        <div class="route-detail">
+          <strong>Taipei</strong> <span class="sub">· 4 nights</span><br>
+          <span class="sub">Night markets · National Palace Museum · Yongkang St beef noodle · day trip Jiufen</span>
+        </div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 10</div>
+        <div class="route-detail">
+          <strong>🎉 Double Ten Day — Taiwan National Day</strong>
+          <span class="tag-holiday">Public Holiday</span><br>
+          <span class="sub">Parade on Ketagalan Blvd · evening fireworks · festive city · <strong>meetup with Josh + cousins</strong> 🙌</span>
+        </div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 13</div>
+        <div class="route-detail">
+          <strong>THSR Taipei → Tainan</strong> <span class="sub">· ~1h 50m · High Speed Rail</span><br>
+          <span class="sub" style="color:#b45309">🎲 <em>Optional:</em> stop in Taichung (Josh's rec) for 1–2 nights en route — see Detours section</span>
+        </div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 13 – 16</div>
+        <div class="route-detail">
+          <strong>Tainan</strong> <span class="sub">· 3 nights · Taiwan's oldest city &amp; food capital</span><br>
+          <span class="sub">Coffin bread · milkfish soup · Chimei Museum · Anping Fort · Shennong Street</span>
+        </div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 16</div>
+        <div class="route-detail"><strong>Train Tainan → Kaohsiung</strong> <span class="sub">· ~30 min</span></div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 16 – 18</div>
+        <div class="route-detail">
+          <strong>Kaohsiung</strong> <span class="sub">· 2 nights · port city · Pier-2 art district · Liuhe night market</span>
+        </div>
+      </div>
+      <div class="route-row">
+        <div class="route-date">Oct 18</div>
+        <div class="route-detail">
+          <strong>Fly Taipei → Tokyo (HND/NRT)</strong> <span class="sub">· ~3h 30m · Eric meets Joan &amp; Rachael</span><br>
+          <span class="sub">Joseph departs for home ✈️</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Josh callout -->
+    <div class="josh-card">
+      <div class="josh-icon">🤝</div>
+      <div class="josh-content">
+        <h4>Oct 10 (and maybe Oct 11): Josh + his Taipei cousins</h4>
+        <p>We're meeting up with Josh on Double Ten Day, and possibly the day after — then we split off and explore Taipei on our own terms. Josh stays with his family (his cousins live there), so no lodging logistics needed. Having a local's guidance during the biggest national holiday of the year is a huge get. Coordinate a couple weeks before departure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLIGHTS -->
+  <section id="flights">
+    <h2>Getting There</h2>
+
+    <h3>Eric · Denver → Taipei</h3>
+    <div class="card">
+      <p><strong>No nonstop DEN → TPE</strong> — routings go through Los Angeles (LAX) or San Francisco (SFO) then nonstop to Taipei Taoyuan. Best options: <strong>EVA Air</strong> (Star Alliance, Royal Laurel business class is excellent and one of the Pacific's best premium products); <strong>United</strong> via SFO/LAX (points-friendly); China Airlines via LAX. Total travel time ~15–18 hrs depending on connection. <strong>Book early</strong> — October demand is steady and prices climb.</p>
+      <p><strong>Points:</strong> Book EVA through United MileagePlus or EVA Infinity MileageLands. Business one-way from Denver typically 60k–80k miles + taxes.</p>
+      <p>
+        <a href="https://www.evaair.com/en-global/index.html" target="_blank">EVA Air ↗</a> ·
+        <a href="https://www.united.com" target="_blank">United ↗</a> ·
+        <a href="https://www.google.com/travel/flights?q=flights+DEN+to+TPE" target="_blank">Google Flights DEN→TPE ↗</a>
+      </p>
+    </div>
+
+    <h3>Eric · Taipei → Tokyo (Oct 18)</h3>
+    <div class="card">
+      <p><strong>Many daily nonstops</strong> — Taipei Taoyuan (TPE) → Tokyo Haneda (HND) or Narita (NRT), ~3h 15m. EVA Air, ANA, China Airlines, JAL. Budget fares from ~$120; Star Alliance business from ~$350 or redeemable. <strong>Aim for a midday departure</strong> so you land in Tokyo with time to meet the group and settle in before Rachael's birthday dinner.</p>
+      <p>
+        <a href="https://www.evaair.com" target="_blank">EVA Air ↗</a> ·
+        <a href="https://www.ana.co.jp/en/us/" target="_blank">ANA ↗</a> ·
+        <a href="https://www.google.com/travel/flights?q=flights+TPE+to+HND" target="_blank">Google Flights TPE→HND ↗</a>
+      </p>
+    </div>
+
+    <div class="alert red">
+      <span class="alert-icon">🌀</span>
+      <p><strong>Typhoon season:</strong> Early October is the tail end of Taiwan's typhoon season (peak: July–September). Risk declines significantly by Oct 9 but isn't zero. Get travel insurance with trip interruption. Watch <a href="https://www.cwb.gov.tw/eng/" target="_blank">Taiwan's Central Weather Bureau ↗</a> as the trip approaches.</p>
+    </div>
+  </section>
+
+  <!-- STAYS -->
+  <section id="stays">
+    <h2>Stay Considerations</h2>
+
+    <!-- TAIPEI -->
+    <div class="city-header">
+      <div class="city-left">
+        <h2>🏙 Taipei</h2>
+        <div style="font-size:.85rem;color:#666;margin-top:.15rem">Oct 9 – 13 · 4 nights · 🎉 Double Ten Day Oct 10</div>
+      </div>
+      <div class="city-meta">⛅ ~75–84°F · warm &amp; humid<br>Typhoon season trailing off</div>
+    </div>
+
+    <div class="card">
+      <p><strong>Neighborhood thinking:</strong> <strong>Da'an</strong> is the sweet spot for food — Yongkang Street (beef noodle soup corridor), Shida Night Market, good bars, walkable to everything. <strong>Xinyi</strong> is the nightlife center — Taipei 101 views, rooftop bars, clubs — but further from the best eating neighborhoods. <strong>Zhongshan</strong> balances both: boutique hotels, solid food scene, easy walk to bars. Since we want to be in the mix, Da'an or Zhongshan over any of the big corporate Xinyi towers.</p>
+    </div>
+
+    <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th style="min-width:175px">Property</th>
+          <th>Why consider it</th>
+          <th>Trade-off</th>
+          <th>$/night</th>
+          <th>Rating</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="pick">
+          <td>
+            <span class="pick-badge">★ Pick</span><br>
+            <strong>Meander Taipei</strong><br>
+            <span class="tag green">Best value</span> <span class="tag">Da'an</span>
+          </td>
+          <td>Boutique in the heart of Da'an — Yongkang Street steps away, Shida Night Market walkable, solid reviews, reasonable price, genuinely local neighborhood feel. Right in the mix.</td>
+          <td>Smaller property; fewer amenities than a full hotel</td>
+          <td>~$100–160</td>
+          <td>9.2 Booking</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=Meander+Taipei&checkin=2026-10-09&checkout=2026-10-13" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Meander+Taipei" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Hotel Eclat Taipei</strong><br>
+            <span class="tag red">Art boutique</span> <span class="tag">Da'an</span>
+          </td>
+          <td>Original artwork throughout (Damien Hirst, Andy Warhol), rooftop infinity pool + bar, steps from Yongkang St — worth it if you want the art experience built into the stay</td>
+          <td>Significantly pricier; rooms book fast; more splurge than value</td>
+          <td>~$250–380</td>
+          <td>4.5★</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Eclat+Taipei&checkin=2026-10-09&checkout=2026-10-13" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Eclat+Taipei" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Palais de Chine</strong><br>
+            <span class="tag">Zhongzheng</span> <span class="tag red">Heritage</span>
+          </td>
+          <td>Elegant French-inspired design near Ximending, excellent restaurant, beautiful property — more central than Da'an but still walkable to food</td>
+          <td>More formal than atmospheric; not the cheapest option</td>
+          <td>~$200–300</td>
+          <td>4.5★</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=Palais+de+Chine+Taipei&checkin=2026-10-09&checkout=2026-10-13" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Palais+de+Chine+Taipei" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="splurge-badge">✨ Nightlife pick</span><br>
+            <strong>W Taipei</strong><br>
+            <span class="tag">Xinyi</span> <span class="tag gold">Clubs</span>
+          </td>
+          <td>WET rooftop bar, Taipei 101 proximity, walking distance to clubs — if Double Ten Day fireworks are the priority, this vantage point is hard to beat</td>
+          <td>Far from best food neighborhoods; expensive; corporate feel</td>
+          <td>~$280–450</td>
+          <td>4★</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=W+Taipei&checkin=2026-10-09&checkout=2026-10-13" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=W+Hotel+Taipei" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- TAINAN -->
+    <div class="city-header" style="margin-top:2.5rem">
+      <div class="city-left">
+        <h2>🏯 Tainan</h2>
+        <div style="font-size:.85rem;color:#666;margin-top:.15rem">Oct 13 – 16 · 3 nights · Taiwan's oldest city &amp; food capital</div>
+      </div>
+      <div class="city-meta">⛅ ~77–86°F · warm, drier than Taipei</div>
+    </div>
+
+    <div class="card">
+      <p><strong>Tainan is where the "eat our way through a country" philosophy has its biggest day.</strong> Taiwan's food capital — not Taipei. The historic core is dense and walkable: Anping, the Confucius Temple district, old Japanese colonial streets, night market alleys. Stay central and close to the food, not at a resort-style property that puts you in a taxi to get anywhere interesting.</p>
+    </div>
+
+    <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th style="min-width:175px">Property</th>
+          <th>Why consider it</th>
+          <th>Trade-off</th>
+          <th>$/night</th>
+          <th>Rating</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="pick">
+          <td>
+            <span class="pick-badge">★ Pick</span><br>
+            <strong>Restored guesthouse · Shennong St / Anping area</strong><br>
+            <span class="tag red">Character</span> <span class="tag green">Best value</span>
+          </td>
+          <td>Japanese-era shophouses and Dutch-colonial-district guesthouses in the atmospheric heart of old Tainan — Shennong Street has a great nighttime craft and herb vibe, Anping puts you steps from the fort and the old food stalls. Interesting, cheap, and exactly right for two people who travel rough.</td>
+          <td>Book early; vet listings for real beds (not futons); limited availability. Worth the extra effort.</td>
+          <td>~$80–150</td>
+          <td>varies</td>
+          <td>
+            <a href="https://www.airbnb.com/tainan-taiwan/stays" target="_blank">Airbnb ↗</a><br>
+            <a href="https://www.booking.com/searchresults.html?ss=boutique+guesthouse+Tainan+old+town&checkin=2026-10-13&checkout=2026-10-16" target="_blank">Booking ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Shennong+Street+Tainan" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Hotel Tainan</strong><br>
+            <span class="tag">Central</span>
+          </td>
+          <td>Reliable heritage hotel smack in the center — walking distance to Chimei shuttle stop, comfortable beds, no nonsense. Good fallback if character spots are full.</td>
+          <td>Older property, less atmospheric; not as walkable to Anping area</td>
+          <td>~$80–130</td>
+          <td>4★</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=Hotel+Tainan&checkin=2026-10-13&checkout=2026-10-16" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Tainan" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Silks Place Tainan</strong><br>
+            <span class="tag red">5-star</span> <span class="tag">Central</span>
+          </td>
+          <td>Tainan's flagship — spa, pool, rooftop bar, walkable to the historic core. If you want the full-comfort option and to treat yourselves one night.</td>
+          <td>Priciest in town; more polished than atmospheric; more Joan-and-Rachael tier</td>
+          <td>~$180–280</td>
+          <td>4.5★</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=Silks+Place+Tainan&checkin=2026-10-13&checkout=2026-10-16" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Silks+Place+Tainan" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- KAOHSIUNG -->
+    <div class="city-header" style="margin-top:2.5rem">
+      <div class="city-left">
+        <h2>⚓ Kaohsiung</h2>
+        <div style="font-size:.85rem;color:#666;margin-top:.15rem">Oct 16 – 18 · 2 nights · port city · Pier-2 art district</div>
+      </div>
+      <div class="city-meta">🌤 ~79–87°F · warm, clearest skies</div>
+    </div>
+
+    <div class="card">
+      <p><strong>Two nights means one base and no commuting.</strong> The <strong>Pier-2 / Yancheng</strong> area has the most character — converted harbor warehouses, galleries, craft bars, ferry to Cijin Island. <strong>Love River / Formosa Boulevard</strong> is more central with better MRT access. Joseph's vote will probably be Pier-2; Eric's vote is wherever the night market is closest.</p>
+    </div>
+
+    <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th style="min-width:175px">Property</th>
+          <th>Why consider it</th>
+          <th>Trade-off</th>
+          <th>$/night</th>
+          <th>Rating</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="pick">
+          <td>
+            <span class="pick-badge">★ Pick</span><br>
+            <strong>Just Sleep Pier-2</strong><br>
+            <span class="tag red">Design boutique</span> <span class="tag">Pier-2</span>
+          </td>
+          <td>Walking distance to the full Pier-2 art complex, Kaohsiung Museum of Fine Arts, Cijin ferry — exactly right for Joseph's art instinct and Eric's late-night wandering</td>
+          <td>Slightly off the MRT grid — taxi to other areas; solid rather than luxury</td>
+          <td>~$80–130</td>
+          <td>8.8 Booking</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=Just+Sleep+Kaohsiung+Pier2&checkin=2026-10-16&checkout=2026-10-18" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Just+Sleep+Kaohsiung+Pier-2" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>The Place Kaohsiung</strong><br>
+            <span class="tag">Love River</span> <span class="tag green">Boutique</span>
+          </td>
+          <td>Boutique on the Love River, good rooftop views, central to MRT, walkable to restaurants</td>
+          <td>Further from Pier-2 and the art district character</td>
+          <td>~$100–160</td>
+          <td>9.0 Booking</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=The+Place+Kaohsiung&checkin=2026-10-16&checkout=2026-10-18" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=The+Place+Kaohsiung" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Courtyard Marriott Kaohsiung</strong><br>
+            <span class="tag">Zuoying</span>
+          </td>
+          <td>Near THSR Zuoying station — convenient if you need an early Oct 18 departure back to Taipei; reliable beds</td>
+          <td>Corporate; far from Pier-2 and the interesting neighborhoods</td>
+          <td>~$110–170</td>
+          <td>4★</td>
+          <td>
+            <a href="https://www.booking.com/searchresults.html?ss=Courtyard+Marriott+Kaohsiung&checkin=2026-10-16&checkout=2026-10-18" target="_blank">Book ↗</a><br>
+            <a href="https://www.google.com/maps/search/?api=1&query=Courtyard+Marriott+Kaohsiung" target="_blank">Map ↗</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- THINGS TO DO -->
+  <section id="todo">
+    <h2>Things to Do — Art, Food &amp; Nightlife</h2>
+
+    <div class="alert gold">
+      <span class="alert-icon">🍜</span>
+      <p><strong>The guiding principle:</strong> Two adventurous eaters, no restrictions, maximum curiosity. Taiwan is one of the great food destinations on earth — night markets, pre-dawn soup spots, hole-in-the-wall noodle shops, and a fine dining scene that largely goes unnoticed by the Western press. Eat at all hours. Joseph's art history background unlocks the museum layer, which is world-class and deeply underrated in Taiwan specifically.</p>
+    </div>
+
+    <h3>🏙 Taipei</h3>
+    <div class="card">
+      <p><strong>🎨 Art — Joseph's department:</strong> <a href="https://www.google.com/maps/search/?api=1&query=National+Palace+Museum+Taipei" target="_blank">National Palace Museum</a> — 700,000+ Chinese imperial artifacts including the jade cabbage and the meat-shaped stone; Joseph could disappear here for a full day and surface only for dinner. <a href="https://www.google.com/maps/search/?api=1&query=Taipei+Fine+Arts+Museum" target="_blank">Taipei Fine Arts Museum (TFAM)</a> for contemporary Taiwanese and international work. <a href="https://www.google.com/maps/search/?api=1&query=Huashan+1914+Creative+Park+Taipei" target="_blank">Huashan 1914 Creative Park</a> — former winery, now galleries, studios, pop-up markets.</p>
+
+      <!-- Josh sub-callout -->
+      <div class="josh-card" style="margin:1rem 0">
+        <div class="josh-icon" style="font-size:1.5rem">🙌</div>
+        <div class="josh-content">
+          <h4>Josh + cousins — Oct 10 and maybe Oct 11</h4>
+          <p>Meeting Josh on Double Ten Day and possibly the next day, then we're off on our own. His cousins live in Taipei (Josh stays with them — no lodging coordination needed). Local guidance during the biggest national holiday of the year is the best kind of serendipity. Let them take us somewhere no guidebook would find. Confirm logistics 2–3 weeks before departure.</p>
+        </div>
+      </div>
+
+      <p><strong>🎉 Oct 10 — Double Ten Day:</strong> The Presidential Office parade on Ketagalan Blvd starts mid-morning — get there early. Evening fireworks along the Tamsui River. The whole city is decorated, festive, and buzzing. Most restaurants and night markets run normally; some smaller shops close. Perfect day to be with locals who know where to watch and eat.</p>
+
+      <p><strong>🍜 Food — the essentials:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Yongkang+Beef+Noodle+Taipei" target="_blank">Yongkang Beef Noodle</a> — the definitive bowl in Taipei, full stop. <a href="https://www.google.com/maps/search/?api=1&query=Raohe+Night+Market+Taipei" target="_blank">Raohe Night Market</a> — better than Shilin, local crowd, the pepper pork buns from the temple-front stall are essential, plus scallion pancakes and oyster noodles. <a href="https://www.google.com/maps/search/?api=1&query=Ningxia+Night+Market+Taipei" target="_blank">Ningxia Night Market</a> for braised pork rice and oyster vermicelli. <a href="https://www.google.com/maps/search/?api=1&query=Din+Tai+Fung+Xinyi+Taipei" target="_blank">Din Tai Fung</a> (the Xinyi original — worth it once). Bubble tea everywhere — it was invented on this island.</p>
+
+      <p><strong>🌙 Nightlife:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Draft+Land+Taipei" target="_blank">Draft Land</a> — rotating tap cocktails, consistently excellent. Alchemy Bar in Da'an (speakeasy-style). Craft beer scene around Zhongzheng and Ximending. Ximending itself for late-night street energy and more food.</p>
+
+      <div class="bar-callout">
+        <div class="bar-callout-icon">🍸</div>
+        <div>
+          <strong>Bitter Burro</strong> — Josh's favorite bar in the whole damn world. In Taipei.<br>
+          <span style="font-size:.82rem;color:#ccc">This is not a casual endorsement. When someone who lives for this stuff calls a place their favorite bar on the planet, you go. Find it, sit in it, order everything. Make it a priority on the Oct 10 night with Josh — let him take you there himself.</span>
+        </div>
+      </div>
+
+      <p><strong>🚌 Day trip — Jiufen:</strong> 90 min by bus from Taipei Main Station — gold-rush hillside town above the sea, narrow stone stairs, red lantern-lit teahouses, unforgettable atmosphere. Go on a weekday. <a href="https://www.google.com/maps/search/?api=1&query=Jiufen+Taiwan" target="_blank">Map ↗</a></p>
+
+      <p><strong>♨️ Beitou hot springs:</strong> A half-day MRT trip — public baths in a leafy volcanic valley. Good morning reset if needed. <a href="https://www.google.com/maps/search/?api=1&query=Beitou+Hot+Springs+Taipei" target="_blank">Map ↗</a></p>
+    </div>
+
+    <h3>🏯 Tainan</h3>
+    <div class="card">
+      <p><strong>🎨 Art:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Chimei+Museum+Tainan" target="_blank">Chimei Museum</a> — one of the great surprises in Asia. Private collection: European Old Masters (Rubens, Poussin, Boucher), natural history, medieval arms and armor, and one of the world's largest violin collections. <strong>Free admission.</strong> 30 min from central Tainan by taxi. Give Joseph the full morning. Also: <a href="https://www.google.com/maps/search/?api=1&query=National+Museum+of+Taiwan+History" target="_blank">National Museum of Taiwan History</a> for indigenous culture and the Dutch / Qing / Japanese colonial layers.</p>
+
+      <p><strong>🏛 Historic Tainan:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Anping+Fort+Tainan" target="_blank">Anping Old Fort</a> (Dutch, 1624 — Taiwan's oldest European structure). <a href="https://www.google.com/maps/search/?api=1&query=Tainan+Confucius+Temple" target="_blank">Confucius Temple</a> (oldest in Taiwan, 1665). <a href="https://www.google.com/maps/search/?api=1&query=Hayashi+Department+Store+Tainan" target="_blank">Hayashi Department Store</a> (1932 Japanese-era, beautifully restored). Walk <a href="https://www.google.com/maps/search/?api=1&query=Shennong+Street+Tainan" target="_blank">Shennong Street</a> at night — herb shops, craft studios, lanterns, old atmosphere.</p>
+
+      <p><strong>🍜 Food — this is the point of coming to Tainan:</strong> <a href="https://www.google.com/maps/search/?api=1&query=coffin+bread+Tainan" target="_blank">Coffin bread</a> (棺材板 guāncái bǎn — thick-fried toast stuffed with cream sauce and seafood; the name means "coffin board"). Dawn <strong>milkfish soup</strong> (虱目魚) — open from 6am, eaten at sunrise with rice. <strong>Tainan beef soup</strong> (牛肉湯) — raw beef slices scalded tableside by boiling broth; Eric's kind of dish. <a href="https://www.google.com/maps/search/?api=1&query=Du+Xiaoyue+Tainan+danzai+noodles" target="_blank">Dù Xiaoyuè</a> for peddler's noodles (擔仔麵 dànzǎi miàn) — the original. Shrimp rolls (蝦捲). All of Zhongzheng Road and Guohua Street market.</p>
+
+      <p><strong>🌙 Nightlife:</strong> Smaller than Taipei but real — craft beer and cocktail spots on Zhongzheng and around Anping. Slower pace is the point; a single great bar and nowhere to be is very Tainan.</p>
+    </div>
+
+    <h3>⚓ Kaohsiung</h3>
+    <div class="card">
+      <p><strong>🎨 Art:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Pier-2+Art+Center+Kaohsiung" target="_blank">Pier-2 Art Center</a> — converted harbor warehouses, now one of Taiwan's most active contemporary art hubs: galleries, studios, artist residencies, installations, bookshops. Joseph will want hours here. Adjacent: <a href="https://www.google.com/maps/search/?api=1&query=Kaohsiung+Museum+of+Fine+Arts" target="_blank">Kaohsiung Museum of Fine Arts</a> for a strong permanent collection.</p>
+
+      <p><strong>🐉 Don't miss:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Lotus+Pond+Kaohsiung+Dragon+Tiger+Pagodas" target="_blank">Lotus Pond Dragon &amp; Tiger Pagodas</a> — jaw-dropping religious kitsch in the absolute best way; enter through the dragon's mouth, exit through the tiger's tail. <a href="https://www.google.com/maps/search/?api=1&query=Cijin+Island+Kaohsiung" target="_blank">Cijin Island</a> — 5-min ferry, sunset views, seafood shacks, old lighthouse.</p>
+
+      <p><strong>🍜 Food:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Liuhe+Night+Market+Kaohsiung" target="_blank">Liuhe Night Market</a> — Kaohsiung's biggest, great for seafood (grilled squid, oyster omelettes, fresh sashimi stalls). Cijin Island ferry stalls for cheap fried seafood. The bar scene around Pier-2 is growing fast.</p>
+
+      <p><strong>🌙 Last night:</strong> Make it count — Pier-2 bar-hop, Love River lit-bridge walk, somewhere late. Kaohsiung doesn't sleep early and this is the end of a very good trip.</p>
+    </div>
+  </section>
+
+  <!-- ITINERARY -->
+  <section id="itinerary">
+    <h2>Suggested Itinerary Rhythm</h2>
+    <p style="font-size:.88rem;color:#777;margin-bottom:1rem">No Joan, no 10pm bedtimes. A loose morning · afternoon · evening flow — adjust freely based on how late the night before went.</p>
+
+    <h3>Taipei · 4 nights</h3>
+    <div class="card">
+      <div class="rhythm-grid">
+        <div class="rhythm-label">Oct 9 — Arrive</div>
+        <div class="rhythm-content">Touch down, check in, decompress. Walk to Yongkang Street in the evening for the first proper bowl of beef noodle soup. Raohe Night Market if there's energy left. Sleep.</div>
+
+        <div class="rhythm-label">Oct 10 — 🎉 Double Ten</div>
+        <div class="rhythm-content"><strong>Ketagalan Blvd parade</strong> — arrive early, the route fills up fast. Afternoon with Josh and hopefully his cousins wherever they want to take us — local guidance on a national holiday is priceless. Evening fireworks. Eat whatever they're eating.</div>
+
+        <div class="rhythm-label">Oct 11 — Museums</div>
+        <div class="rhythm-content">Morning at the <strong>National Palace Museum</strong> — block 3–4 hrs minimum; Joseph's call on how long. Lunch in Shilin area. Afternoon: Taipei Fine Arts Museum or Huashan Creative Park. Evening: Draft Land or Alchemy for cocktails, then wherever.</div>
+
+        <div class="rhythm-label">Oct 12 — Jiufen</div>
+        <div class="rhythm-content">Early bus to <strong>Jiufen</strong> — teahouses, clifftop views, one of the most atmospheric places in Asia. Back by evening for Ningxia Night Market (oyster vermicelli, scallion pancakes). Late night: wherever it leads.</div>
+      </div>
+    </div>
+
+    <h3>Tainan · 3 nights</h3>
+    <div class="card">
+      <div class="rhythm-grid">
+        <div class="rhythm-label">🌅 Dawn</div>
+        <div class="rhythm-content"><strong>Milkfish soup stall</strong> — open from 6am. This is the move. Eat at sunrise, walk it off through the Confucius Temple area before the heat builds. Then Anping Fort.</div>
+
+        <div class="rhythm-label">☀️ Midday</div>
+        <div class="rhythm-content"><strong>Chimei Museum</strong> — give Joseph the time he needs. Hayashi Department Store for craft browsing. Shennong Street in the late afternoon.</div>
+
+        <div class="rhythm-label">🌆 Evening</div>
+        <div class="rhythm-content"><strong>Eat your way through Zhongzheng Road and Guohua Street.</strong> Coffin bread. Beef soup. Peddler's noodles. Shrimp rolls. Dumplings. In whatever order the stalls present themselves. Bar on Anping afterward.</div>
+      </div>
+    </div>
+
+    <h3>Kaohsiung · 2 nights</h3>
+    <div class="card">
+      <div class="rhythm-grid">
+        <div class="rhythm-label">🌅 Morning</div>
+        <div class="rhythm-content"><strong>Pier-2 Art Center</strong> when it opens — galleries in morning light before the crowds. Walk the entire warehouse complex. Joseph navigates.</div>
+
+        <div class="rhythm-label">☀️ Afternoon</div>
+        <div class="rhythm-content">Ferry to <strong>Cijin Island</strong> — seafood stalls, lighthouse, sunset views. Or: Lotus Pond Dragon-Tiger Pagodas — unmissable visual spectacle and one of the stranger things you'll ever walk through.</div>
+
+        <div class="rhythm-label">🌆 Last night</div>
+        <div class="rhythm-content"><strong>Liuhe Night Market</strong> for the final sweep. Pier-2 bar hop. Love River by night. This is the last night of Taiwan — make it count. You fly tomorrow.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHOOSE YOUR OWN ADVENTURE -->
+  <section id="adventure">
+    <h2>🎲 Choose Your Own Adventure — Optional Detours</h2>
+    <p style="font-size:.9rem;color:#666;margin-bottom:1.25rem">Unlike the Japan/Korea trip, this itinerary has room to breathe. Below are three detours that could replace a city leg, extend a stay, or happen entirely on the fly. Nothing is booked. Everything is possible. Pick one and go.</p>
+
+    <div class="adventure-grid">
+
+      <!-- TAICHUNG -->
+      <div class="adventure-card">
+        <div class="adventure-card-header josh">
+          <div>
+            <div class="adventure-title">🏙 Taichung — Josh's Recommendation</div>
+            <div class="adventure-subtitle">Taiwan's third city · art · Fengjia Night Market · one legendary bar</div>
+          </div>
+          <div class="adventure-meta" style="color:#92400e">
+            ~1h from Taipei by THSR<br>
+            ~45min from Tainan by THSR<br>
+            1–2 nights ideal
+          </div>
+        </div>
+        <div class="adventure-card-body">
+          <p>Taichung sits almost exactly between Taipei and Tainan on the High Speed Rail — making it a natural overnight detour on the way south rather than a separate mission. Josh knows his stuff, and the case for Taichung is genuinely compelling: it's grown into one of Taiwan's most interesting cultural cities, with a serious art scene, a café culture that rivals Taipei, and the largest night market on the island.</p>
+
+          <p><strong>🎨 For Joseph:</strong> The <a href="https://www.google.com/maps/search/?api=1&query=National+Taichung+Theater" target="_blank">National Taichung Theater</a> is reason enough to stop. Designed by Toyo Ito (of Sendai Mediatheque fame) — a radical, curving, cave-like structure that was nearly impossible to build and even harder to describe. Widely considered one of the most extraordinary buildings in Asia. Also: <a href="https://www.google.com/maps/search/?api=1&query=Rainbow+Village+Taichung" target="_blank">Rainbow Village</a> (a retired soldier painted his entire village in folk murals to save it from demolition — now a landmark), and the <a href="https://www.google.com/maps/search/?api=1&query=National+Museum+of+Natural+Science+Taichung" target="_blank">National Museum of Natural Science</a>.</p>
+
+          <p><strong>🍜 Food:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Fengjia+Night+Market+Taichung" target="_blank">Fengjia Night Market</a> — the biggest and arguably best night market in Taiwan. More food, more stalls, more chaos than Raohe or Shilin. Also: Taichung has a serious breakfast culture and a strong independent café and cocktail scene — the city punches well above its weight for nightlife.</p>
+
+
+          <div class="plug-in-box">
+            <strong>How to plug this in:</strong> Take THSR from Taipei on Oct 13 morning, stop in Taichung for 1–2 nights, continue to Tainan on Oct 14 or 15. Compresses Tainan to 1–2 nights instead of 3 — manageable if you've already done Taipei food deeply. Or skip Tainan partially and go Taipei → Taichung (1 night) → Kaohsiung (2 nights), using a day trip or half-day from Kaohsiung for Tainan's key dishes.
+          </div>
+        </div>
+      </div>
+
+      <!-- TAROKO GORGE -->
+      <div class="adventure-card">
+        <div class="adventure-card-header gorge">
+          <div>
+            <div class="adventure-title">🏔 Taroko Gorge — The Wild Card</div>
+            <div class="adventure-subtitle">Eastern Taiwan · marble canyon · one of Asia's most dramatic landscapes</div>
+          </div>
+          <div class="adventure-meta" style="color:#14532d">
+            ~2h from Taipei by train<br>
+            Base city: Hualien<br>
+            1–2 nights minimum
+          </div>
+        </div>
+        <div class="adventure-card-body">
+          <p>Taroko is a marble canyon on Taiwan's east coast cut by a river over millennia — sheer cliff walls, turquoise water, suspension bridges, tunnels blasted through rock, and one of the most visually staggering national parks in Asia. It is emphatically not the Taiwan that most people picture, which is exactly why it's worth seeing.</p>
+
+          <p><strong>🎨 For Joseph:</strong> The Taiwanese indigenous Truku people have lived in this canyon for centuries — their weaving, woodworking, and ceremonial culture are documented at the <a href="https://www.google.com/maps/search/?api=1&query=Taroko+National+Park+Visitor+Center" target="_blank">park visitor center</a> and in Hualien's cultural spaces. The landscape itself, from an art history standpoint, informed an entire generation of Taiwanese landscape painters.</p>
+
+          <p><strong>🥾 Do:</strong> Shakadang Trail (riverside canyon path, easy, stunning), Swallow Grotto (the most dramatic section of the gorge road — cliff faces riddled with holes, rock formations overhead), Baiyang Waterfall Trail (ends in a waterfall you walk behind), and Qingshui Cliffs (Pacific Ocean on one side, vertical cliff faces on the other — breathtaking from the coastal highway).</p>
+
+          <p><strong>🍜 Hualien food:</strong> The city is famous for scallion pancakes (蔥油餅), pork rice, and the freshest Pacific seafood you'll eat in Taiwan — the east coast fish market is extraordinary by 6am.</p>
+
+          <div class="plug-in-box">
+            <strong>How to plug this in:</strong> Add 1–2 nights to the start of the trip — arrive Taipei Oct 9, take the Puyuma Express east to Hualien Oct 10 or 11, return to Taipei Oct 11 or 12, then continue south as planned. Or use Taroko as a bookend: Hualien is reachable from Taipei before flying out Oct 18, though the logistics get tight. Best treated as a Taipei extension, not a southern add-on.
+          </div>
+        </div>
+      </div>
+
+      <!-- SUN MOON LAKE -->
+      <div class="adventure-card">
+        <div class="adventure-card-header lake">
+          <div>
+            <div class="adventure-title">🌅 Sun Moon Lake — The Scenic Slowdown</div>
+            <div class="adventure-subtitle">Central Taiwan mountains · cycling · tea · indigenous culture · famous for a reason</div>
+          </div>
+          <div class="adventure-meta" style="color:#1e3a8a">
+            ~1.5h from Taichung by bus<br>
+            ~2.5h from Taipei by bus<br>
+            1 night sweet spot
+          </div>
+        </div>
+        <div class="adventure-card-body">
+          <p>Taiwan's most famous lake sits at 748 meters in the mountains of Nantou County. The name comes from the shape: one half resembles a sun, the other a crescent moon. It is not a secret — it draws enormous Taiwanese domestic tourism — but it earned its reputation. Morning fog on the water, aboriginal villages around the shore, cycling the full 33km loop on a rented electric bike, and the surrounding tea plantations that produce some of Taiwan's best high-mountain oolongs.</p>
+
+          <p><strong>🎨 For Joseph:</strong> The <a href="https://www.google.com/maps/search/?api=1&query=Formosan+Aboriginal+Culture+Village+Sun+Moon+Lake" target="_blank">Formosan Aboriginal Culture Village</a> is adjacent — 14 distinct indigenous cultures represented in reconstructed villages, performing arts, and a genuinely serious ethnographic collection. Also: the lakeside <a href="https://www.google.com/maps/search/?api=1&query=Wenwu+Temple+Sun+Moon+Lake" target="_blank">Wenwu Temple</a> is one of the most architecturally grand temple complexes in Taiwan, set directly above the water.</p>
+
+          <p><strong>🍜 Eat and drink:</strong> The Thao indigenous people (the lake's original inhabitants) have their own cuisine — grilled freshwater fish, wild boar, mochi made from freshly pounded rice. Sun Moon Lake tea (紅茶, hóngchá — a red/black oolong) is famous; every lakeside café brews it. Don't miss it.</p>
+
+          <div class="plug-in-box">
+            <strong>How to plug this in:</strong> Pairs naturally with a Taichung stop — Taichung → Sun Moon Lake by bus (1.5h), spend the afternoon and night, return to Taichung or continue directly south by bus to Tainan HSR station. Works as a one-night detour without meaningfully disrupting the route. Also possible as a standalone day trip from Taipei if you don't want an overnight.
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /adventure-grid -->
+  </section>
+
+  <!-- BOOKING STATUS -->
+  <section id="booking">
+    <h2>Booking Status</h2>
+    <div class="card">
+      <div class="status-grid">
+        <div class="dot grey"></div>
+        <div><strong>Taipei:</strong> Hotel Eclat Taipei — not yet booked</div>
+        <div style="font-size:.8rem;color:#999">check availability</div>
+
+        <div class="dot grey"></div>
+        <div><strong>Tainan:</strong> Silks Place Tainan — not yet booked</div>
+        <div style="font-size:.8rem;color:#999">check availability</div>
+
+        <div class="dot grey"></div>
+        <div><strong>Kaohsiung:</strong> Just Sleep Pier-2 — not yet booked</div>
+        <div style="font-size:.8rem;color:#999">check availability</div>
+
+        <div class="dot grey"></div>
+        <div><strong>Flights DEN → TPE (Oct 7):</strong> not yet booked</div>
+        <div style="font-size:.8rem;color:#999">book early</div>
+
+        <div class="dot grey"></div>
+        <div><strong>Flight TPE → HND (Oct 18):</strong> not yet booked</div>
+        <div style="font-size:.8rem;color:#999">many daily options</div>
+
+        <div class="dot grey"></div>
+        <div><strong>THSR Taipei → Tainan (Oct 13):</strong> not yet booked</div>
+        <div style="font-size:.8rem;color:#999"><a href="https://www.thsrc.com.tw/en/" target="_blank">thsrc.com.tw ↗</a></div>
+
+        <div class="dot grey"></div>
+        <div><strong>Josh meetup (Oct 10 + maybe Oct 11):</strong> he stays with family, no lodging needed</div>
+        <div style="font-size:.8rem;color:#999">confirm 2–3 wks before</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIRMATIONS -->
+  <section id="confirmations">
+    <h2>Bookings &amp; Confirmations</h2>
+    <div class="card">
+      <table class="conf-table">
+        <thead>
+          <tr><th>Item</th><th>Provider</th><th>Dates</th><th>Conf #</th><th>Cost</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="6" style="color:#aaa;font-style:italic;font-size:.85rem;text-align:center;padding:1.2rem">Nothing booked yet — fill this in as you confirm things.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CURRENCY -->
+  <section id="currency">
+    <h2>Currency — Taiwan Dollar (TWD)</h2>
+    <div class="currency-box">
+      <label>USD $</label>
+      <input type="number" id="usd-in" value="100" min="0" step="1" aria-label="USD amount">
+      <div class="currency-result"><span id="twd-out">—</span> <span style="font-size:1rem;font-weight:400;color:#888">NT$</span></div>
+      <div class="rate-note">1 USD = <span id="rate">…</span> TWD · <span id="rate-date">loading live rate…</span></div>
+    </div>
+    <div style="margin-top:1.1rem;font-size:.87rem;color:#666">
+      <strong>Taiwan is cheap.</strong> Night market snacks: NT$50–150 (~$1.50–5). A great bowl of noodles: NT$100–200 (~$3–6). Taxis are inexpensive. Credit cards work at hotels and most sit-down restaurants — carry NT$500–1,000 cash for night markets and small stalls. ATMs at every 7-Eleven dispense NT$ at good rates.
+    </div>
+  </section>
+
+  <!-- WORDS -->
+  <section id="words">
+    <h2>Useful Words — Mandarin (Traditional)</h2>
+    <div class="alert blue">
+      <span class="alert-icon">📱</span>
+      <p><strong>Download Google Translate</strong> with the <strong>Traditional Chinese offline pack</strong> before you fly. Camera mode is essential for menus — Taiwan's best stalls almost never have English. Taiwanese people are remarkably warm to visitors who make any attempt at Mandarin at all.</p>
+    </div>
+    <div class="card">
+      <p style="font-size:.78rem;color:#999;margin:-.2rem 0 .8rem">Click any row to hear it spoken aloud.</p>
+      <div class="words-grid">
+        <div>
+          <div class="word-row" onclick="sayIt('你好',this)"><span class="word-en">Hello</span><span class="word-zh">你好</span><span class="word-py">Nǐ hǎo</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('謝謝',this)"><span class="word-en">Thank you</span><span class="word-zh">謝謝</span><span class="word-py">Xièxie</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('不好意思',this)"><span class="word-en">Excuse me</span><span class="word-zh">不好意思</span><span class="word-py">Bù hǎo yìsi</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('是',this)"><span class="word-en">Yes / No</span><span class="word-zh">是 / 不是</span><span class="word-py">Shì / Bù shì</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('請',this)"><span class="word-en">Please</span><span class="word-zh">請</span><span class="word-py">Qǐng</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('多少錢',this)"><span class="word-en">How much?</span><span class="word-zh">多少錢？</span><span class="word-py">Duōshǎo qián?</span><button class="word-speak">🔊</button></div>
+        </div>
+        <div>
+          <div class="word-row" onclick="sayIt('好吃',this)"><span class="word-en">Delicious!</span><span class="word-zh">好吃！</span><span class="word-py">Hǎo chī!</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('乾杯',this)"><span class="word-en">Cheers!</span><span class="word-zh">乾杯！</span><span class="word-py">Gānbēi!</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('啤酒',this)"><span class="word-en">Beer</span><span class="word-zh">啤酒</span><span class="word-py">Píjiǔ</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('夜市',this)"><span class="word-en">Night market</span><span class="word-zh">夜市</span><span class="word-py">Yèshì</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('牛肉麵',this)"><span class="word-en">Beef noodles</span><span class="word-zh">牛肉麵</span><span class="word-py">Niúròu miàn</span><button class="word-speak">🔊</button></div>
+          <div class="word-row" onclick="sayIt('在哪裡',this)"><span class="word-en">Where is…?</span><span class="word-zh">…在哪裡？</span><span class="word-py">…zài nǎlǐ?</span><button class="word-speak">🔊</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKING -->
+  <section id="packing">
+    <h2>Packing — Carry-On Only, Full Three Legs</h2>
+    <div class="alert gold">
+      <span class="alert-icon">🌡</span>
+      <p><strong>24 days, no checked bags, three countries, 40°F temperature swing.</strong> Taiwan (Oct 9–18): 75–87°F, humid. Japan (Oct 18 – ~Oct 26): mid-60s°F. Korea (Oct 26–Nov 2): 45–60°F, can feel cold. The strategy is layering — the same clothes that work in a Taipei night market work in Seoul with everything else piled on top.</p>
+    </div>
+    <div class="alert" style="background:#f0f7f0;border-color:#7ab87a;color:#2a4a2a;display:flex;gap:.6rem;align-items:flex-start;padding:.9rem 1rem;border-radius:8px;border:1.5px solid #7ab87a;margin-bottom:1.2rem">
+      <span style="font-size:1.1rem">🧺</span>
+      <p style="margin:0;font-size:.87rem"><strong>Laundry strategy:</strong> Japan and Korea both have coin laundry everywhere (often in the basement of your hotel), plus most places have a washer. Pack for 5–6 days max and do one wash per leg. This is how you travel 24 days in a carry-on.</p>
+    </div>
+
+    <div class="card">
+      <div class="pack-section">
+        <h3>👕 Clothing — the core list</h3>
+        <ul>
+          <li><strong>5–6 quick-dry t-shirts</strong> — these carry the whole trip. Moisture-wicking; cotton holds sweat and stinks fast in Taiwan humidity. Worn alone in Taiwan, layered under everything else in Korea.</li>
+          <li><strong>2–3 lightweight button-down or collared shirts</strong> — worn open over a tee in Taiwan; alone or under a jacket in Japan/Korea. Doubles as a "nicer" option for sit-down dinners and museums.</li>
+          <li><strong>2 pairs of pants</strong> — one casual (travel/jogger-style), one slightly nicer. Leave the jeans; they take a day to dry and add a pound of weight.</li>
+          <li><strong>1 pair of shorts</strong> — for Taiwan and Kaohsiung beach days. Leave them in a locker at the airport before Japan if you want to reclaim the space.</li>
+          <li><strong>1 packable rain jacket</strong> — wears as a windbreaker, packs to nothing. Essential for Taipei typhoon tail risk and for Japan rain. This is your outermost layer for mild-cold Japan days.</li>
+          <li><strong>1 mid-layer — fleece or lightweight down</strong> — the Japan/Korea layer. A packable down jacket (~$60 at any outdoor store) adds almost no weight and keeps you warm through Seoul in November. Do not skip this.</li>
+          <li><strong>5–6 pairs of quick-dry underwear</strong> — wash in the sink, dry overnight. Merino wool if you can swing it; synthetic otherwise.</li>
+          <li><strong>5–6 pairs of socks</strong> — you'll need more than you think. Add one pair of thin liner socks for blister prevention during 20,000-step days.</li>
+          <li><strong>1 pair of broken-in walking shoes</strong> — your primary footwear for the whole trip. Must be tested before you leave; this is not the time for new shoes.</li>
+          <li><strong>Flip-flops or lightweight sandals</strong> — essential for Taiwan (hot springs, beach, temple courtyards) and Japan onsen. Pack the thinnest pair you own.</li>
+          <li><strong>One warm hat and lightweight gloves</strong> — for Korea in late October/November nights. Packable, barely takes space.</li>
+        </ul>
+      </div>
+
+      <div class="pack-section">
+        <h3>🔌 Tech &amp; Power</h3>
+        <ul>
+          <li><strong>Plug adapter:</strong> Taiwan and Japan both use Type A (same as US) — no adapter needed for either. Korea uses Type C (European two-round-pin) — bring one compact travel adapter for the Korea leg, or buy one for a few dollars at Incheon airport.</li>
+          <li><strong>Phone plan:</strong> An international e-SIM covering all three countries is the cleanest approach. Get one before you fly — options like Airalo, Holafly, or SimOptions typically run $20–40 for 3 weeks of data. Your US carrier's international day-pass works too but adds up fast over 24 days.</li>
+          <li><strong>Power bank</strong> — long market and temple days drain phones constantly. 10,000 mAh is enough; 20,000 mAh if you want peace of mind.</li>
+          <li><strong>Headphones</strong> — long trains, long flights. Joseph knows.</li>
+          <li><strong>Universal charging cable</strong> — USB-C if your devices support it; covers most modern phones and laptops.</li>
+        </ul>
+      </div>
+
+      <div class="pack-section">
+        <h3>💳 Transit Cards — get all three</h3>
+        <ul>
+          <li><strong>Taiwan EasyCard (悠遊卡):</strong> Buy at TPE airport baggage claim or any 7-Eleven. Works on all MRT, buses, some taxis, and 7-Eleven purchases across the island. Load NT$500–1,000 to start.</li>
+          <li><strong>Japan Suica or Pasmo IC card:</strong> Get at Narita or Haneda airport. Works on virtually all rail and metro in Japan (JR, Tokyo Metro, regional trains), plus convenience stores and vending machines. Load ¥3,000–5,000.</li>
+          <li><strong>Korea T-money:</strong> Buy at Incheon airport or any convenience store (CU, GS25). Works on Seoul metro, city buses, and some taxis. Load ₩30,000–50,000.</li>
+        </ul>
+      </div>
+
+      <div class="pack-section">
+        <h3>📄 Documents &amp; Money</h3>
+        <ul>
+          <li><strong>Passport</strong> valid at least 6 months past Nov 2, 2026. US citizens: no visa required for Taiwan (90 days), Japan (90 days), or South Korea (90 days). Confirm entry requirements for your specific passport before departure.</li>
+          <li><strong>Credit cards with no foreign transaction fees</strong> — Visa and Mastercard accepted widely at hotels and restaurants. Cash is still king at night markets and smaller spots everywhere.</li>
+          <li><strong>Local cash, leg by leg:</strong> Taiwan: NT$3,000–5,000 (~$100–150) at TPE airport ATM. Japan: ¥20,000–30,000 (~$130–200). Korea: ₩100,000–200,000 (~$75–150). Airport ATMs in all three countries are reliable and give good rates.</li>
+          <li><strong>Travel insurance</strong> with medical + trip interruption coverage. Non-negotiable for a 24-day trip. October still carries typhoon tail risk in Taiwan and Japan.</li>
+        </ul>
+      </div>
+
+      <div class="pack-section">
+        <h3>💊 Health &amp; Comfort</h3>
+        <ul>
+          <li>Any prescriptions in original packaging — pharmacies are abundant in all three countries but matching formulations takes time you won't want to spend</li>
+          <li>Blister plasters — you will blow through these. Take more than you think you need.</li>
+          <li>Antacid/stomach relief — you will test your limits at every market. This is good. Have the backup.</li>
+          <li>Sunscreen — especially for Taiwan and any outdoor Kaohsiung or Kenting days. Japan and Korea in Oct are milder but you'll still want it.</li>
+          <li>Small first-aid kit: antiseptic wipes, bandages, ibuprofen, antihistamine</li>
+        </ul>
+      </div>
+
+      <div class="pack-section">
+        <h3>🧳 Bag strategy</h3>
+        <ul>
+          <li><strong>1 overhead carry-on</strong> (22" × 14" × 9" max — check your airline) for clothes, shoes, and gear</li>
+          <li><strong>1 personal item backpack</strong> (fits under seat) for daily use: phone charger, power bank, passport, camera, snacks, a layer. This bag is your day bag in every city — bring one you'd want to carry for 10 hours.</li>
+          <li><strong>Buying things:</strong> You will buy food, books, and probably a few things at markets. Japan especially makes this dangerous. Factor in that you'll need room on the way home, or plan to ship a box — Japan Post's shipping boxes from any post office are easy and reliable (~$30–50 for a medium box to the US).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATION BRIEFER -->
+  <section id="briefer">
+    <h2>🗺 Destination Briefer</h2>
+    <p style="font-size:.9rem;color:#666;margin-bottom:1.25rem">Pick anywhere in Taiwan. We'll tell you how to get there, where to sleep, what to do, and what to watch out for.</p>
+
+    <div class="briefer-form">
+      <div class="briefer-fields">
+        <div class="bf-group">
+          <label class="bf-label" for="bf-dest">Where do you want to go?</label>
+          <select id="bf-dest" class="bf-sel">
+            <option value="">— pick a destination —</option>
+            <option value="taichung">🏙 Taichung</option>
+            <option value="hualien">🏔 Hualien / Taroko Gorge</option>
+            <option value="sunmoonlake">🌅 Sun Moon Lake</option>
+            <option value="jiufen">🏮 Jiufen</option>
+            <option value="kenting">🌊 Kenting</option>
+            <option value="alishan">🌲 Alishan</option>
+            <option value="beitou">♨️ Beitou Hot Springs</option>
+            <option value="tamsui">🌇 Tamsui</option>
+            <option value="penghu">🏝 Penghu Islands</option>
+          </select>
+        </div>
+        <div class="bf-group">
+          <label class="bf-label" for="bf-origin">Leaving from</label>
+          <select id="bf-origin" class="bf-sel">
+            <option value="taipei">Taipei</option>
+            <option value="taichung">Taichung</option>
+            <option value="tainan">Tainan</option>
+            <option value="kaohsiung">Kaohsiung</option>
+            <option value="tpe">Just landed at TPE</option>
+          </select>
+        </div>
+        <div class="bf-group">
+          <label class="bf-label" for="bf-date">Arriving</label>
+          <input type="date" id="bf-date" class="bf-date" value="2026-10-13">
+        </div>
+        <div class="bf-group">
+          <label class="bf-label" for="bf-nights">Staying for</label>
+          <select id="bf-nights" class="bf-sel">
+            <option value="0">Day trip only</option>
+            <option value="1">1 night</option>
+            <option value="2" selected>2 nights</option>
+            <option value="3">3 nights</option>
+            <option value="4">4+ nights</option>
+          </select>
+        </div>
+      </div>
+      <button id="bf-go" class="bf-go">Get Briefing →</button>
+    </div>
+
+    <div id="bf-out" class="bf-out" style="display:none"></div>
+  </section>
+
+  <div class="footer">
+    Taiwan 2026 · Eric &amp; Joseph · 🗓 Oct 9 – 18 · built with Claude<br>
+    <span id="footer-ts"></span>
+  </div>
+
+</div>
+
+<script>
+// Timestamps
+const now = new Date();
+const fmt = now.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+const fmtTime = now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZoneName:'short'});
+const elUp = document.getElementById('updated');
+if(elUp) elUp.textContent = fmt + ' · ' + fmtTime;
+const elFt = document.getElementById('footer-ts');
+if(elFt) elFt.textContent = 'Last updated ' + fmt;
+
+// Currency converter
+async function fetchRate(){
+  try{
+    const r = await fetch('https://api.frankfurter.app/latest?from=USD&to=TWD');
+    const d = await r.json();
+    const rate = d.rates.TWD;
+    document.getElementById('rate').textContent = rate.toFixed(2);
+    document.getElementById('rate-date').textContent = 'live rate as of ' + d.date;
+    window._twdRate = rate;
+    convert();
+  }catch(e){
+    document.getElementById('rate').textContent = '~32';
+    document.getElementById('rate-date').textContent = 'live rate unavailable — using ~32';
+    window._twdRate = 32;
+    convert();
+  }
+}
+function convert(){
+  const usd = parseFloat(document.getElementById('usd-in').value)||0;
+  const rate = window._twdRate || 32;
+  document.getElementById('twd-out').textContent = Math.round(usd * rate).toLocaleString();
+}
+document.getElementById('usd-in').addEventListener('input', convert);
+fetchRate();
+
+// Pronunciation — Web Speech API
+function sayIt(text, rowEl){
+  if(!window.speechSynthesis){ return; }
+  speechSynthesis.cancel();
+  function speak(){
+    const u = new SpeechSynthesisUtterance(text);
+    const voices = speechSynthesis.getVoices();
+    const zh = voices.find(v=>v.lang==='zh-TW')
+             || voices.find(v=>v.lang==='zh-CN')
+             || voices.find(v=>v.lang.startsWith('zh'))
+             || null;
+    if(zh) u.voice = zh;
+    u.lang = 'zh-TW';
+    u.rate = 0.82;
+    u.pitch = 1;
+    speechSynthesis.speak(u);
+  }
+  const loaded = speechSynthesis.getVoices();
+  if(loaded && loaded.length){ speak(); }
+  else { speechSynthesis.addEventListener('voiceschanged', speak, {once:true}); }
+  if(rowEl){
+    rowEl.classList.add('word-flash');
+    setTimeout(()=>rowEl.classList.remove('word-flash'), 700);
+  }
+}
+</script>
+
+<script>
+// ════════════════════════════════════════════════
+//  TAIWAN DESTINATION BRIEFER  — knowledge base
+// ════════════════════════════════════════════════
+(function(){
+
+// ── Transit lookup ──────────────────────────────
+// Keys: "origin_destination" (both lowercase, no spaces)
+const TRANSIT = {
+  taipei_taichung:{
+    p:{mode:'Taiwan High Speed Rail (THSR)',time:'~45 min',cost:'NT$700 (~$22)',book:'Trains every 15–30 min; no reservation needed for unreserved cars — just buy and board'},
+    a:{mode:'TRA Puyuma Express (regular rail)',time:'~1h 30m',cost:'NT$374 (~$12)',book:'Slower, more scenic, and cheaper. Reserve Puyuma seats in advance at railway.gov.tw'}
+  },
+  taipei_hualien:{
+    p:{mode:'TRA Puyuma or Taroko Express (east coast line)',time:'~2 hr',cost:'NT$440–780 (~$14–24)',book:'⚠ BOOK WELL IN ADVANCE — this line sells out weeks ahead, especially on weekends. Reserve at railway.gov.tw'},
+    a:{mode:'Fly Taipei Songshan (TSA) → Hualien',time:'~30 min flight',cost:'NT$1,500–2,500 (~$45–75)',book:'Mandarin Airlines; useful if trains are sold out'}
+  },
+  taipei_sunmoonlake:{
+    p:{mode:'THSR to Taichung + Taiwan Tourist Shuttle bus',time:'~3h 30m total',cost:'~NT$900–1,100 (~$28–35)',book:'Take THSR to Taichung HSR (NT$700, 45 min), then tourist shuttle bus direct to the lake (NT$193, 1h 30m). Buses run regularly; no advance booking needed on weekdays.'},
+    a:{mode:'Direct express bus from Taipei Bus Station',time:'~3h',cost:'~NT$300 (~$9)',book:'Nantou Bus Company runs a direct coach; check schedule at Taipei Bus Station'}
+  },
+  taipei_jiufen:{
+    p:{mode:'Bus 1062 from Taipei City Hall MRT',time:'~1h 15m',cost:'NT$120 (~$4)',book:'No reservation — runs every 20–30 min. Fastest and most direct option.'},
+    a:{mode:'TRA train to Ruifang + local bus or taxi',time:'~1h 20m total',cost:'NT$50 train + NT$15–150 local',book:'TRA to Ruifang station (frequent departures), then Bus 827 or taxi (~NT$150) to Jiufen village'}
+  },
+  taipei_kenting:{
+    p:{mode:'THSR to Zuoying (Kaohsiung) + Kenting Express bus',time:'~4h total',cost:'~NT$2,000 (~$62)',book:'THSR to Zuoying (1h 50m, NT$1,490), then Kenting Express bus from Zuoying (~2.5h, NT$350). Check kenting-bus.com.tw for schedules.'},
+    a:{mode:'Fly Taipei Songshan (TSA) → Hengchun',time:'~45 min flight + transfers',cost:'NT$2,000–3,500 (~$60–110)',book:'Uni Air; limited flights — check schedules carefully and book early'}
+  },
+  taipei_alishan:{
+    p:{mode:'THSR to Chiayi + Alishan Forest Railway',time:'~4h total',cost:'~NT$1,100 (~$34)',book:'THSR to Chiayi (NT$843, ~35 min), then Alishan Forest Railway to the summit (NT$250, ~2.5 hr). ⚠ Book forest railway tickets separately at railway.gov.tw — they sell out.'},
+    a:{mode:'THSR to Chiayi + bus to Alishan',time:'~2.5h total',cost:'~NT$950 (~$30)',book:'Bus from Chiayi station is faster (1.5 hr) and cheaper — but the forest railway IS the experience. Take the train up.'}
+  },
+  taipei_beitou:{
+    p:{mode:'MRT Red Line → transfer to Xinbeitou Branch',time:'~35 min from central Taipei',cost:'NT$50 (~$1.50)',book:'No reservation. MRT runs every 5 min. Use your EasyCard.'},
+    a:null
+  },
+  taipei_tamsui:{
+    p:{mode:'MRT Red Line to Tamsui (terminus)',time:'~45 min from central Taipei',cost:'NT$50 (~$1.50)',book:'No reservation. MRT runs every 5 min. Use your EasyCard.'},
+    a:null
+  },
+  taipei_penghu:{
+    p:{mode:'Fly Taipei Songshan (TSA) → Magong (MZG)',time:'~40 min flight',cost:'NT$1,500–2,800 (~$45–90)',book:'Mandarin Airlines or Uni Air. Book early — Penghu flights fill fast, especially on weekends.'},
+    a:{mode:'Ferry from Budai Fishing Port (Chiayi coast)',time:'~4–5 hr',cost:'NT$1,000–1,500 (~$30–45)',book:'A comfortable option if you like being at sea; take THSR to Chiayi then bus to Budai port'}
+  },
+  taichung_sunmoonlake:{
+    p:{mode:'Taiwan Tourist Shuttle bus from Taichung HSR station',time:'~1h 30m',cost:'NT$193 (~$6)',book:'No advance booking needed on weekdays. From Taichung HSR or Taichung Main Station.'},
+    a:{mode:'Chartered taxi',time:'~1 hr',cost:'~NT$1,000–1,500 one-way',book:'Arrange through your hotel — better value if splitting cost'}
+  },
+  taichung_hualien:{
+    p:{mode:'Train via Taipei (THSR to Taipei + east coast line)',time:'~3h 30m–4h total',cost:'~NT$1,200 (~$37)',book:'Most practical routing: THSR back to Taipei (45 min), transfer at Taipei Main for Puyuma Express to Hualien. Book east coast segment far in advance.'},
+    a:{mode:'Fly Taichung (RMQ) → Hualien',time:'~35 min flight',cost:'NT$1,500–2,500 (~$45–75)',book:'Mandarin Airlines; check availability — limited schedule'}
+  },
+  taichung_jiufen:{
+    p:{mode:'THSR to Taipei + Bus 1062',time:'~2h total',cost:'NT$700 + NT$120 (~$25)',book:'THSR Taichung to Taipei (45 min), then bus from Taipei City Hall MRT to Jiufen'},
+    a:null
+  },
+  taichung_kenting:{
+    p:{mode:'THSR to Zuoying (Kaohsiung) + Kenting Express bus',time:'~3h total',cost:'~NT$1,300 (~$40)',book:'THSR to Zuoying (40 min, NT$650), then Kenting Express bus from Zuoying (~2.5h, NT$350)'},
+    a:null
+  },
+  taichung_alishan:{
+    p:{mode:'THSR to Chiayi + Forest Railway or bus',time:'~2.5–4h total',cost:'~NT$850–1,050 (~$26–33)',book:'THSR south to Chiayi (NT$600, ~20 min), then Alishan Forest Railway (NT$250, ~2.5 hr) or bus (1.5 hr). Book forest railway tickets ahead.'},
+    a:null
+  },
+  taichung_tainan:{
+    p:{mode:'Taiwan High Speed Rail (THSR)',time:'~35 min',cost:'NT$600 (~$18)',book:'Frequent departures. Buy at station or thsrc.com.tw'},
+    a:null
+  },
+  taichung_kaohsiung:{
+    p:{mode:'Taiwan High Speed Rail (THSR)',time:'~40 min',cost:'NT$650 (~$20)',book:'Frequent departures. Buy at station or thsrc.com.tw'},
+    a:null
+  },
+  tainan_taichung:{
+    p:{mode:'Taiwan High Speed Rail (THSR)',time:'~35 min',cost:'NT$600 (~$18)',book:'Frequent departures'},
+    a:null
+  },
+  tainan_hualien:{
+    p:{mode:'THSR to Taipei + Puyuma Express east coast to Hualien',time:'~4h total',cost:'~NT$2,200 (~$68)',book:'Most practical: THSR to Taipei (1h 50m), transfer at Taipei Main for Puyuma to Hualien (~2h). Book east coast segment far in advance.'},
+    a:null
+  },
+  tainan_kenting:{
+    p:{mode:'TRA or taxi to Kaohsiung + Kenting Express bus',time:'~3.5h total',cost:'~NT$400–700 (~$12–22)',book:'TRA to Kaohsiung (30 min), then Kenting Express bus from Zuoying station (~2.5h)'},
+    a:null
+  },
+  tainan_jiufen:{
+    p:{mode:'THSR to Taipei + Bus to Jiufen',time:'~3h total',cost:'~NT$1,470 (~$45)',book:'THSR to Taipei (1h 50m), bus from Taipei City Hall MRT to Jiufen. Long day trip — consider an overnight.'},
+    a:null
+  },
+  tainan_sunmoonlake:{
+    p:{mode:'THSR to Taichung + Tourist Shuttle bus',time:'~2h 15m total',cost:'~NT$800 (~$25)',book:'THSR to Taichung (35 min), then Taiwan Tourist Shuttle bus from Taichung HSR to Sun Moon Lake (1.5h)'},
+    a:null
+  },
+  kaohsiung_taichung:{
+    p:{mode:'Taiwan High Speed Rail (THSR)',time:'~40 min',cost:'NT$650 (~$20)',book:'Frequent departures from Zuoying station'},
+    a:null
+  },
+  kaohsiung_kenting:{
+    p:{mode:'Kenting Express Bus from Zuoying THSR station',time:'~2h 30m',cost:'NT$350 (~$11)',book:'Check kenting-bus.com.tw; runs several times daily. Catch it at Zuoying or Kaohsiung Main station.'},
+    a:{mode:'Taxi or rideshare (flexible)',time:'~1h 30m',cost:'NT$2,000–3,000 (~$60–90)',book:'Worth it if you have luggage or want to stop along the way'}
+  },
+  kaohsiung_hualien:{
+    p:{mode:'Fly Kaohsiung (KHH) → Hualien (HUN)',time:'~50 min',cost:'NT$1,500–2,500 (~$45–75)',book:'Uni Air; book ahead and check schedules carefully'},
+    a:{mode:'Train (south coast scenic route)',time:'~5–6h',cost:'NT$700–900 (~$22–28)',book:'Genuinely scenic but very long. Only if you enjoy extended train journeys.'}
+  },
+  kaohsiung_penghu:{
+    p:{mode:'Fly Kaohsiung (KHH) → Magong (MZG)',time:'~35 min',cost:'NT$1,200–2,200 (~$37–70)',book:'Mandarin Airlines and Uni Air; book early'},
+    a:null
+  },
+  kaohsiung_sunmoonlake:{
+    p:{mode:'THSR to Taichung + Tourist Shuttle bus',time:'~2h 10m total',cost:'~NT$850 (~$26)',book:'THSR to Taichung HSR (40 min, NT$650), then tourist shuttle bus to Sun Moon Lake (1.5h, NT$193)'},
+    a:null
+  },
+  kaohsiung_jiufen:{
+    p:{mode:'THSR to Taipei + Bus to Jiufen',time:'~3h 30m total',cost:'~NT$1,610 (~$50)',book:'Very long day trip — THSR to Taipei (1h 50m), then bus to Jiufen. Consider staying overnight in Taipei instead.'},
+    a:null
+  },
+  tpe_taichung:{
+    p:{mode:'THSR from Taoyuan station (direct from airport)',time:'~30 min',cost:'NT$415 (~$13)',book:'Taoyuan HSR station is connected directly to TPE terminal — very convenient first stop'},
+    a:null
+  },
+  tpe_hualien:{
+    p:{mode:'Bus to Taipei Main Station + Puyuma Express to Hualien',time:'~3h total',cost:'~NT$600–1,000 (~$18–30)',book:'Bus from TPE airport to Taipei Main (~40 min, NT$140), then Puyuma to Hualien (~2h). Book east coast train far in advance at railway.gov.tw'},
+    a:{mode:'Fly TPE domestic terminal → Hualien',time:'~1h total with transfers',cost:'NT$1,500–2,500 (~$45–75)',book:'Mandarin Airlines — check domestic terminal location at TPE'}
+  },
+  tpe_taipei:{
+    p:{mode:'Airport MRT (桃園機場捷運) to Taipei Main Station',time:'~35 min',cost:'NT$160 (~$5)',book:'Runs every 15 min. Very easy. Buy an EasyCard at the airport.'},
+    a:null
+  }
+};
+
+// ── Destination data ─────────────────────────────
+const DEST = {
+  taichung:{
+    name:'Taichung', icon:'🏙',
+    tagline:'Art, architecture & Taiwan\'s most chaotic night market',
+    daytripOk:false,
+    stay:[
+      {name:'WDC Hotel',type:'Value boutique · Central',price:'~NT$2,200–3,500/night (~$70–110)',note:'Solid central location, comfortable without being flashy — good base for the night market and old city walks'},
+      {name:'Ginn House',type:'Design hotel · 7th District',price:'~NT$3,500–5,500/night (~$110–170)',note:'More design-forward; well-placed for the upscale bar and restaurant cluster in the 7th Redevelopment Zone'},
+      {name:'Hotel One Taichung',type:'Splurge option · 7th District',price:'~NT$5,000–8,000/night (~$155–250)',note:'Rooftop pool and city views — worth it for 2+ nights; one of the better upper-end hotels in the city'}
+    ],
+    see:[
+      {name:'National Taichung Theater',star:true,desc:'Toyo Ito\'s masterpiece — curved concrete with no straight lines or right angles. Took 12 years to build; engineers had to invent new construction techniques. One of the most extraordinary buildings in Asia. Joseph will want to linger.'},
+      {name:'Rainbow Village',desc:'A retired soldier painted his entire village in joyful folk murals to stop it being demolished. The murals saved it. Now a beloved landmark.'},
+      {name:'Miyahara',desc:'Former Japanese ophthalmology clinic turned into an extraordinary ice cream and chocolate shop. Colonial architecture, ceiling-high book stacks, baroque excess. Get the ice cream — it\'s the best in Taiwan.'},
+      {name:'National Museum of Fine Arts (國美館)',desc:'Taiwan\'s national fine arts museum is in Taichung, not Taipei. Contemporary Taiwanese and Asian art, strong rotating international shows, free admission.'},
+      {name:'Fengjia Night Market',desc:'The largest night market in Taiwan. More food, more stalls, more sensory overload than anything in Taipei. Go hungry. Arrive at 6pm and stay as long as you can stand it.'}
+    ],
+    eat:[
+      {name:'Fengjia Night Market',note:'Go on day 1',desc:'Mandatory. Beef rolls, egg rolls, grilled squid, oyster noodles, stinky tofu, and the original Chun Shui Tang bubble tea location (they invented it, arguably)'},
+      {name:'Second Market (第二市場)',note:'Morning only',desc:'Japanese-era covered market open since 1917 — breakfast culture. Sesame flatbread (燒餅), soy milk, rice rolls, you tiao. Get here before 10am or many stalls are sold out.'},
+      {name:'Miyahara ice cream',desc:'Worth eating dessert twice in one day. Also sells pineapple cakes in beautiful tins — exceptional gifts.'},
+      {name:'Taichung café scene',desc:'More cafés per capita than anywhere in Taiwan — many are remarkable. Walk and pick based on whatever looks interesting. The 7th District has the highest concentration.'}
+    ],
+    consider:[
+      'October weather: warm and dry — one of the best months. Much less rain than Taipei.',
+      'Fengjia Night Market is at peak chaos on Friday and Saturday nights — that\'s a feature, not a bug',
+      'Getting around: Taichung\'s public transit is limited. Use Uber or taxi for anything beyond walking distance.',
+      'The 7th Redevelopment Zone (七期) is where upscale restaurants and cocktail bars concentrate — different vibe from the old city',
+      'National Taichung Theater has guided tours; worth booking ahead for Joseph',
+      'Sun Moon Lake is 1.5h by bus from Taichung — easy to combine into a 1-night detour'
+    ]
+  },
+
+  hualien:{
+    name:'Hualien / Taroko Gorge', icon:'🏔',
+    tagline:'Marble canyon, Pacific cliffs, and one of Asia\'s most dramatic landscapes',
+    daytripOk:false,
+    stay:[
+      {name:'Guesthouses near Taroko entrance (Tianxiang area)',type:'Value · Best gorge access',price:'~NT$1,500–2,800/night (~$45–90)',note:'Small family-run minsu right in or near the park — basic but you wake up in the gorge, and you beat the day-trippers to the trails'},
+      {name:'Farglory Hotel Hualien',type:'Full-service resort · Gorge area',price:'~NT$4,500–7,000/night (~$140–220)',note:'Closest full-service hotel to the gorge entrance; arranges park transport. Good if you want reliable amenities.'},
+      {name:'Parkview Hotel',type:'Reliable · Central Hualien',price:'~NT$2,500–4,000/night (~$80–125)',note:'Good base for the city market and harbor; less convenient for the gorge itself — factor in taxi time'}
+    ],
+    see:[
+      {name:'Shakadang Trail (砂卡礑步道)',star:true,desc:'Start here. Easy, stunning 1.5km riverside path through a marble canyon — turquoise water, sheer walls, enormous boulders. Go first thing in the morning before tour groups arrive.'},
+      {name:'Swallow Grotto (燕子口)',star:true,desc:'The most dramatic section of the Taroko highway — now pedestrianized. Cliff faces riddled with natural holes, rock overhangs, vertical canyon above and river below. Helmets required and provided at the entrance.'},
+      {name:'Baiyang Waterfall Trail',desc:'2km trail through tunnels in the marble cliff, ending behind a waterfall. The "Water Curtain Tunnel" before the fall has springs dripping through the ceiling in hundreds of streams. Surreal.'},
+      {name:'Qingshui Cliffs (清水斷崖)',note:'Bring a camera',desc:'On the coastal highway south of Hualien: 800m vertical cliffs dropping straight into the Pacific Ocean. The road clings to the cliff face. One of the most cinematic coastal landscapes in Asia.'},
+      {name:'Hualien Harbor fish market',note:'Very early morning',desc:'6am fish market by the harbor — Pacific seafood sold directly off the boats. Fresh-cut sashimi, grilled fish, seafood rice bowls. Some of the best raw fish you\'ll eat in Taiwan.'}
+    ],
+    eat:[
+      {name:'Harbor fish market sashimi',note:'6–8am only',desc:'Get to the harbor before 8am. Vendors cut and sell at the stalls. The freshest possible Pacific fish.'},
+      {name:'Hualien scallion pancakes (蔥油餅)',desc:'Hualien\'s version is thicker and crispier than Taipei — cooked on a griddle with egg. Find them at morning markets or street vendors near the harbor.'},
+      {name:'Indigenous cuisine (Truku)',desc:'Wild boar, river fish, mountain vegetables, mochi — served at restaurants in Hualien city. Ask your guesthouse where the good local spots are.'},
+      {name:'Handmade mochi',desc:'Hualien\'s most famous souvenir food — particularly from Zeng Ji Mochi on Zhongshan Road. Sesame and peanut fillings; eat fresh.'}
+    ],
+    consider:[
+      'Book your east coast train WELL in advance — the Puyuma and Taroko Express sell out weeks ahead, especially on weekends. This is the most common mistake people make.',
+      'October is still late typhoon season on the east coast — higher risk than the west. Check forecasts; have a backup plan.',
+      'Some Taroko trails close after earthquakes or typhoons for maintenance — verify specific trail status at taroko.gov.tw before you go.',
+      'Getting around the gorge: taxi half-day tour (~NT$2,500) is the most flexible option. Ask your hotel to arrange it.',
+      'Swallow Grotto requires a helmet (provided) — wear shoes you can walk on uneven wet rock',
+      'Combine with Hualien city properly: the harbor, the night market (Dongdamen), and the fish market are all worth your time beyond the gorge itself'
+    ]
+  },
+
+  sunmoonlake:{
+    name:'Sun Moon Lake', icon:'🌅',
+    tagline:'Mountain lake, cycling, high-altitude oolong tea, and Thao indigenous culture',
+    daytripOk:true,
+    stay:[
+      {name:'Lakeside minsu guesthouse (various)',type:'Value · Best atmosphere',price:'~NT$2,000–4,000/night (~$60–125)',note:'Many family-run lakeside guesthouses have stunning water views for reasonable prices — some of the best value in Taiwan. Book early for October.'},
+      {name:'Fleur de Chine Hotel',type:'Upscale · Shuishe Village',price:'~NT$8,000–15,000/night (~$250–470)',note:'The standard upscale choice — lakefront, spa, excellent restaurant. More Joan-and-Rachael. You can probably do better value.'},
+      {name:'Day trip from Taichung',type:'Viable for a single day',price:'Bus fare only (NT$193 each way)',note:'Manageable as a day trip from Taichung — leave early, cycle the lake, take the ropeway, eat dinner there, last bus back around 7–8pm'}
+    ],
+    see:[
+      {name:'Cycle the lake loop (33km)',star:true,desc:'Rent an electric bike (~NT$300–500/day) from any shop near Shuishe Village and ride the full circuit. The far shore is quieter and more beautiful than the main tourist side. Do not skip it.'},
+      {name:'Wenwu Temple (文武廟)',desc:'Grand lakeside temple complex dedicated to Confucius and the God of War. Red pavilions that drop directly to the water below — one of the most architecturally dramatic temple settings in Taiwan.'},
+      {name:'Sun Moon Lake Ropeway',desc:'Gondola from the south shore up to Formosan Aboriginal Culture Village. The lake views from the gondola are the main event — go for the views even if you skip the park below.'},
+      {name:'Thao Village at Ita Thao',desc:'The lakeside Thao indigenous community — small market, traditional food stalls, crafts, a genuine cultural presence that\'s been here for centuries. Best in the evening.'}
+    ],
+    eat:[
+      {name:'Sun Moon Lake red oolong tea (日月潭紅茶)',note:'Order it everywhere',desc:'A distinctive red oolong unique to this altitude — honey and fruit notes, grown on the slopes around the lake. Every café serves it. Order it in every café. Compare.'},
+      {name:'Thao food at Ita Thao market',desc:'Freshwater fish grilled over charcoal, wild boar, mountain vegetables, fried mochi. Best at the Ita Thao lakeside stalls in the late afternoon.'},
+      {name:'Fried mochi (炸麻糬)',desc:'Rice mochi balls fried until golden, dusted in peanut powder and brown sugar. The signature lake snack. Eat them hot from the vendor.'},
+      {name:'Bamboo rice (竹筒飯)',desc:'Sticky rice steamed inside a bamboo tube — an indigenous Taiwanese staple. Available at every indigenous food stall around the lake.'}
+    ],
+    consider:[
+      'Weekends and national holidays bring enormous domestic crowds — Double Ten Day (Oct 10) is one of the busiest days of the year here. If going around Oct 10, go on a weekday before or after.',
+      'October is an excellent month overall: cooler temperatures, fall color beginning in the hills, clearer air than summer',
+      'There is no direct train to Sun Moon Lake — you must route through Taichung by bus',
+      'E-bike rental sells out on weekends — arrive early to the rental shops near Shuishe pier, or reserve ahead',
+      'The lake loop includes a significant hill on the north shore — the electric bike handles it easily; a regular pedal bike is a real workout',
+      'Most guesthouses require a 2-night minimum on weekend nights'
+    ]
+  },
+
+  jiufen:{
+    name:'Jiufen', icon:'🏮',
+    tagline:'Clifftop gold-rush town, red lanterns, and famous teahouses above the sea',
+    daytripOk:true,
+    stay:[
+      {name:'Teahouse guesthouses on Old Street',type:'Character · Old Street hillside',price:'~NT$2,500–4,500/night (~$75–140)',note:'Several guesthouses built into the terraced hillside — incredible bay views. No wheeled luggage (the stairs are steep and narrow). Worth one night to experience dawn before crowds arrive.'},
+      {name:'Day trip from Taipei (recommended)',type:'Most common approach',price:'Bus fare only (~NT$120 each way)',note:'Jiufen is small. One long afternoon and evening covers it thoroughly — overnight isn\'t necessary unless you want the quiet after-crowd atmosphere.'}
+    ],
+    see:[
+      {name:'Old Street (基山街) at dusk',star:true,desc:'The famous narrow stone-stepped street, lantern-lit from mid-afternoon, lined with tea shops and street food. Arrive at 4–5pm and stay through the lanterns coming on at night.'},
+      {name:'A-Mei Teahouse (阿妹茶樓)',desc:'The iconic teahouse — bay views, historic building, often cited (unofficially) as an inspiration for the Spirited Away bathhouse. Expect a wait; it\'s worth it. Order a full tea set and sit for an hour.'},
+      {name:'Jiufen Gold Museum (Jinguashi)',desc:'In nearby Jinguashi (10 min away) — former gold and copper mine, exhibitions on the mining era, and a moving section on WWII POWs who were forced to work here. Joseph will appreciate the layers.'},
+      {name:'Night view over the harbor',desc:'From any vantage point above the town after dark — the red lanterns below and the lights of Keelung harbor in the distance are one of the most photographed views in Taiwan, for good reason.'}
+    ],
+    eat:[
+      {name:'Taro balls (芋圓 yùyuán)',star:true,desc:'Jiufen\'s signature dish — chewy balls of taro or sweet potato in sweet soup, hot or cold. Quality varies a lot between stalls. Look for handmade signs and make the short walk to the better-reviewed places.'},
+      {name:'Fish ball soup (魚丸湯)',desc:'Simple and perfect — fish paste balls in clear broth with scallions. Good at almost any stall on Old Street; one of the better things to eat while standing on the steps.'},
+      {name:'Stinky tofu (臭豆腐)',desc:'Deep-fried fermented tofu with a famously challenging smell and a surprisingly good taste once you commit. Jiufen does a good version.'}
+    ],
+    consider:[
+      '⚠ Avoid weekends and public holidays — Jiufen becomes genuinely unpleasant with crowds on Saturdays, Sundays, and holidays like Double Ten Day. A weekday afternoon is strongly preferred.',
+      'October weather: Jiufen is in the mountains above Keelung — one of the rainiest areas in Taiwan. Bring rain gear regardless of the forecast.',
+      'The stairs are steep and narrow. Wheeled luggage is impossible. If staying overnight, pack a backpack only.',
+      'Bus 1062 from Taipei City Hall MRT is the easiest option (~NT$120 each way, ~1h 15m)',
+      'The Jinguashi Gold Museum is about 10 min away by taxi — worth combining with a Jiufen afternoon if Joseph is interested in the history'
+    ]
+  },
+
+  kenting:{
+    name:'Kenting', icon:'🌊',
+    tagline:'Taiwan\'s southern tip — national park, beaches, Pacific sunsets, seafood',
+    daytripOk:false,
+    stay:[
+      {name:'Guesthouses in Kenting town',type:'Value · Central',price:'~NT$2,000–4,000/night (~$60–125)',note:'Independently run guesthouses and surf-adjacent spots near the main street — more character than the resort zone, and walking distance to the night market and beach'},
+      {name:'Caesar Park Hotel',type:'Beach resort',price:'~NT$4,000–7,000/night (~$125–220)',note:'The reliable resort choice — beach access, pool, consistent quality. Less interesting but comfortable.'},
+      {name:'Howard Beach Resort',type:'Full resort · Kenting beach',price:'~NT$5,000–9,000/night (~$155–280)',note:'Direct beach access — good if you\'re here specifically for the water'}
+    ],
+    see:[
+      {name:'Longpan Park (龍磐公園)',star:true,desc:'Clifftop grasslands on the eastern cape — dramatic limestone formations dropping into the Pacific, wild open space, completely cinematic. One of the most visually striking spots in Taiwan and almost nobody talks about it.'},
+      {name:'Maobitou — Cat\'s Nose Cape (貓鼻頭)',desc:'The southwestern tip of Taiwan — coral rock formations, coastal views, the point where the Taiwan Strait meets the Pacific. Sunset is exceptional here.'},
+      {name:'Eluanbi Lighthouse (鵝鑾鼻)',desc:'Taiwan\'s southernmost point — a fortified 19th-century lighthouse at the bottom of the island. The grounds are good for a walk and the symbolic "southernmost tip" moment.'},
+      {name:'Kenting National Park beaches',desc:'Several beaches in the park: Baisha Beach (longest), South Bay (clearer water, better snorkeling, busier). October water is still warm and swimmable.'}
+    ],
+    eat:[
+      {name:'Grilled seafood on Kenting main street',note:'Every evening',desc:'Outdoor grills set up every evening along the main strip — squid, clams, sea snails, lobster, spot prawns. Point and pay by weight.'},
+      {name:'Hengchun sour plum cuisine',desc:'Hengchun (10 min north) has a local cooking tradition using preserved sour plums as a marinade and sauce base. Seek it out at local restaurants — it\'s genuinely different.'},
+      {name:'Fresh coconut',desc:'Taiwan\'s only coconut-producing region. Freshly macheted coconuts sold everywhere. Drink the water, then scrape the meat.'}
+    ],
+    consider:[
+      'October is ideal: still warm enough to swim (27–30°C), much less crowded than July–August, lower humidity',
+      'Getting there without a car is slow: Kenting Express bus from Kaohsiung Zuoying takes 2.5 hours',
+      'Strong winds are year-round (Taiwan Strait funnel effect) — west-facing beaches can have rough surf; east-facing is calmer',
+      'Rent a scooter to reach Longpan Park and Maobitou — they\'re too far to walk and the bus doesn\'t go there',
+      'Kenting is a beach/resort town — a very different pace from the cities. Good for 2 days of decompression after a food-heavy week.',
+      'Buses back to Kaohsiung fill up Sunday afternoons when domestic tourists leave — book your return bus ticket in advance'
+    ]
+  },
+
+  alishan:{
+    name:'Alishan', icon:'🌲',
+    tagline:'Mountain forest railway, ancient cypresses, and the most famous sunrise in Taiwan',
+    daytripOk:false,
+    stay:[
+      {name:'Alishan House',type:'Heritage hotel · In the forest park',price:'~NT$4,500–8,000/night (~$140–250)',note:'The historic park hotel — original Japanese-era structure, forest location, walking distance to the sunrise viewing train. Book early; it fills weeks in advance.'},
+      {name:'Forest guesthouses / minsu',type:'Value · Park village',price:'~NT$1,800–3,500/night (~$55–110)',note:'Many small guesthouses in the park village. Simpler rooms — but waking up in the ancient cypress forest is the same experience regardless of the star rating.'}
+    ],
+    see:[
+      {name:'Sunrise at Zhushan (祝山)',star:true,desc:'A narrow-gauge train runs at 3–4am to the Zhushan viewing platform. On a clear morning you see the sun rise over a sea of clouds with mountain peaks above — one of the most famous views in Taiwan. Cold and crowded, entirely worth it.'},
+      {name:'Alishan Forest Railway',star:true,desc:'One of only a few alpine narrow-gauge railways in the world at this altitude — built by the Japanese to haul timber in 1912. The journey from Chiayi to Alishan passes 50 tunnels. Take it up even if you bus down.'},
+      {name:'Ancient cypress grove',desc:'Several trees over 1,000–2,000 years old; one felled 1,000-year-old tree has a Buddhist shrine built inside the hollowed stump. Walk the old railway loop trail through the oldest section.'},
+      {name:'Shen Mu Station trail loop',desc:'The peaceful 2km old railway loop through the most ancient groves — cool, mossy, quiet. Best in the morning before tour groups arrive.'}
+    ],
+    eat:[
+      {name:'High-mountain oolong tea (高山茶)',note:'Buy from farms, not tourist shops',desc:'Alishan produces some of Taiwan\'s finest high-altitude oolong — floral, clean, with a long finish. Buy directly from tea farms on the road up or from the village co-op. Compare before you buy.'},
+      {name:'Mountain vegetables (山蔬)',desc:'Cool-altitude bamboo shoots, wild ferns, mountain mushrooms — exceptional produce at every restaurant in the village. Order the vegetable set alongside whatever else you\'re having.'},
+      {name:'Wild boar (山豬肉)',desc:'Indigenous mountain cuisine standard — stewed or grilled, served with rice and mountain greens at local restaurants in the park village.'}
+    ],
+    consider:[
+      'Bring a jacket — morning temperatures at altitude can reach 12–15°C (54–59°F) even in October, and the pre-dawn sunrise train is genuinely cold',
+      'Book Alishan Forest Railway tickets well in advance at railway.gov.tw — particularly the sunrise train, which sells out fastest',
+      'The sunrise sea of clouds depends entirely on weather — it\'s magnificent when it works and just fog when it doesn\'t. No refunds on the wonder.',
+      'October occasionally brings mist; fall foliage begins in the hills around this time and adds to the atmosphere',
+      'Chiayi is the transit hub: from Taipei, THSR to Chiayi (35 min, NT$843), then Forest Railway (2.5h) or bus (1.5h) to the summit',
+      'Weekend crowds at the sunrise viewpoint are intense — arrive for a Monday sunrise if possible'
+    ]
+  },
+
+  beitou:{
+    name:'Beitou Hot Springs', icon:'♨️',
+    tagline:'Sulphur springs, Japanese-era bathhouses, and a morning reset',
+    daytripOk:true,
+    stay:[
+      {name:'Day trip from Taipei (strongly recommended)',type:'Standard approach',price:'MRT fare only (~NT$50 round trip)',note:'Beitou is 35 minutes from central Taipei by MRT. A half-day is enough to do everything.'},
+      {name:'Hot spring hotel with private bath',type:'Overnight option',price:'~NT$3,000–8,000/night (~$90–250)',note:'If you want the full ryokan experience — private indoor hot spring bath in the room, dinner service. Several options from basic to polished.'}
+    ],
+    see:[
+      {name:'Thermal Valley (地熱谷)',star:true,desc:'A vivid turquoise-green boiling hot spring pool open to the public — 100°C, not swimmable, but the steam and color are extraordinary. Free entry. Start here.'},
+      {name:'Beitou Hot Spring Museum (北投溫泉博物館)',desc:'The original public Japanese bathhouse (1913), now a museum — beautiful colonial cypress-wood architecture, original pools (dry, displayable), excellent exhibition on geology and the springs\' history. Free.'},
+      {name:'Xinbeitou Library (圖書館)',desc:'Consistently voted one of the most beautiful libraries in the world — an elegant wooden structure set into the forest. Open to anyone. Go and sit for an hour.'}
+    ],
+    eat:[
+      {name:'Morning shops near Xinbeitou MRT',desc:'Egg sandwiches, soy milk, you tiao from local morning stalls on the walk to the springs. Best breakfast for what you\'re about to do.'},
+      {name:'Hot spring egg (溫泉蛋)',desc:'Eggs slow-cooked in spring water — sold everywhere around the Thermal Valley. Simple, perfect, very cheap.'}
+    ],
+    consider:[
+      'Best on a weekday morning — gets crowded with Taipei families on weekends',
+      'Public bath: Dì Rè Gǔ Public Bath (NT$80) is the classic cheap option. Gender-separated. No tattoos allowed.',
+      'Private room baths at local hotels are available by the hour (~NT$200–500) — no need to stay overnight',
+      'Two spring types: sulphur (milky white, unusual) and bicarbonate (clear, slightly effervescent). The sulphur springs are rarer.',
+      'MRT Red Line from Taipei Main or Zhongshan → Beitou station → transfer to Xinbeitou branch (~35–40 min total)',
+      'Combine with Tamsui on the same day: Beitou in the morning, Tamsui sunset in the evening — same MRT line'
+    ]
+  },
+
+  tamsui:{
+    name:'Tamsui', icon:'🌇',
+    tagline:'River estuary town, Dutch fort ruins, and Taiwan\'s most famous sunset',
+    daytripOk:true,
+    stay:[
+      {name:'Day trip from Taipei (only option that makes sense)',type:'Standard approach',price:'MRT fare only (~NT$50 round trip)',note:'Tamsui is a half-day or evening trip. The whole town takes 2–3 hours to walk. Overnight isn\'t necessary.'}
+    ],
+    see:[
+      {name:'Tamsui Old Street (淡水老街)',star:true,desc:'The main riverside pedestrian strip — a-gei stalls, iron egg vendors, oyster booths, bubble tea, waterfront views. Touristy and enjoyable. Walk the whole length.'},
+      {name:'Sunset over the estuary',star:true,desc:'The Tamsui River meets the sea, and the evening sunsets across the estuary are genuinely spectacular. Arrive by 5pm in October for the full golden hour.'},
+      {name:'Fort San Domingo (紅毛城)',desc:'A fort begun by the Spanish in 1628, later Dutch, then British (until 1980) — one of the most historically layered buildings in Taiwan. Colonial interiors, good harbor views.'},
+      {name:'Fisherman\'s Wharf and Love Bridge',desc:'Further along the coast — a modern waterfront development with the famous "Love Bridge" suspension bridge, best at sunset and after dark when it\'s lit.'}
+    ],
+    eat:[
+      {name:'A-gei (阿給)',star:true,desc:'Tamsui\'s signature dish — deep-fried tofu pocket stuffed with glass noodles and sealed with fish paste, served with spicy sauce. Find the stall with the longest queue; they vary significantly in quality.'},
+      {name:'Iron eggs (鐵蛋)',desc:'Eggs braised repeatedly in soy sauce and five spice until dark brown and very chewy — a Tamsui specialty. Buy a bag to snack on while walking.'},
+      {name:'Oysters from riverside stalls',desc:'Fresh estuary oysters, grilled or fried, from outdoor stalls along the waterfront.'}
+    ],
+    consider:[
+      'Go in the late afternoon — arriving around 4–5pm to catch the sunset is the main event',
+      'MRT Red Line to Tamsui (terminus) — 45 min from central Taipei, extremely easy',
+      'Weekend evenings bring crowds; weekday is more relaxed',
+      'Combine with Beitou on the same day: hot springs in the morning, Tamsui sunset in the evening — both are on the same MRT Red Line'
+    ]
+  },
+
+  penghu:{
+    name:'Penghu Islands', icon:'🏝',
+    tagline:'Taiwan Strait archipelago — basalt columns, transparent water, world-class seafood',
+    daytripOk:false,
+    stay:[
+      {name:'Guesthouses in Magong city',type:'Value · Main island',price:'~NT$1,500–3,500/night (~$45–110)',note:'Wide range in Magong — book something with a scooter rental included or nearby. Central Magong gives you access to the old town temples and the harbor.'},
+      {name:'Jibei Island guesthouses',type:'Best for beaches',price:'~NT$2,000–4,000/night (~$60–125)',note:'The small island north of the main group — closer to the famous Jibei sandbar and clearer water. Requires a ferry from Magong.'}
+    ],
+    see:[
+      {name:'Tongpan Island basalt columns',star:true,desc:'A small island covered in naturally occurring hexagonal basalt columns — ancient volcanic formations that look architecturally designed. One of the most unusual geological landscapes in Taiwan. Take a boat tour from Magong harbor.'},
+      {name:'Jibei sandbar (吉貝沙嘴)',star:true,desc:'A long curved sandbar extending from Jibei Island into the clear Taiwan Strait — white sand, shallow water, snorkeling, kitesurfing. One of the most beautiful beaches in the region.'},
+      {name:'Magong Old Town',desc:'Dense warren of old temples, historic lane houses, and the 1604 Tianhou Temple — one of the oldest in Taiwan. The old-town streetscape is better preserved than most Taiwanese cities.'},
+      {name:'Cross-Sea Bridge (跨海大橋)',desc:'A 2.5km bridge connecting the main island to Baisha and Xiyu — best seen by scooter at sunset. Stop at the Erkan Historical Village on Baisha for the best-preserved traditional Penghu village architecture.'}
+    ],
+    eat:[
+      {name:'Penghu oysters',star:true,desc:'Penghu oysters are famous across Taiwan — large, sweet, exceptionally clean. Order them every way: raw, grilled, in soup, in omelettes.'},
+      {name:'Peanut ice cream roll (花生冰淇淋捲餅)',desc:'Penghu\'s signature street snack — vanilla ice cream and shaved frozen peanut candy rolled in a thin crepe. From street carts near the ferry terminal and the old town market.'},
+      {name:'Sea urchin (海膽)',note:'Peak season in October',desc:'Fresh sea urchin, raw over rice or with soy sauce — Penghu\'s urchin is considered among the best in Taiwan. October is peak season.'}
+    ],
+    consider:[
+      '⚠ Fly, don\'t take the ferry. The ferry is 4–5 hours. The flight is 40 minutes. Fly.',
+      'Book your flights early — Penghu flights fill up fast on weekends and in October',
+      'Scooter rental is essential (NT$400–600/day) — the islands are spread out, public transport is minimal, and the best sites require transport',
+      'The basalt column island tours require a boat tour (~NT$800–1,500/person) arranged in Magong — this is not optional, these are the defining sight',
+      'October: post-typhoon, good water visibility, manageable crowds compared to summer. The famous year-round winds ease slightly.',
+      'Penghu has an island pace — slower, rural, disconnected from mainland Taiwan in a good way. Plan at least 2 nights to feel it properly.'
+    ]
+  }
+};
+
+// ── Helper functions ───────────────────────────────
+function getTransitKey(origin, dest){
+  return origin + '_' + dest;
+}
+
+function lookupTransit(origin, dest){
+  const key = getTransitKey(origin, dest);
+  if(TRANSIT[key]) return TRANSIT[key];
+  // Try to build a generic note if we don't have specifics
+  return null;
+}
+
+function formatDateRange(dateStr, nights){
+  if(!dateStr) return '';
+  const d = new Date(dateStr + 'T12:00:00');
+  const end = new Date(d);
+  end.setDate(end.getDate() + parseInt(nights||0));
+  const opts = {month:'short', day:'numeric'};
+  if(nights === '0') return d.toLocaleDateString('en-US', opts) + ' (day trip)';
+  return d.toLocaleDateString('en-US', opts) + ' – ' + end.toLocaleDateString('en-US', opts);
+}
+
+function getDayName(dateStr){
+  if(!dateStr) return '';
+  const d = new Date(dateStr + 'T12:00:00');
+  return d.toLocaleDateString('en-US', {weekday:'long'});
+}
+
+function isWeekend(dateStr){
+  if(!dateStr) return false;
+  const d = new Date(dateStr + 'T12:00:00');
+  return d.getDay() === 0 || d.getDay() === 6;
+}
+
+function isDoubleTen(dateStr){
+  if(!dateStr) return false;
+  return dateStr.includes('-10-10');
+}
+
+function isNearDoubleTen(dateStr){
+  if(!dateStr) return false;
+  const d = new Date(dateStr + 'T12:00:00');
+  const dd = new Date('2026-10-10T12:00:00');
+  const diff = Math.abs(d - dd);
+  return diff <= 2*24*60*60*1000; // within 2 days
+}
+
+// ── Render functions ───────────────────────────────
+function renderTransitCard(transit){
+  if(!transit){
+    return `<div class="bf-ch">🚄 Getting There</div>
+    <div class="bf-cb"><p style="color:#888;font-size:.85rem">We don't have specific routing info for this combination — check Google Maps or Rome2Rio for options.</p></div>`;
+  }
+  const p = transit.p;
+  let html = `<div class="bf-ch">🚄 Getting There</div>
+  <div class="bf-cb">
+    <div class="bf-transit-main">
+      <div class="bf-t-mode">${p.mode}</div>
+      <div class="bf-t-stats"><span>⏱ ${p.time}</span><span>💰 ${p.cost}</span></div>
+      <div class="bf-t-book">${p.book}</div>
+    </div>`;
+  if(transit.a){
+    const a = transit.a;
+    html += `<div class="bf-t-alt">
+      <div class="bf-t-alt-label">Alternative</div>
+      <div class="bf-t-mode" style="font-size:.85rem">${a.mode}</div>
+      <div class="bf-t-stats"><span>⏱ ${a.time}</span><span>💰 ${a.cost}</span></div>
+      <div class="bf-t-book">${a.book}</div>
+    </div>`;
+  }
+  html += `</div>`;
+  return html;
+}
+
+function renderStayCard(stays, nights){
+  const showAll = parseInt(nights) >= 2;
+  const items = showAll ? stays : stays.slice(0,2);
+  let html = `<div class="bf-ch">🛏 Where to Stay</div><div class="bf-cb">`;
+  items.forEach((s,i)=>{
+    html += `<div class="bf-item">
+      <div class="bf-item-name">${s.name}</div>
+      <div class="bf-item-note">${s.type} · ${s.price}</div>
+      <div class="bf-item-desc">${s.note}</div>
+    </div>`;
+  });
+  html += `</div>`;
+  return html;
+}
+
+function renderSeeCard(sights, nights){
+  const limit = parseInt(nights) === 0 ? 3 : (parseInt(nights) >= 3 ? sights.length : Math.min(4, sights.length));
+  const items = sights.slice(0, limit);
+  let html = `<div class="bf-ch">👁 What to See &amp; Do</div><div class="bf-cb">`;
+  items.forEach(s=>{
+    html += `<div class="bf-item">
+      <div class="bf-item-name">${s.star ? '<span class="bf-star">★ Must</span>' : ''}${s.name}</div>
+      <div class="bf-item-desc">${s.desc}</div>
+    </div>`;
+  });
+  html += `</div>`;
+  return html;
+}
+
+function renderEatCard(eats, nights){
+  const limit = parseInt(nights) === 0 ? 2 : eats.length;
+  const items = eats.slice(0, limit);
+  let html = `<div class="bf-ch">🍜 What to Eat</div><div class="bf-cb">`;
+  items.forEach(e=>{
+    html += `<div class="bf-item">
+      <div class="bf-item-name">${e.star ? '<span class="bf-star">★</span>' : ''}${e.name}${e.note ? `<span style="font-size:.74rem;color:#888;font-weight:400;margin-left:.3rem">${e.note}</span>` : ''}</div>
+      <div class="bf-item-desc">${e.desc}</div>
+    </div>`;
+  });
+  html += `</div>`;
+  return html;
+}
+
+function renderConsiderCard(items, dateStr, destId){
+  let warns = [];
+  if(isDoubleTen(dateStr) || isNearDoubleTen(dateStr)){
+    if(['jiufen','sunmoonlake'].includes(destId)){
+      warns.push('<strong>Double Ten Day warning:</strong> Oct 10 is Taiwan\'s biggest national holiday — this destination will be extremely crowded on and around that date.');
+    }
+  }
+  if(isWeekend(dateStr) && ['jiufen','sunmoonlake'].includes(destId)){
+    warns.push('<strong>Weekend note:</strong> This destination gets significantly more crowded on weekends. If you can shift to a weekday, do it.');
+  }
+
+  let html = `<div class="bf-ch">💡 Things to Consider</div><div class="bf-cb">`;
+  if(warns.length){
+    warns.forEach(w => { html += `<div class="bf-warn-box">${w}</div>`; });
+  }
+  html += `<ul class="bf-ul">`;
+  items.forEach(c => { html += `<li>${c}</li>`; });
+  html += `</ul></div>`;
+  return html;
+}
+
+// ── Main briefing generator ───────────────────────
+function generateBriefing(destId, originId, dateStr, nights){
+  const dest = DEST[destId];
+  if(!dest) return '<p>Destination not found.</p>';
+
+  const transit = lookupTransit(originId, destId);
+  const dayName = getDayName(dateStr);
+  const dateRange = formatDateRange(dateStr, nights);
+  const nightLabel = nights === '0' ? 'day trip' : (nights === '1' ? '1 night' : nights + ' nights');
+
+  // Crowd / timing warnings for pills
+  let pills = [`📅 ${dateRange}`, `🌙 ${nightLabel}`];
+  let warnPills = [];
+  if(isDoubleTen(dateStr)) warnPills.push('⚠️ Double Ten Day — peak crowds');
+  else if(isNearDoubleTen(dateStr)) warnPills.push('⚠️ Near Double Ten Day — busy');
+  else if(isWeekend(dateStr) && ['jiufen','sunmoonlake','beitou','tamsui'].includes(destId)) warnPills.push('⚠️ Weekend — busier than usual');
+
+  let html = `
+  <div class="bf-result-header">
+    <div class="bf-rt">${dest.icon} ${dest.name}</div>
+    <div class="bf-rs">${dest.tagline}</div>
+    <div class="bf-rpills">
+      ${pills.map(p=>`<span class="bf-pill">${p}</span>`).join('')}
+      ${warnPills.map(p=>`<span class="bf-pill warn">${p}</span>`).join('')}
+    </div>
+  </div>
+  <div class="bf-grid">
+    <div class="bf-card">${renderTransitCard(transit)}</div>
+    <div class="bf-card">${renderStayCard(dest.stay, nights)}</div>
+    <div class="bf-card">${renderSeeCard(dest.see, nights)}</div>
+    <div class="bf-card">${renderEatCard(dest.eat, nights)}</div>
+    <div class="bf-card full">${renderConsiderCard(dest.consider, dateStr, destId)}</div>
+  </div>`;
+
+  return html;
+}
+
+// ── Event listeners ───────────────────────────────
+document.getElementById('bf-go').addEventListener('click', function(){
+  const destId   = document.getElementById('bf-dest').value;
+  const originId = document.getElementById('bf-origin').value;
+  const dateStr  = document.getElementById('bf-date').value;
+  const nights   = document.getElementById('bf-nights').value;
+
+  if(!destId){
+    alert('Pick a destination first.');
+    return;
+  }
+
+  const out = document.getElementById('bf-out');
+  out.innerHTML = generateBriefing(destId, originId, dateStr, nights);
+  out.style.display = 'block';
+  setTimeout(()=>{ out.scrollIntoView({behavior:'smooth', block:'start'}); }, 50);
+});
+
+})();
+</script>
+</body>
+</html>
