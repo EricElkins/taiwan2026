@@ -152,6 +152,16 @@ tr.pick td{background:#fff9f9}
 .bar-callout strong{color:#f59e0b}
 .bar-callout a{color:#f59e0b}
 
+/* ── Photo strips ── */
+.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin:0 0 1.6rem}
+.photo-grid.three{grid-template-columns:repeat(3,1fr)}
+.photo-grid figure{margin:0;border-radius:10px;overflow:hidden;position:relative;background:#e8e2d9}
+.photo-grid a{display:block}
+.photo-grid img{width:100%;height:122px;object-fit:cover;display:block;transition:transform .25s}
+.photo-grid figure:hover img{transform:scale(1.05)}
+.photo-grid figcaption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-size:.68rem;font-weight:600;padding:1.1rem .5rem .35rem;letter-spacing:.02em;pointer-events:none}
+.adventure-photo{width:100%;height:170px;object-fit:cover;display:block;border-radius:8px;margin-bottom:.9rem}
+
 /* ── Footer ── */
 .footer{text-align:center;font-size:.78rem;color:#bbb;padding:2.5rem 0 1.5rem;border-top:1px solid #e8e2d9;margin-top:1rem}
 
@@ -206,6 +216,8 @@ tr.pick td{background:#fff9f9}
   .word-row{grid-template-columns:1fr 1fr auto}
   .word-py{display:none}
   .rhythm-grid{grid-template-columns:80px 1fr}
+  .photo-grid,.photo-grid.three{grid-template-columns:1fr 1fr}
+  .photo-grid img{height:105px}
 }
 </style>
 </head>
@@ -217,9 +229,9 @@ tr.pick td{background:#fff9f9}
     <span class="nav-logo">🇹🇼 Taiwan 2026</span>
     <a href="#route">Route</a>
     <a href="#flights">Flights</a>
-    <a href="#stays">Stays</a>
-    <a href="#todo">Do · Eat</a>
-    <a href="#itinerary">Itinerary</a>
+    <a href="#taipei">Taipei</a>
+    <a href="#tainan">Tainan</a>
+    <a href="#kaohsiung">Kaohsiung</a>
     <a href="#adventure">🎲 Detours</a>
     <a href="#briefer">🗺 Briefer</a>
     <a href="#booking">Status</a>
@@ -606,11 +618,18 @@ tr.pick td{background:#fff9f9}
     </div>
   </section>
 
-  <!-- STAYS -->
-  <section id="stays">
-    <h2>Stay Considerations</h2>
+  <!-- ═══ CITY BY CITY ═══ -->
+  <section>
+    <h2>City by City</h2>
+    <div class="alert gold">
+      <span class="alert-icon">🍜</span>
+      <p><strong>The guiding principle:</strong> Two adventurous eaters, no restrictions, maximum curiosity. Taiwan is one of the great food destinations on earth — night markets, pre-dawn soup spots, hole-in-the-wall noodle shops, and a fine dining scene that largely goes unnoticed by the Western press. Eat at all hours. Joseph's art history background unlocks the museum layer, which is world-class and deeply underrated in Taiwan specifically.</p>
+    </div>
+    <p style="font-size:.88rem;color:#777">Everything below is grouped by city, in trip order — where to stay, what to do, and the daily rhythm together. No Joan, no 10pm bedtimes: the day-by-day flow is loose by design. Adjust freely based on how late the night before went.</p>
+  </section>
 
-    <!-- TAIPEI -->
+  <!-- ═══ TAIPEI ═══ -->
+  <section id="taipei">
     <div class="city-header">
       <div class="city-left">
         <h2>🏙 Taipei</h2>
@@ -619,6 +638,14 @@ tr.pick td{background:#fff9f9}
       <div class="city-meta">⛅ ~75–84°F · warm &amp; humid<br>Typhoon season trailing off</div>
     </div>
 
+    <div class="photo-grid">
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Taipei_Taiwan_Taipei-101-Tower-01.jpg/960px-Taipei_Taiwan_Taipei-101-Tower-01.jpg" alt="Taipei 101 tower" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Taipei 101</figcaption></a></figure>
+      <figure><a href="https://commons.wikimedia.org/wiki/File:East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg/960px-East_Entrance_of_Raohe_Street_Night_Market_20060118_night.jpg" alt="Raohe Street Night Market entrance at night" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Raohe Night Market</figcaption></a></figure>
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_National-Palace-Museum-01.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Taipei_Taiwan_National-Palace-Museum-01.jpg/960px-Taipei_Taiwan_National-Palace-Museum-01.jpg" alt="National Palace Museum" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>National Palace Museum</figcaption></a></figure>
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Jiufen_at_night_lantern_glow.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Jiufen_at_night_lantern_glow.jpg/960px-Jiufen_at_night_lantern_glow.jpg" alt="Jiufen lanterns at night" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Jiufen at night</figcaption></a></figure>
+    </div>
+
+    <h3>🛏 Where to stay</h3>
     <div class="card">
       <p><strong>Neighborhood thinking:</strong> <strong>Da'an</strong> is the sweet spot for food — Yongkang Street (beef noodle soup corridor), Shida Night Market, good bars, walkable to everything. <strong>Xinyi</strong> is the nightlife center — Taipei 101 views, rooftop bars, clubs — but further from the best eating neighborhoods. <strong>Zhongshan</strong> balances both: boutique hotels, solid food scene, easy walk to bars. Since we want to be in the mix, Da'an or Zhongshan over any of the big corporate Xinyi towers.</p>
     </div>
@@ -698,8 +725,59 @@ tr.pick td{background:#fff9f9}
     </table>
     </div>
 
-    <!-- TAINAN -->
-    <div class="city-header" style="margin-top:2.5rem">
+    <h3>🎨 Do &amp; eat</h3>
+    <div class="card">
+      <p><strong>🎨 Art — Joseph's department:</strong> <a href="https://www.google.com/maps/search/?api=1&query=National+Palace+Museum+Taipei" target="_blank">National Palace Museum</a> — 700,000+ Chinese imperial artifacts including the jade cabbage and the meat-shaped stone; Joseph could disappear here for a full day and surface only for dinner. <a href="https://www.google.com/maps/search/?api=1&query=Taipei+Fine+Arts+Museum" target="_blank">Taipei Fine Arts Museum (TFAM)</a> for contemporary Taiwanese and international work. <a href="https://www.google.com/maps/search/?api=1&query=Huashan+1914+Creative+Park+Taipei" target="_blank">Huashan 1914 Creative Park</a> — former winery, now galleries, studios, pop-up markets.</p>
+
+      <!-- Josh sub-callout -->
+      <div class="josh-card" style="margin:1rem 0">
+        <div class="josh-icon" style="font-size:1.5rem">🙌</div>
+        <div class="josh-content">
+          <h4>Josh + cousins — Oct 10 and maybe Oct 11</h4>
+          <p>Meeting Josh on Double Ten Day and possibly the next day, then we're off on our own. His cousins live in Taipei (Josh stays with them — no lodging coordination needed). Local guidance during the biggest national holiday of the year is the best kind of serendipity. Let them take us somewhere no guidebook would find. Confirm logistics 2–3 weeks before departure.</p>
+        </div>
+      </div>
+
+      <p><strong>🎉 Oct 10 — Double Ten Day:</strong> The Presidential Office parade on Ketagalan Blvd starts mid-morning — get there early. Evening fireworks along the Tamsui River. The whole city is decorated, festive, and buzzing. Most restaurants and night markets run normally; some smaller shops close. Perfect day to be with locals who know where to watch and eat.</p>
+
+      <p><strong>🍜 Food — the essentials:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Yongkang+Beef+Noodle+Taipei" target="_blank">Yongkang Beef Noodle</a> — the definitive bowl in Taipei, full stop. <a href="https://www.google.com/maps/search/?api=1&query=Raohe+Night+Market+Taipei" target="_blank">Raohe Night Market</a> — better than Shilin, local crowd, the pepper pork buns from the temple-front stall are essential, plus scallion pancakes and oyster noodles. <a href="https://www.google.com/maps/search/?api=1&query=Ningxia+Night+Market+Taipei" target="_blank">Ningxia Night Market</a> for braised pork rice and oyster vermicelli. <a href="https://www.google.com/maps/search/?api=1&query=Din+Tai+Fung+Xinyi+Taipei" target="_blank">Din Tai Fung</a> (the Xinyi original — worth it once). Bubble tea everywhere — it was invented on this island.</p>
+
+      <p><strong>🌙 Nightlife:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Draft+Land+Taipei" target="_blank">Draft Land</a> — rotating tap cocktails, consistently excellent. Alchemy Bar in Da'an (speakeasy-style). Craft beer scene around Zhongzheng and Ximending. Ximending itself for late-night street energy and more food.</p>
+
+      <div class="bar-callout">
+        <div class="bar-callout-icon">🍸</div>
+        <div>
+          <strong>Bitter Burro</strong> — Josh's favorite bar in the whole damn world. In Taipei.<br>
+          <span style="font-size:.82rem;color:#ccc">This is not a casual endorsement. When someone who lives for this stuff calls a place their favorite bar on the planet, you go. Find it, sit in it, order everything. Make it a priority on the Oct 10 night with Josh — let him take you there himself.</span>
+        </div>
+      </div>
+
+      <p><strong>🚌 Day trip — Jiufen:</strong> 90 min by bus from Taipei Main Station — gold-rush hillside town above the sea, narrow stone stairs, red lantern-lit teahouses, unforgettable atmosphere. Go on a weekday. <a href="https://www.google.com/maps/search/?api=1&query=Jiufen+Taiwan" target="_blank">Map ↗</a></p>
+
+      <p><strong>♨️ Beitou hot springs:</strong> A half-day MRT trip — public baths in a leafy volcanic valley. Good morning reset if needed. <a href="https://www.google.com/maps/search/?api=1&query=Beitou+Hot+Springs+Taipei" target="_blank">Map ↗</a></p>
+    </div>
+
+    <h3>📅 Day by day</h3>
+    <div class="card">
+      <div class="rhythm-grid">
+        <div class="rhythm-label">Oct 9 — Arrive</div>
+        <div class="rhythm-content">Touch down, check in, decompress. Walk to Yongkang Street in the evening for the first proper bowl of beef noodle soup. Raohe Night Market if there's energy left. Sleep.</div>
+
+        <div class="rhythm-label">Oct 10 — 🎉 Double Ten</div>
+        <div class="rhythm-content"><strong>Ketagalan Blvd parade</strong> — arrive early, the route fills up fast. Afternoon with Josh and hopefully his cousins wherever they want to take us — local guidance on a national holiday is priceless. Evening fireworks. Eat whatever they're eating.</div>
+
+        <div class="rhythm-label">Oct 11 — Museums</div>
+        <div class="rhythm-content">Morning at the <strong>National Palace Museum</strong> — block 3–4 hrs minimum; Joseph's call on how long. Lunch in Shilin area. Afternoon: Taipei Fine Arts Museum or Huashan Creative Park. Evening: Draft Land or Alchemy for cocktails, then wherever.</div>
+
+        <div class="rhythm-label">Oct 12 — Jiufen</div>
+        <div class="rhythm-content">Early bus to <strong>Jiufen</strong> — teahouses, clifftop views, one of the most atmospheric places in Asia. Back by evening for Ningxia Night Market (oyster vermicelli, scallion pancakes). Late night: wherever it leads.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TAINAN ═══ -->
+  <section id="tainan">
+    <div class="city-header">
       <div class="city-left">
         <h2>🏯 Tainan</h2>
         <div style="font-size:.85rem;color:#666;margin-top:.15rem">Oct 13 – 16 · 3 nights · Taiwan's oldest city &amp; food capital</div>
@@ -707,6 +785,13 @@ tr.pick td{background:#fff9f9}
       <div class="city-meta">⛅ ~77–86°F · warm, drier than Taipei</div>
     </div>
 
+    <div class="photo-grid three">
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Fort-Zeelandia-01.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Tainan_Taiwan_Fort-Zeelandia-01.jpg/960px-Tainan_Taiwan_Fort-Zeelandia-01.jpg" alt="Anping Old Fort (Fort Zeelandia)" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Anping Old Fort</figcaption></a></figure>
+      <figure><a href="https://commons.wikimedia.org/wiki/File:%E7%A5%9E%E8%BE%B2%E8%A1%97_Shennong_Street_Tainan_City02.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/%E7%A5%9E%E8%BE%B2%E8%A1%97_Shennong_Street_Tainan_City02.jpg/960px-%E7%A5%9E%E8%BE%B2%E8%A1%97_Shennong_Street_Tainan_City02.jpg" alt="Shennong Street, Tainan" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Shennong Street</figcaption></a></figure>
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Tainan_Taiwan_Confucius-Temple-01.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tainan_Taiwan_Confucius-Temple-01.jpg/960px-Tainan_Taiwan_Confucius-Temple-01.jpg" alt="Tainan Confucius Temple" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Confucius Temple</figcaption></a></figure>
+    </div>
+
+    <h3>🛏 Where to stay</h3>
     <div class="card">
       <p><strong>Tainan is where the "eat our way through a country" philosophy has its biggest day.</strong> Taiwan's food capital — not Taipei. The historic core is dense and walkable: Anping, the Confucius Temple district, old Japanese colonial streets, night market alleys. Stay central and close to the food, not at a resort-style property that puts you in a taxi to get anywhere interesting.</p>
     </div>
@@ -772,8 +857,35 @@ tr.pick td{background:#fff9f9}
     </table>
     </div>
 
-    <!-- KAOHSIUNG -->
-    <div class="city-header" style="margin-top:2.5rem">
+    <h3>🎨 Do &amp; eat</h3>
+    <div class="card">
+      <p><strong>🎨 Art:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Chimei+Museum+Tainan" target="_blank">Chimei Museum</a> — one of the great surprises in Asia. Private collection: European Old Masters (Rubens, Poussin, Boucher), natural history, medieval arms and armor, and one of the world's largest violin collections. <strong>Free admission.</strong> 30 min from central Tainan by taxi. Give Joseph the full morning. Also: <a href="https://www.google.com/maps/search/?api=1&query=National+Museum+of+Taiwan+History" target="_blank">National Museum of Taiwan History</a> for indigenous culture and the Dutch / Qing / Japanese colonial layers.</p>
+
+      <p><strong>🏛 Historic Tainan:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Anping+Fort+Tainan" target="_blank">Anping Old Fort</a> (Dutch, 1624 — Taiwan's oldest European structure). <a href="https://www.google.com/maps/search/?api=1&query=Tainan+Confucius+Temple" target="_blank">Confucius Temple</a> (oldest in Taiwan, 1665). <a href="https://www.google.com/maps/search/?api=1&query=Hayashi+Department+Store+Tainan" target="_blank">Hayashi Department Store</a> (1932 Japanese-era, beautifully restored). Walk <a href="https://www.google.com/maps/search/?api=1&query=Shennong+Street+Tainan" target="_blank">Shennong Street</a> at night — herb shops, craft studios, lanterns, old atmosphere.</p>
+
+      <p><strong>🍜 Food — this is the point of coming to Tainan:</strong> <a href="https://www.google.com/maps/search/?api=1&query=coffin+bread+Tainan" target="_blank">Coffin bread</a> (棺材板 guāncái bǎn — thick-fried toast stuffed with cream sauce and seafood; the name means "coffin board"). Dawn <strong>milkfish soup</strong> (虱目魚) — open from 6am, eaten at sunrise with rice. <strong>Tainan beef soup</strong> (牛肉湯) — raw beef slices scalded tableside by boiling broth; Eric's kind of dish. <a href="https://www.google.com/maps/search/?api=1&query=Du+Xiaoyue+Tainan+danzai+noodles" target="_blank">Dù Xiaoyuè</a> for peddler's noodles (擔仔麵 dànzǎi miàn) — the original. Shrimp rolls (蝦捲). All of Zhongzheng Road and Guohua Street market.</p>
+
+      <p><strong>🌙 Nightlife:</strong> Smaller than Taipei but real — craft beer and cocktail spots on Zhongzheng and around Anping. Slower pace is the point; a single great bar and nowhere to be is very Tainan.</p>
+    </div>
+
+    <h3>📅 Daily rhythm</h3>
+    <div class="card">
+      <div class="rhythm-grid">
+        <div class="rhythm-label">🌅 Dawn</div>
+        <div class="rhythm-content"><strong>Milkfish soup stall</strong> — open from 6am. This is the move. Eat at sunrise, walk it off through the Confucius Temple area before the heat builds. Then Anping Fort.</div>
+
+        <div class="rhythm-label">☀️ Midday</div>
+        <div class="rhythm-content"><strong>Chimei Museum</strong> — give Joseph the time he needs. Hayashi Department Store for craft browsing. Shennong Street in the late afternoon.</div>
+
+        <div class="rhythm-label">🌆 Evening</div>
+        <div class="rhythm-content"><strong>Eat your way through Zhongzheng Road and Guohua Street.</strong> Coffin bread. Beef soup. Peddler's noodles. Shrimp rolls. Dumplings. In whatever order the stalls present themselves. Bar on Anping afterward.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ KAOHSIUNG ═══ -->
+  <section id="kaohsiung">
+    <div class="city-header">
       <div class="city-left">
         <h2>⚓ Kaohsiung</h2>
         <div style="font-size:.85rem;color:#666;margin-top:.15rem">Oct 16 – 18 · 2 nights · port city · Pier-2 art district</div>
@@ -781,6 +893,13 @@ tr.pick td{background:#fff9f9}
       <div class="city-meta">🌤 ~79–87°F · warm, clearest skies</div>
     </div>
 
+    <div class="photo-grid three">
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Kaohsiung_Taiwan_Dragon-and-Tiger-Pagodas-01.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kaohsiung_Taiwan_Dragon-and-Tiger-Pagodas-01.jpg/960px-Kaohsiung_Taiwan_Dragon-and-Tiger-Pagodas-01.jpg" alt="Dragon and Tiger Pagodas at Lotus Pond" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Dragon &amp; Tiger Pagodas</figcaption></a></figure>
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Pier-2_Art_Center.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Pier-2_Art_Center.jpg/960px-Pier-2_Art_Center.jpg" alt="Pier-2 Art Center" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Pier-2 Art Center</figcaption></a></figure>
+      <figure><a href="https://commons.wikimedia.org/wiki/File:Cijin_Beach_20150725.jpg" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Cijin_Beach_20150725.jpg/960px-Cijin_Beach_20150725.jpg" alt="Cijin Beach" loading="lazy" onerror="this.closest('figure').style.display='none'"><figcaption>Cijin Island</figcaption></a></figure>
+    </div>
+
+    <h3>🛏 Where to stay</h3>
     <div class="card">
       <p><strong>Two nights means one base and no commuting.</strong> The <strong>Pier-2 / Yancheng</strong> area has the most character — converted harbor warehouses, galleries, craft bars, ferry to Cijin Island. <strong>Love River / Formosa Boulevard</strong> is more central with better MRT access. Joseph's vote will probably be Pier-2; Eric's vote is wherever the night market is closest.</p>
     </div>
@@ -844,61 +963,8 @@ tr.pick td{background:#fff9f9}
       </tbody>
     </table>
     </div>
-  </section>
 
-  <!-- THINGS TO DO -->
-  <section id="todo">
-    <h2>Things to Do — Art, Food &amp; Nightlife</h2>
-
-    <div class="alert gold">
-      <span class="alert-icon">🍜</span>
-      <p><strong>The guiding principle:</strong> Two adventurous eaters, no restrictions, maximum curiosity. Taiwan is one of the great food destinations on earth — night markets, pre-dawn soup spots, hole-in-the-wall noodle shops, and a fine dining scene that largely goes unnoticed by the Western press. Eat at all hours. Joseph's art history background unlocks the museum layer, which is world-class and deeply underrated in Taiwan specifically.</p>
-    </div>
-
-    <h3>🏙 Taipei</h3>
-    <div class="card">
-      <p><strong>🎨 Art — Joseph's department:</strong> <a href="https://www.google.com/maps/search/?api=1&query=National+Palace+Museum+Taipei" target="_blank">National Palace Museum</a> — 700,000+ Chinese imperial artifacts including the jade cabbage and the meat-shaped stone; Joseph could disappear here for a full day and surface only for dinner. <a href="https://www.google.com/maps/search/?api=1&query=Taipei+Fine+Arts+Museum" target="_blank">Taipei Fine Arts Museum (TFAM)</a> for contemporary Taiwanese and international work. <a href="https://www.google.com/maps/search/?api=1&query=Huashan+1914+Creative+Park+Taipei" target="_blank">Huashan 1914 Creative Park</a> — former winery, now galleries, studios, pop-up markets.</p>
-
-      <!-- Josh sub-callout -->
-      <div class="josh-card" style="margin:1rem 0">
-        <div class="josh-icon" style="font-size:1.5rem">🙌</div>
-        <div class="josh-content">
-          <h4>Josh + cousins — Oct 10 and maybe Oct 11</h4>
-          <p>Meeting Josh on Double Ten Day and possibly the next day, then we're off on our own. His cousins live in Taipei (Josh stays with them — no lodging coordination needed). Local guidance during the biggest national holiday of the year is the best kind of serendipity. Let them take us somewhere no guidebook would find. Confirm logistics 2–3 weeks before departure.</p>
-        </div>
-      </div>
-
-      <p><strong>🎉 Oct 10 — Double Ten Day:</strong> The Presidential Office parade on Ketagalan Blvd starts mid-morning — get there early. Evening fireworks along the Tamsui River. The whole city is decorated, festive, and buzzing. Most restaurants and night markets run normally; some smaller shops close. Perfect day to be with locals who know where to watch and eat.</p>
-
-      <p><strong>🍜 Food — the essentials:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Yongkang+Beef+Noodle+Taipei" target="_blank">Yongkang Beef Noodle</a> — the definitive bowl in Taipei, full stop. <a href="https://www.google.com/maps/search/?api=1&query=Raohe+Night+Market+Taipei" target="_blank">Raohe Night Market</a> — better than Shilin, local crowd, the pepper pork buns from the temple-front stall are essential, plus scallion pancakes and oyster noodles. <a href="https://www.google.com/maps/search/?api=1&query=Ningxia+Night+Market+Taipei" target="_blank">Ningxia Night Market</a> for braised pork rice and oyster vermicelli. <a href="https://www.google.com/maps/search/?api=1&query=Din+Tai+Fung+Xinyi+Taipei" target="_blank">Din Tai Fung</a> (the Xinyi original — worth it once). Bubble tea everywhere — it was invented on this island.</p>
-
-      <p><strong>🌙 Nightlife:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Draft+Land+Taipei" target="_blank">Draft Land</a> — rotating tap cocktails, consistently excellent. Alchemy Bar in Da'an (speakeasy-style). Craft beer scene around Zhongzheng and Ximending. Ximending itself for late-night street energy and more food.</p>
-
-      <div class="bar-callout">
-        <div class="bar-callout-icon">🍸</div>
-        <div>
-          <strong>Bitter Burro</strong> — Josh's favorite bar in the whole damn world. In Taipei.<br>
-          <span style="font-size:.82rem;color:#ccc">This is not a casual endorsement. When someone who lives for this stuff calls a place their favorite bar on the planet, you go. Find it, sit in it, order everything. Make it a priority on the Oct 10 night with Josh — let him take you there himself.</span>
-        </div>
-      </div>
-
-      <p><strong>🚌 Day trip — Jiufen:</strong> 90 min by bus from Taipei Main Station — gold-rush hillside town above the sea, narrow stone stairs, red lantern-lit teahouses, unforgettable atmosphere. Go on a weekday. <a href="https://www.google.com/maps/search/?api=1&query=Jiufen+Taiwan" target="_blank">Map ↗</a></p>
-
-      <p><strong>♨️ Beitou hot springs:</strong> A half-day MRT trip — public baths in a leafy volcanic valley. Good morning reset if needed. <a href="https://www.google.com/maps/search/?api=1&query=Beitou+Hot+Springs+Taipei" target="_blank">Map ↗</a></p>
-    </div>
-
-    <h3>🏯 Tainan</h3>
-    <div class="card">
-      <p><strong>🎨 Art:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Chimei+Museum+Tainan" target="_blank">Chimei Museum</a> — one of the great surprises in Asia. Private collection: European Old Masters (Rubens, Poussin, Boucher), natural history, medieval arms and armor, and one of the world's largest violin collections. <strong>Free admission.</strong> 30 min from central Tainan by taxi. Give Joseph the full morning. Also: <a href="https://www.google.com/maps/search/?api=1&query=National+Museum+of+Taiwan+History" target="_blank">National Museum of Taiwan History</a> for indigenous culture and the Dutch / Qing / Japanese colonial layers.</p>
-
-      <p><strong>🏛 Historic Tainan:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Anping+Fort+Tainan" target="_blank">Anping Old Fort</a> (Dutch, 1624 — Taiwan's oldest European structure). <a href="https://www.google.com/maps/search/?api=1&query=Tainan+Confucius+Temple" target="_blank">Confucius Temple</a> (oldest in Taiwan, 1665). <a href="https://www.google.com/maps/search/?api=1&query=Hayashi+Department+Store+Tainan" target="_blank">Hayashi Department Store</a> (1932 Japanese-era, beautifully restored). Walk <a href="https://www.google.com/maps/search/?api=1&query=Shennong+Street+Tainan" target="_blank">Shennong Street</a> at night — herb shops, craft studios, lanterns, old atmosphere.</p>
-
-      <p><strong>🍜 Food — this is the point of coming to Tainan:</strong> <a href="https://www.google.com/maps/search/?api=1&query=coffin+bread+Tainan" target="_blank">Coffin bread</a> (棺材板 guāncái bǎn — thick-fried toast stuffed with cream sauce and seafood; the name means "coffin board"). Dawn <strong>milkfish soup</strong> (虱目魚) — open from 6am, eaten at sunrise with rice. <strong>Tainan beef soup</strong> (牛肉湯) — raw beef slices scalded tableside by boiling broth; Eric's kind of dish. <a href="https://www.google.com/maps/search/?api=1&query=Du+Xiaoyue+Tainan+danzai+noodles" target="_blank">Dù Xiaoyuè</a> for peddler's noodles (擔仔麵 dànzǎi miàn) — the original. Shrimp rolls (蝦捲). All of Zhongzheng Road and Guohua Street market.</p>
-
-      <p><strong>🌙 Nightlife:</strong> Smaller than Taipei but real — craft beer and cocktail spots on Zhongzheng and around Anping. Slower pace is the point; a single great bar and nowhere to be is very Tainan.</p>
-    </div>
-
-    <h3>⚓ Kaohsiung</h3>
+    <h3>🎨 Do &amp; eat</h3>
     <div class="card">
       <p><strong>🎨 Art:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Pier-2+Art+Center+Kaohsiung" target="_blank">Pier-2 Art Center</a> — converted harbor warehouses, now one of Taiwan's most active contemporary art hubs: galleries, studios, artist residencies, installations, bookshops. Joseph will want hours here. Adjacent: <a href="https://www.google.com/maps/search/?api=1&query=Kaohsiung+Museum+of+Fine+Arts" target="_blank">Kaohsiung Museum of Fine Arts</a> for a strong permanent collection.</p>
 
@@ -908,45 +974,8 @@ tr.pick td{background:#fff9f9}
 
       <p><strong>🌙 Last night:</strong> Make it count — Pier-2 bar-hop, Love River lit-bridge walk, somewhere late. Kaohsiung doesn't sleep early and this is the end of a very good trip.</p>
     </div>
-  </section>
 
-  <!-- ITINERARY -->
-  <section id="itinerary">
-    <h2>Suggested Itinerary Rhythm</h2>
-    <p style="font-size:.88rem;color:#777;margin-bottom:1rem">No Joan, no 10pm bedtimes. A loose morning · afternoon · evening flow — adjust freely based on how late the night before went.</p>
-
-    <h3>Taipei · 4 nights</h3>
-    <div class="card">
-      <div class="rhythm-grid">
-        <div class="rhythm-label">Oct 9 — Arrive</div>
-        <div class="rhythm-content">Touch down, check in, decompress. Walk to Yongkang Street in the evening for the first proper bowl of beef noodle soup. Raohe Night Market if there's energy left. Sleep.</div>
-
-        <div class="rhythm-label">Oct 10 — 🎉 Double Ten</div>
-        <div class="rhythm-content"><strong>Ketagalan Blvd parade</strong> — arrive early, the route fills up fast. Afternoon with Josh and hopefully his cousins wherever they want to take us — local guidance on a national holiday is priceless. Evening fireworks. Eat whatever they're eating.</div>
-
-        <div class="rhythm-label">Oct 11 — Museums</div>
-        <div class="rhythm-content">Morning at the <strong>National Palace Museum</strong> — block 3–4 hrs minimum; Joseph's call on how long. Lunch in Shilin area. Afternoon: Taipei Fine Arts Museum or Huashan Creative Park. Evening: Draft Land or Alchemy for cocktails, then wherever.</div>
-
-        <div class="rhythm-label">Oct 12 — Jiufen</div>
-        <div class="rhythm-content">Early bus to <strong>Jiufen</strong> — teahouses, clifftop views, one of the most atmospheric places in Asia. Back by evening for Ningxia Night Market (oyster vermicelli, scallion pancakes). Late night: wherever it leads.</div>
-      </div>
-    </div>
-
-    <h3>Tainan · 3 nights</h3>
-    <div class="card">
-      <div class="rhythm-grid">
-        <div class="rhythm-label">🌅 Dawn</div>
-        <div class="rhythm-content"><strong>Milkfish soup stall</strong> — open from 6am. This is the move. Eat at sunrise, walk it off through the Confucius Temple area before the heat builds. Then Anping Fort.</div>
-
-        <div class="rhythm-label">☀️ Midday</div>
-        <div class="rhythm-content"><strong>Chimei Museum</strong> — give Joseph the time he needs. Hayashi Department Store for craft browsing. Shennong Street in the late afternoon.</div>
-
-        <div class="rhythm-label">🌆 Evening</div>
-        <div class="rhythm-content"><strong>Eat your way through Zhongzheng Road and Guohua Street.</strong> Coffin bread. Beef soup. Peddler's noodles. Shrimp rolls. Dumplings. In whatever order the stalls present themselves. Bar on Anping afterward.</div>
-      </div>
-    </div>
-
-    <h3>Kaohsiung · 2 nights</h3>
+    <h3>📅 Day by day</h3>
     <div class="card">
       <div class="rhythm-grid">
         <div class="rhythm-label">🌅 Morning</div>
@@ -982,6 +1011,7 @@ tr.pick td{background:#fff9f9}
           </div>
         </div>
         <div class="adventure-card-body">
+          <a href="https://commons.wikimedia.org/wiki/File:National_Taichung_Theater.jpg" target="_blank"><img class="adventure-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/National_Taichung_Theater.jpg/960px-National_Taichung_Theater.jpg" alt="National Taichung Theater by Toyo Ito" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
           <p>Taichung sits almost exactly between Taipei and Tainan on the High Speed Rail — making it a natural overnight detour on the way south rather than a separate mission. Josh knows his stuff, and the case for Taichung is genuinely compelling: it's grown into one of Taiwan's most interesting cultural cities, with a serious art scene, a café culture that rivals Taipei, and the largest night market on the island.</p>
 
           <p><strong>🎨 For Joseph:</strong> The <a href="https://www.google.com/maps/search/?api=1&query=National+Taichung+Theater" target="_blank">National Taichung Theater</a> is reason enough to stop. Designed by Toyo Ito (of Sendai Mediatheque fame) — a radical, curving, cave-like structure that was nearly impossible to build and even harder to describe. Widely considered one of the most extraordinary buildings in Asia. Also: <a href="https://www.google.com/maps/search/?api=1&query=Rainbow+Village+Taichung" target="_blank">Rainbow Village</a> (a retired soldier painted his entire village in folk murals to save it from demolition — now a landmark), and the <a href="https://www.google.com/maps/search/?api=1&query=National+Museum+of+Natural+Science+Taichung" target="_blank">National Museum of Natural Science</a>.</p>
@@ -1009,6 +1039,7 @@ tr.pick td{background:#fff9f9}
           </div>
         </div>
         <div class="adventure-card-body">
+          <a href="https://commons.wikimedia.org/wiki/File:Taroko_Gorge.jpg" target="_blank"><img class="adventure-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Taroko_Gorge.jpg/960px-Taroko_Gorge.jpg" alt="Taroko Gorge marble canyon" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
           <p>Taroko is a marble canyon on Taiwan's east coast cut by a river over millennia — sheer cliff walls, turquoise water, suspension bridges, tunnels blasted through rock, and one of the most visually staggering national parks in Asia. It is emphatically not the Taiwan that most people picture, which is exactly why it's worth seeing.</p>
 
           <p><strong>🎨 For Joseph:</strong> The Taiwanese indigenous Truku people have lived in this canyon for centuries — their weaving, woodworking, and ceremonial culture are documented at the <a href="https://www.google.com/maps/search/?api=1&query=Taroko+National+Park+Visitor+Center" target="_blank">park visitor center</a> and in Hualien's cultural spaces. The landscape itself, from an art history standpoint, informed an entire generation of Taiwanese landscape painters.</p>
@@ -1037,6 +1068,7 @@ tr.pick td{background:#fff9f9}
           </div>
         </div>
         <div class="adventure-card-body">
+          <a href="https://commons.wikimedia.org/wiki/File:Sun_Moon_Lake.jpg" target="_blank"><img class="adventure-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sun_Moon_Lake.jpg/960px-Sun_Moon_Lake.jpg" alt="Sun Moon Lake" loading="lazy" onerror="this.parentElement.style.display='none'"></a>
           <p>Taiwan's most famous lake sits at 748 meters in the mountains of Nantou County. The name comes from the shape: one half resembles a sun, the other a crescent moon. It is not a secret — it draws enormous Taiwanese domestic tourism — but it earned its reputation. Morning fog on the water, aboriginal villages around the shore, cycling the full 33km loop on a rented electric bike, and the surrounding tea plantations that produce some of Taiwan's best high-mountain oolongs.</p>
 
           <p><strong>🎨 For Joseph:</strong> The <a href="https://www.google.com/maps/search/?api=1&query=Formosan+Aboriginal+Culture+Village+Sun+Moon+Lake" target="_blank">Formosan Aboriginal Culture Village</a> is adjacent — 14 distinct indigenous cultures represented in reconstructed villages, performing arts, and a genuinely serious ethnographic collection. Also: the lakeside <a href="https://www.google.com/maps/search/?api=1&query=Wenwu+Temple+Sun+Moon+Lake" target="_blank">Wenwu Temple</a> is one of the most architecturally grand temple complexes in Taiwan, set directly above the water.</p>
@@ -1149,7 +1181,59 @@ tr.pick td{background:#fff9f9}
 
   <!-- PACKING -->
   <section id="packing">
-    <h2>Packing — Carry-On Only, Full Three Legs</h2>
+    <h2>Packing — Two Very Different Trips</h2>
+    <p style="font-size:.9rem;color:#666;margin-bottom:1.25rem">Joseph flies home from Taiwan on Oct 18. Eric continues through Japan and Korea to Nov 2. One of these packing jobs is easy; the other is a 24-day, three-country, 40°F-swing logistics puzzle. Both fit in a carry-on.</p>
+
+    <!-- JOSEPH -->
+    <div class="city-header">
+      <div class="city-left">
+        <h2>🧳 Joseph — Taiwan Only</h2>
+        <div style="font-size:.85rem;color:#666;margin-top:.15rem">Oct 9 – 18 · 9 nights · one climate: hot &amp; humid</div>
+      </div>
+      <div class="city-meta">🌡 75–87°F the whole time<br>Pack light, pack cool</div>
+    </div>
+
+    <div class="card">
+      <div class="pack-section">
+        <h3>👕 Clothing</h3>
+        <ul>
+          <li><strong>6–7 quick-dry t-shirts</strong> — cotton holds sweat and stinks fast in Taiwan humidity. Pack enough tops and laundry becomes optional on a 9-night trip.</li>
+          <li><strong>1–2 lightweight button-downs</strong> — worn open over a tee; doubles as the "nicer" layer for museums and sit-down dinners.</li>
+          <li><strong>1 pair of lightweight pants + 2 pairs of shorts</strong> — shorts are the daily uniform; pants for nicer dinners and aggressively air-conditioned museums.</li>
+          <li><strong>1 packable rain jacket</strong> — it's typhoon-tail season. This is for rain, not warmth: it will not drop below ~70°F. <strong>No cold-weather anything.</strong></li>
+          <li><strong>7+ pairs quick-dry underwear and socks</strong> — sink-wash as backup.</li>
+          <li><strong>Broken-in walking shoes + thin sandals</strong> — 20,000-step days; sandals for hot springs, the beach, and the hotel.</li>
+        </ul>
+      </div>
+      <div class="pack-section">
+        <h3>🔌 Tech &amp; money</h3>
+        <ul>
+          <li><strong>No plug adapter needed</strong> — Taiwan uses Type A, same as the US.</li>
+          <li><strong>Taiwan-only e-SIM</strong> — ~$10–15 for 10 days of data (Airalo or similar). Set it up before flying.</li>
+          <li><strong>Power bank</strong> — night-market nights are long. 10,000 mAh is plenty.</li>
+          <li><strong>EasyCard</strong> at TPE baggage claim or any 7-Eleven — all MRT, buses, convenience stores. Load NT$500–1,000.</li>
+          <li><strong>NT$3,000–5,000 cash</strong> (~$100–150) from the airport ATM. Cards work at hotels and sit-down restaurants; cash everywhere else.</li>
+        </ul>
+      </div>
+      <div class="pack-section">
+        <h3>📄 Documents &amp; health</h3>
+        <ul>
+          <li>Passport valid 6+ months past Oct 18, 2026 — US citizens get 90 days visa-free.</li>
+          <li>Travel insurance with trip interruption (typhoon tail risk is real, see Flights section).</li>
+          <li>Blister plasters, antacid, sunscreen, prescriptions in original packaging.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ERIC -->
+    <div class="city-header" style="margin-top:2.5rem">
+      <div class="city-left">
+        <h2>🌏 Eric — Taiwan → Japan → Korea</h2>
+        <div style="font-size:.85rem;color:#666;margin-top:.15rem">Oct 7 – Nov 2 · 24 days · three countries · one carry-on</div>
+      </div>
+      <div class="city-meta">🌡 87°F Taipei → 45°F Seoul<br>Layering is the whole game</div>
+    </div>
+
     <div class="alert gold">
       <span class="alert-icon">🌡</span>
       <p><strong>24 days, no checked bags, three countries, 40°F temperature swing.</strong> Taiwan (Oct 9–18): 75–87°F, humid. Japan (Oct 18 – ~Oct 26): mid-60s°F. Korea (Oct 26–Nov 2): 45–60°F, can feel cold. The strategy is layering — the same clothes that work in a Taipei night market work in Seoul with everything else piled on top.</p>
@@ -1284,6 +1368,7 @@ tr.pick td{background:#fff9f9}
 
   <div class="footer">
     Taiwan 2026 · Eric &amp; Joseph · 🗓 Oct 9 – 18 · built with Claude<br>
+    📷 Photos: Wikimedia Commons — click any photo for its source &amp; license<br>
     <span id="footer-ts"></span>
   </div>
 
