@@ -129,6 +129,25 @@ tr.pick td{background:#fff9f9}
 /* ── Confirmation table ── */
 .conf-table td{font-size:.83rem}
 
+/* ── Flight cards ── */
+.flight-card{background:#fff;border:1px solid #e8e2d9;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);margin-bottom:1.1rem}
+.flight-card-header{background:linear-gradient(135deg,#1a0505,#2d0a0a);color:#fff;padding:.85rem 1.2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.flight-card-header h4{margin:0;font-size:1rem;font-weight:700;color:#fff}
+.flight-conf{font-family:monospace;background:rgba(255,255,255,.15);border-radius:6px;padding:.25rem .6rem;font-size:.88rem;letter-spacing:.08em;color:#fde68a;font-weight:700}
+.flight-leg{padding:.9rem 1.2rem;border-bottom:1px solid #f5f0e8;display:grid;grid-template-columns:1fr auto 1fr auto;align-items:center;gap:.5rem 1rem}
+.flight-leg:last-child{border-bottom:none}
+.flight-airport{font-size:1.5rem;font-weight:800;color:#1a0505;line-height:1}
+.flight-city{font-size:.72rem;color:#888;font-weight:500;margin-top:.1rem}
+.flight-time{font-size:1.1rem;font-weight:700;color:#1a0505}
+.flight-date{font-size:.72rem;color:#888;font-weight:500}
+.flight-arrow{font-size:1.3rem;color:#C8102E;text-align:center}
+.flight-meta{font-size:.78rem;color:#666;line-height:1.7;padding:.1rem 0}
+.flight-meta strong{color:#1a0505}
+.flight-seat{background:#fff7ed;border-radius:6px;padding:.2rem .5rem;font-size:.76rem;font-weight:700;color:#92400e;white-space:nowrap}
+.flight-pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.25rem}
+.flight-alert{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:.75rem 1rem;font-size:.84rem;color:#166534;margin-bottom:1.1rem}
+@media(max-width:640px){.flight-pair{grid-template-columns:1fr}.flight-leg{grid-template-columns:1fr auto 1fr}}
+
 /* ── Decorative divider ── */
 .divider{text-align:center;color:#e8e2d9;font-size:1.1rem;letter-spacing:.3em;margin:2.5rem 0;user-select:none}
 
@@ -523,7 +542,7 @@ tr.pick td{background:#fff9f9}
     <div class="card">
       <div class="route-row">
         <div class="route-date">Oct 7</div>
-        <div class="route-detail"><strong>Fly Denver → Taipei</strong> <span class="sub">· depart DEN</span></div>
+        <div class="route-detail"><strong>Fly Denver → Seattle → Taipei</strong> <span class="sub">· AS 615 6:56 PM · overnight SEA · JX 31 1:15 AM</span></div>
       </div>
       <div class="route-row">
         <div class="route-date">Oct 9</div>
@@ -589,26 +608,180 @@ tr.pick td{background:#fff9f9}
 
   <!-- FLIGHTS -->
   <section id="flights">
-    <h2>Getting There</h2>
+    <h2>Getting There — ✅ Booked</h2>
 
-    <h3>Eric · Denver → Taipei</h3>
-    <div class="card">
-      <p><strong>No nonstop DEN → TPE</strong> — routings go through Los Angeles (LAX) or San Francisco (SFO) then nonstop to Taipei Taoyuan. Best options: <strong>EVA Air</strong> (Star Alliance, Royal Laurel business class is excellent and one of the Pacific's best premium products); <strong>United</strong> via SFO/LAX (points-friendly); China Airlines via LAX. Total travel time ~15–18 hrs depending on connection. <strong>Book early</strong> — October demand is steady and prices climb.</p>
-      <p><strong>Points:</strong> Book EVA through United MileagePlus or EVA Infinity MileageLands. Business one-way from Denver typically 60k–80k miles + taxes.</p>
-      <p>
-        <a href="https://www.evaair.com/en-global/index.html" target="_blank">EVA Air ↗</a> ·
-        <a href="https://www.united.com" target="_blank">United ↗</a> ·
-        <a href="https://www.google.com/travel/flights?q=flights+DEN+to+TPE" target="_blank">Google Flights DEN→TPE ↗</a>
-      </p>
+    <!-- OUTBOUND — shared itinerary -->
+    <h3>✈️ Outbound · DEN → SEA → TPE</h3>
+    <p style="font-size:.87rem;color:#666;margin-bottom:1rem">Same flights, separate confirmations. You depart DEN together Wed evening, overnight in Seattle, then board STARLUX just after midnight Thu morning — arriving Taipei Friday.</p>
+
+    <div class="flight-pair">
+
+      <!-- ERIC outbound -->
+      <div class="flight-card">
+        <div class="flight-card-header">
+          <h4>🧍 Eric Elkins</h4>
+          <span class="flight-conf">ICQTNV</span>
+        </div>
+        <!-- Leg 1 -->
+        <div class="flight-leg">
+          <div>
+            <div class="flight-airport">DEN</div>
+            <div class="flight-city">Denver</div>
+            <div class="flight-time">6:56 PM</div>
+            <div class="flight-date">Wed Oct 7</div>
+          </div>
+          <div class="flight-arrow">→</div>
+          <div>
+            <div class="flight-airport">SEA</div>
+            <div class="flight-city">Seattle</div>
+            <div class="flight-time">8:59 PM</div>
+            <div class="flight-date">Wed Oct 7</div>
+          </div>
+          <div class="flight-meta">
+            <strong>Alaska AS 615</strong><br>
+            737-900<br>
+            <span class="flight-seat">Seat 20A</span>
+          </div>
+        </div>
+        <!-- Leg 2 -->
+        <div class="flight-leg">
+          <div>
+            <div class="flight-airport">SEA</div>
+            <div class="flight-city">Seattle</div>
+            <div class="flight-time">1:15 AM</div>
+            <div class="flight-date">Thu Oct 8</div>
+          </div>
+          <div class="flight-arrow">→</div>
+          <div>
+            <div class="flight-airport">TPE</div>
+            <div class="flight-city">Taipei</div>
+            <div class="flight-time">4:55 AM</div>
+            <div class="flight-date">Fri Oct 9</div>
+          </div>
+          <div class="flight-meta">
+            <strong>STARLUX JX 31</strong><br>
+            A350-900<br>
+            <span class="flight-seat">Seat at check-in</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOSEPH outbound -->
+      <div class="flight-card">
+        <div class="flight-card-header">
+          <h4>🧍 Joseph Newman</h4>
+          <span class="flight-conf">FUYSUF</span>
+        </div>
+        <!-- Leg 1 -->
+        <div class="flight-leg">
+          <div>
+            <div class="flight-airport">DEN</div>
+            <div class="flight-city">Denver</div>
+            <div class="flight-time">6:56 PM</div>
+            <div class="flight-date">Wed Oct 7</div>
+          </div>
+          <div class="flight-arrow">→</div>
+          <div>
+            <div class="flight-airport">SEA</div>
+            <div class="flight-city">Seattle</div>
+            <div class="flight-time">8:59 PM</div>
+            <div class="flight-date">Wed Oct 7</div>
+          </div>
+          <div class="flight-meta">
+            <strong>Alaska AS 615</strong><br>
+            737-900<br>
+            <span class="flight-seat">Seat 20C</span>
+          </div>
+        </div>
+        <!-- Leg 2 -->
+        <div class="flight-leg">
+          <div>
+            <div class="flight-airport">SEA</div>
+            <div class="flight-city">Seattle</div>
+            <div class="flight-time">1:15 AM</div>
+            <div class="flight-date">Thu Oct 8</div>
+          </div>
+          <div class="flight-arrow">→</div>
+          <div>
+            <div class="flight-airport">TPE</div>
+            <div class="flight-city">Taipei</div>
+            <div class="flight-time">4:55 AM</div>
+            <div class="flight-date">Fri Oct 9</div>
+          </div>
+          <div class="flight-meta">
+            <strong>STARLUX JX 31</strong><br>
+            A350-900<br>
+            <span class="flight-seat">Seat at check-in</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.flight-pair -->
+
+    <div class="alert gold">
+      <span class="alert-icon">🏨</span>
+      <p><strong>Seattle overnight needed.</strong> You land SEA at 8:59 PM and don't board again until 1:15 AM — but that's cutting it very close for check-in/security on an international flight. Consider grabbing a room near SEA (Hampton Inn Airport, Marriott Sea-Tac) for a few hours, or use the airport lounge and take it easy. Don't rely on the 2h 16m window being enough if the Alaska flight is late.</p>
     </div>
 
-    <h3>Eric · Taipei → Tokyo (Oct 18)</h3>
+    <!-- JOSEPH RETURN -->
+    <h3>✈️ Joseph · Return Home · Oct 18</h3>
+    <div class="flight-card" style="max-width:520px">
+      <div class="flight-card-header">
+        <h4>🧍 Joseph Newman — Homebound</h4>
+        <span class="flight-conf">EIMGVZ</span>
+      </div>
+      <!-- Leg 1 -->
+      <div class="flight-leg">
+        <div>
+          <div class="flight-airport">TPE</div>
+          <div class="flight-city">Taipei</div>
+          <div class="flight-time">8:10 PM</div>
+          <div class="flight-date">Sun Oct 18</div>
+        </div>
+        <div class="flight-arrow">→</div>
+        <div>
+          <div class="flight-airport">SEA</div>
+          <div class="flight-city">Seattle</div>
+          <div class="flight-time">4:10 PM</div>
+          <div class="flight-date">Sun Oct 18</div>
+        </div>
+        <div class="flight-meta">
+          <strong>STARLUX JX 32</strong><br>
+          A350-900<br>
+          <span class="flight-seat">Seat at check-in</span>
+        </div>
+      </div>
+      <!-- Leg 2 -->
+      <div class="flight-leg">
+        <div>
+          <div class="flight-airport">SEA</div>
+          <div class="flight-city">Seattle</div>
+          <div class="flight-time">6:35 PM</div>
+          <div class="flight-date">Sun Oct 18</div>
+        </div>
+        <div class="flight-arrow">→</div>
+        <div>
+          <div class="flight-airport">DEN</div>
+          <div class="flight-city">Denver</div>
+          <div class="flight-time">10:21 PM</div>
+          <div class="flight-date">Sun Oct 18</div>
+        </div>
+        <div class="flight-meta">
+          <strong>Alaska AS 310</strong><br>
+          737-900<br>
+          <span class="flight-seat">Seat 20F</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ERIC ONWARD -->
+    <h3>✈️ Eric · Taipei → Tokyo · Oct 18 <span style="font-size:.8rem;font-weight:500;color:#C8102E">— not yet booked</span></h3>
     <div class="card">
-      <p><strong>Many daily nonstops</strong> — Taipei Taoyuan (TPE) → Tokyo Haneda (HND) or Narita (NRT), ~3h 15m. EVA Air, ANA, China Airlines, JAL. Budget fares from ~$120; Star Alliance business from ~$350 or redeemable. <strong>Aim for a midday departure</strong> so you land in Tokyo with time to meet the group and settle in before Rachael's birthday dinner.</p>
+      <p><strong>Many daily nonstops</strong> — Taipei Taoyuan (TPE) → Tokyo Haneda (HND) or Narita (NRT), ~3h 15m. EVA Air, ANA, China Airlines, JAL. Budget fares from ~$120; Star Alliance business from ~$350 or redeemable. <strong>Aim for a midday departure</strong> so you land in Tokyo with time to meet the group and settle in before Rachael's birthday dinner (Oct 18).</p>
       <p>
         <a href="https://www.evaair.com" target="_blank">EVA Air ↗</a> ·
         <a href="https://www.ana.co.jp/en/us/" target="_blank">ANA ↗</a> ·
-        <a href="https://www.google.com/travel/flights?q=flights+TPE+to+HND" target="_blank">Google Flights TPE→HND ↗</a>
+        <a href="https://www.google.com/travel/flights?q=flights+TPE+to+HND+2026-10-18" target="_blank">Google Flights TPE→HND Oct 18 ↗</a>
       </p>
     </div>
 
@@ -1101,12 +1274,16 @@ tr.pick td{background:#fff9f9}
         <div><strong>Kaohsiung:</strong> Just Sleep Pier-2 — not yet booked</div>
         <div style="font-size:.8rem;color:#999">check availability</div>
 
-        <div class="dot grey"></div>
-        <div><strong>Flights DEN → TPE (Oct 7):</strong> not yet booked</div>
-        <div style="font-size:.8rem;color:#999">book early</div>
+        <div class="dot green"></div>
+        <div><strong>Flights DEN → SEA → TPE (Oct 7–9):</strong> ✅ Booked — Eric <code>ICQTNV</code> · Joseph <code>FUYSUF</code></div>
+        <div style="font-size:.8rem;color:#22c55e">AS 615 + JX 31 · STARLUX</div>
+
+        <div class="dot green"></div>
+        <div><strong>Flights TPE → SEA → DEN (Oct 18):</strong> ✅ Joseph booked — <code>EIMGVZ</code></div>
+        <div style="font-size:.8rem;color:#22c55e">JX 32 + AS 310</div>
 
         <div class="dot grey"></div>
-        <div><strong>Flight TPE → HND (Oct 18):</strong> not yet booked</div>
+        <div><strong>Flight TPE → HND (Oct 18):</strong> Eric — not yet booked</div>
         <div style="font-size:.8rem;color:#999">many daily options</div>
 
         <div class="dot grey"></div>
@@ -1126,10 +1303,44 @@ tr.pick td{background:#fff9f9}
     <div class="card">
       <table class="conf-table">
         <thead>
-          <tr><th>Item</th><th>Provider</th><th>Dates</th><th>Conf #</th><th>Cost</th><th>Notes</th></tr>
+          <tr><th>Item</th><th>Provider</th><th>Dates</th><th>Conf #</th><th>Who</th><th>Notes</th></tr>
         </thead>
         <tbody>
-          <tr><td colspan="6" style="color:#aaa;font-style:italic;font-size:.85rem;text-align:center;padding:1.2rem">Nothing booked yet — fill this in as you confirm things.</td></tr>
+          <tr>
+            <td><strong>DEN→SEA→TPE</strong></td>
+            <td>Alaska + STARLUX</td>
+            <td>Oct 7–9</td>
+            <td><code>ICQTNV</code></td>
+            <td>Eric</td>
+            <td>AS 615 (20A) + JX 31 · SEA overnight needed</td>
+          </tr>
+          <tr>
+            <td><strong>DEN→SEA→TPE</strong></td>
+            <td>Alaska + STARLUX</td>
+            <td>Oct 7–9</td>
+            <td><code>FUYSUF</code></td>
+            <td>Joseph</td>
+            <td>AS 615 (20C) + JX 31 · same flights as Eric</td>
+          </tr>
+          <tr>
+            <td><strong>TPE→SEA→DEN</strong></td>
+            <td>STARLUX + Alaska</td>
+            <td>Oct 18</td>
+            <td><code>EIMGVZ</code></td>
+            <td>Joseph</td>
+            <td>JX 32 + AS 310 (20F) · home same day</td>
+          </tr>
+          <tr style="color:#aaa;font-style:italic;font-size:.85rem">
+            <td><strong>TPE→HND/NRT</strong></td>
+            <td>TBD</td>
+            <td>Oct 18</td>
+            <td>—</td>
+            <td>Eric</td>
+            <td>Not yet booked — onward to Japan leg</td>
+          </tr>
+          <tr style="color:#aaa;font-style:italic;font-size:.85rem">
+            <td colspan="6" style="text-align:center;padding-top:.8rem">Hotels, trains, and remaining flights — add as confirmed</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -1377,7 +1588,7 @@ tr.pick td{background:#fff9f9}
 <script>
 // Timestamps — hardcoded build time (Mountain Time)
 const elUp = document.getElementById('updated');
-if(elUp) elUp.textContent = 'June 11, 2026 · 8:48 PM MDT';
+if(elUp) elUp.textContent = 'June 11, 2026 · 9:25 PM MDT';
 const elFt = document.getElementById('footer-ts');
 if(elFt) elFt.textContent = 'Last updated June 11, 2026';
 
