@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asia 2026 · Trip Dossier</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f172a;color:#f1f5f9;line-height:1.6;font-size:16px}
+
+/* Header */
+.header{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border-bottom:2px solid #334155;padding:2rem 1.5rem}
+.header-inner{max-width:900px;margin:0 auto}
+.header h1{font-size:1.8rem;font-weight:900;letter-spacing:-.02em;color:#f8fafc}
+.header h1 span{color:#f59e0b}
+.header .sub{font-size:.9rem;color:#94a3b8;margin-top:.3rem}
+.trip-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.pill{background:#1e293b;border:1px solid #334155;color:#cbd5e1;font-size:.75rem;font-weight:600;padding:.25rem .75rem;border-radius:20px}
+.pill.green{border-color:#16a34a;color:#4ade80}
+.pill.amber{border-color:#d97706;color:#fbbf24}
+
+/* Layout */
+.wrap{max-width:900px;margin:0 auto;padding:2rem 1.5rem}
+.section{margin-bottom:2.5rem}
+.section-title{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#64748b;margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem}
+.section-title::after{content:'';flex:1;height:1px;background:#1e293b}
+
+/* Cards */
+.card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:.75rem}
+.card.green{border-left:3px solid #16a34a}
+.card.amber{border-left:3px solid #d97706}
+.card.blue{border-left:3px solid #3b82f6}
+.card.purple{border-left:3px solid #8b5cf6}
+.card.slate{border-left:3px solid #475569}
+
+.card-title{font-size:.88rem;font-weight:800;color:#f1f5f9;margin-bottom:.65rem;display:flex;align-items:center;gap:.5rem}
+.badge{font-size:.65rem;font-weight:800;padding:.15rem .45rem;border-radius:4px;letter-spacing:.03em}
+.badge.green{background:#16a34a;color:#fff}
+.badge.amber{background:#d97706;color:#fff}
+.badge.grey{background:#475569;color:#cbd5e1}
+
+/* Grid */
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:.3rem .75rem}
+.info-grid.three{grid-template-columns:1fr 1fr 1fr}
+.info-row{font-size:.83rem}
+.info-row .label{color:#64748b;font-size:.75rem;margin-bottom:.05rem}
+.info-row strong{color:#f1f5f9}
+code{background:#0f172a;border:1px solid #334155;color:#a5f3fc;padding:.1rem .4rem;border-radius:4px;font-size:.82rem;font-family:'SF Mono',Consolas,monospace}
+
+/* Emergency highlight */
+.emergency{background:#450a0a;border:1px solid #7f1d1d;border-radius:10px;padding:1rem 1.2rem;margin-bottom:.75rem}
+.emergency-title{font-size:.7rem;font-weight:800;letter-spacing:.1em;color:#fca5a5;text-transform:uppercase;margin-bottom:.6rem}
+.emergency-grid{display:grid;grid-template-columns:1fr 1fr;gap:.4rem .75rem;font-size:.84rem}
+.emergency-grid .label{color:#fca5a5;font-size:.74rem}
+.emergency-grid strong{color:#fecaca}
+
+/* Flights */
+.flight-row{display:grid;grid-template-columns:auto 1fr auto;gap:.4rem 1rem;align-items:center;padding:.6rem 0;border-bottom:1px solid #1e293b}
+.flight-row:last-child{border-bottom:none}
+.flight-arrow{color:#f59e0b;font-weight:900;font-size:1rem}
+.flight-info{font-size:.83rem;color:#94a3b8}
+.flight-main{font-size:.9rem;font-weight:700;color:#f1f5f9}
+
+/* TBD placeholder */
+.tbd{background:#1a2235;border:1px dashed #334155;border-radius:8px;padding:.75rem 1rem;color:#475569;font-size:.83rem;font-style:italic;text-align:center;margin:.4rem 0}
+
+/* Passport */
+.passport-row{display:grid;grid-template-columns:120px 1fr;gap:.4rem .75rem;font-size:.84rem;padding:.4rem 0;border-bottom:1px solid #1e293b}
+.passport-row:last-child{border-bottom:none}
+.passport-name{font-weight:700;color:#f1f5f9}
+.passport-detail{color:#94a3b8}
+
+/* People */
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.person-card{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:.9rem}
+.person-name{font-weight:800;font-size:.9rem;color:#f8fafc;margin-bottom:.4rem}
+.person-detail{font-size:.78rem;color:#94a3b8;line-height:1.5}
+
+/* Footer */
+.footer{border-top:1px solid #1e293b;padding:1.5rem;text-align:center;font-size:.75rem;color:#475569;margin-top:2rem}
+
+@media(max-width:600px){
+  .info-grid,.info-grid.three,.people-grid{grid-template-columns:1fr 1fr}
+  .emergency-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <h1>🌏 Asia 2026 · <span>Trip Dossier</span></h1>
+    <div class="sub">Quick-access essentials — keep this open on your phone</div>
+    <div class="trip-pills">
+      <span class="pill green">🇹🇼 Taiwan · Oct 7–18 · Eric + Joseph</span>
+      <span class="pill amber">🇯🇵 Japan · Oct 18–27 · Eric + Rachael + Joan</span>
+      <span class="pill amber">🇰🇷 Korea · Oct 27–Nov 2 · Eric + Rachael + Joan</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ── EMERGENCY / INSURANCE ── -->
+  <div class="section">
+    <div class="section-title">🛡 Travel Insurance</div>
+
+    <div class="emergency">
+      <div class="emergency-title">⚠️ Emergency Numbers — Save These to Your Phone</div>
+      <div class="emergency-grid">
+        <div>
+          <div class="label">Outside USA (collect)</div>
+          <strong>+1 317-655-4500 ext. 0</strong>
+        </div>
+        <div>
+          <div class="label">Inside USA (toll-free)</div>
+          <strong>317-655-4500 ext. 0</strong>
+        </div>
+        <div>
+          <div class="label">Claims</div>
+          <strong>866-243-7524</strong>
+        </div>
+        <div>
+          <div class="label">Customer Service</div>
+          <strong>866-347-6673</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="card-title">IMG iTravelInsured Choice <span class="badge green">ACTIVE</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Policy Number</div><strong><code>TCCH086592401</code></strong></div>
+        <div class="info-row"><div class="label">Coverage Dates</div><strong>Jun 15 – Nov 3, 2026</strong></div>
+        <div class="info-row"><div class="label">Provider</div><strong>IMG</strong></div>
+        <div class="info-row"><div class="label">Claims also</div><strong>317-655-9798</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TRAVELERS ── -->
+  <div class="section">
+    <div class="section-title">👤 Travelers</div>
+    <div class="people-grid">
+      <div class="person-card">
+        <div class="person-name">Eric Elkins</div>
+        <div class="person-detail">
+          All legs<br>
+          eric@widefoc.us<br>
+          <span style="color:#475569">Passport →</span> <span style="color:#64748b;font-style:italic">add below</span>
+        </div>
+      </div>
+      <div class="person-card">
+        <div class="person-name">Joseph</div>
+        <div class="person-detail">
+          Taiwan only<br>
+          Oct 7–18<br>
+          <span style="color:#475569">Passport →</span> <span style="color:#64748b;font-style:italic">add below</span>
+        </div>
+      </div>
+      <div class="person-card" style="grid-column:span 1">
+        <div class="person-name">Rachael</div>
+        <div class="person-detail">
+          Japan + Korea<br>
+          Oct 18–Nov 2<br>
+          🎂 Oct 18
+        </div>
+      </div>
+    </div>
+    <div class="people-grid" style="margin-top:.75rem;grid-template-columns:1fr">
+      <div class="person-card">
+        <div class="person-name">Joan</div>
+        <div class="person-detail">Japan + Korea · Oct 18–Nov 2 · 🎂 Oct 29</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PASSPORTS ── -->
+  <div class="section">
+    <div class="section-title">🛂 Passports</div>
+    <div class="card slate">
+      <div class="tbd">Passport details not yet added — share numbers, expiry dates, and issuing country when ready</div>
+    </div>
+  </div>
+
+  <!-- ── FLIGHTS ── -->
+  <div class="section">
+    <div class="section-title">✈️ Flights</div>
+
+    <div class="card green">
+      <div class="card-title">DEN → SEA → TPE <span class="badge green">CONFIRMED</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Date</div><strong>Oct 7–9, 2026</strong></div>
+        <div class="info-row"><div class="label">Airlines</div><strong>Alaska + STARLUX</strong></div>
+        <div class="info-row"><div class="label">Eric conf.</div><strong><code>ICQTNV</code></strong> · AS 615 (20A) + JX 31</div>
+        <div class="info-row"><div class="label">Joseph conf.</div><strong><code>FUYSUF</code></strong> · AS 615 (20C) + JX 31</div>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="card-title">TPE → SEA → DEN (Joseph) <span class="badge green">CONFIRMED</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Date</div><strong>Oct 18, 2026</strong></div>
+        <div class="info-row"><div class="label">Conf.</div><strong><code>EIMGVZ</code></strong></div>
+        <div class="info-row"><div class="label">Flights</div><strong>JX 32 + AS 310 (20F)</strong></div>
+        <div class="info-row"><div class="label">Traveler</div><strong>Joseph only</strong></div>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="card-title">DEN → NRT (Rachael + Joan) <span class="badge green">CONFIRMED</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Date</div><strong>Fri, Oct 17, 2026</strong></div>
+        <div class="info-row"><div class="label">Flight</div><strong>UA 143 (direct)</strong></div>
+        <div class="info-row"><div class="label">Arrives</div><strong>2:45pm Tokyo Narita (NRT)</strong></div>
+        <div class="info-row"><div class="label">Note</div><strong>One day before Eric joins</strong></div>
+      </div>
+    </div>
+
+    <div class="card amber">
+      <div class="card-title">TPE → Tokyo (Eric) <span class="badge amber">NOT BOOKED</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Date</div><strong>Sat, Oct 18, 2026 (Rachael's birthday)</strong></div>
+        <div class="info-row"><div class="label">Note</div><strong>Many daily TPE→NRT/HND options — book soon</strong></div>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="card-title">ICN → SLC → DEN (Eric + Rachael + Joan) <span class="badge green">CONFIRMED</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Date</div><strong>Mon, Nov 2, 2026</strong></div>
+        <div class="info-row"><div class="label">Total duration</div><strong>16h 35m</strong></div>
+        <div class="info-row"><div class="label">DL0172 · ICN → SLC</div><strong>Departs 6:35pm · A350-900 · seat 3A (Delta One)</strong></div>
+        <div class="info-row"><div class="label">DL1586 · SLC → DEN</div><strong>Arrives 7:10pm · A320 · seat 2D (Delta First)</strong></div>
+        <div class="info-row"><div class="label">SLC layover</div><strong>3h 58m</strong></div>
+        <div class="info-row"><div class="label">Terminal</div><strong>ICN Terminal 2 · DEN TBD</strong></div>
+      </div>
+    </div>
+    <div class="tbd">Japan/Korea outbound flights and Rachael + Joan return confirmation numbers — add when confirmed</div>
+  </div>
+
+  <!-- ── HOTELS ── -->
+  <div class="section">
+    <div class="section-title">🏨 Accommodations</div>
+
+    <div class="card green">
+      <div class="card-title">Taipei · Dandy Hotel Da'an Park Branch <span class="badge green">CONFIRMED</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Dates</div><strong>Oct 9–12 (3 nights)</strong></div>
+        <div class="info-row"><div class="label">Guests</div><strong>Eric + Joseph</strong></div>
+        <div class="info-row"><div class="label">Conf. #</div><strong><code>679757917</code></strong> (ZenHotels)</div>
+        <div class="info-row"><div class="label">Total</div><strong>$758.08 · cancel by Oct 5</strong></div>
+        <div class="info-row"><div class="label">Room</div><strong>Standard Double · twin beds · breakfast incl.</strong></div>
+      </div>
+    </div>
+
+    <div class="card green">
+      <div class="card-title">Tokyo · Petals Tokyo (Floating Hotel) <span class="badge green">CONFIRMED</span></div>
+      <div class="info-grid">
+        <div class="info-row"><div class="label">Rachael + Joan</div><strong>Oct 17–21 (4 nights)</strong></div>
+        <div class="info-row"><div class="label">Eric</div><strong>Oct 18–21 (3 nights)</strong></div>
+        <div class="info-row"><div class="label">Location</div><strong>Tennoz Isle canal, Shinagawa</strong></div>
+        <div class="info-row"><div class="label">From airport</div><strong>20 min from HND · 75 min from NRT</strong></div>
+        <div class="info-row"><div class="label">Contact</div><strong>petalstokyo@terrada.co.jp · 050-5491-2681</strong></div>
+        <div class="info-row"><div class="label">Note</div><strong>4 houseboats on canal · art district · arrange Rachael's bday dinner through hotel</strong></div>
+      </div>
+    </div>
+
+    <div class="tbd">Kyoto, Busan, Seoul hotels — add as confirmed</div>
+  </div>
+
+  <!-- ── KEY CONTACTS / NUMBERS ── -->
+  <div class="section">
+    <div class="section-title">📞 Key Numbers</div>
+    <div class="card blue">
+      <div class="info-grid three">
+        <div class="info-row"><div class="label">Taiwan emergency</div><strong>110 (police) · 119 (fire/ambulance)</strong></div>
+        <div class="info-row"><div class="label">Japan emergency</div><strong>110 (police) · 119 (fire/ambulance)</strong></div>
+        <div class="info-row"><div class="label">Korea emergency</div><strong>112 (police) · 119 (fire/ambulance)</strong></div>
+        <div class="info-row"><div class="label">US Embassy Taiwan</div><strong>+886-2-2162-2000</strong></div>
+        <div class="info-row"><div class="label">US Embassy Japan</div><strong>+81-3-3224-5000</strong></div>
+        <div class="info-row"><div class="label">US Embassy Korea</div><strong>+82-2-397-4114</strong></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Asia 2026 Trip Dossier · Last updated June 14, 2026
+</div>
+
+</body>
+</html>
