@@ -84,263 +84,54 @@ code{background:#0f172a;border:1px solid #334155;color:#a5f3fc;padding:.1rem .4r
   .emergency-grid{grid-template-columns:1fr}
 }
 </style>
+
+<style>
+.lockwrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:#0f172a}
+.lockcard{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:2rem 1.8rem;max-width:380px;width:100%;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.lockcard .emoji{font-size:1.7rem}
+.lockcard h1{font-size:1.15rem;color:#f8fafc;margin:.6rem 0 .3rem;font-weight:800}
+.lockcard p{font-size:.85rem;color:#94a3b8;margin-bottom:1.1rem}
+.lockcard input{width:100%;border:1px solid #334155;background:#0f172a;color:#f1f5f9;border-radius:10px;padding:.7rem .9rem;font-size:1rem;outline:none;margin-bottom:.7rem;text-align:center}
+.lockcard input:focus{border-color:#d97706}
+.lockcard button{width:100%;background:#b8532b;color:#fff;border:none;border-radius:10px;padding:.7rem;font-size:.95rem;font-weight:700;cursor:pointer}
+.lockcard button:hover{background:#9c4523}
+.lockcard .err{color:#fca5a5;font-size:.82rem;margin-top:.6rem;min-height:1.1em}
+</style>
 </head>
 <body>
 
-<div class="header">
-  <div class="header-inner">
-    <h1>🌏 Asia 2026 · <span>Trip Dossier</span></h1>
-    <div class="sub">Quick-access essentials — keep this open on your phone</div>
-    <div class="trip-pills">
-      <span class="pill green">🇹🇼 Taiwan · Oct 9–18 · Eric + Joseph</span>
-      <span class="pill green">🇯🇵 Japan · Oct 18–25 · Eric · Rachael · Joan · Matt · Phillip</span>
-      <span class="pill green">🇰🇷 Korea · Oct 25–Nov 2 · Eric · Rachael · Joan · Matt · Phillip</span>
-    </div>
+<div class="lockwrap">
+  <div class="lockcard">
+    <div class="emoji">🔒🍁</div>
+    <h1>Asia 2026 · Trip Dossier</h1>
+    <p>Private. Enter the passphrase to view.</p>
+    <input id="pw" type="password" placeholder="Passphrase" autocomplete="off">
+    <button onclick="unlock()">Unlock</button>
+    <div class="err" id="err"></div>
   </div>
 </div>
 
-<div class="wrap">
-
-  <!-- ── EMERGENCY / INSURANCE ── -->
-  <div class="section">
-    <div class="section-title">🛡 Travel Insurance</div>
-
-    <div class="emergency">
-      <div class="emergency-title">⚠️ Emergency Numbers — Save These to Your Phone</div>
-      <div class="emergency-grid">
-        <div>
-          <div class="label">Outside USA (collect)</div>
-          <strong>+1 317-655-4500 ext. 0</strong>
-        </div>
-        <div>
-          <div class="label">Inside USA (toll-free)</div>
-          <strong>317-655-4500 ext. 0</strong>
-        </div>
-        <div>
-          <div class="label">Claims</div>
-          <strong>866-243-7524</strong>
-        </div>
-        <div>
-          <div class="label">Customer Service</div>
-          <strong>866-347-6673</strong>
-        </div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">IMG iTravelInsured Choice <span class="badge green">ACTIVE</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Policy Number</div><strong><code>TCCH086592401</code></strong></div>
-        <div class="info-row"><div class="label">Coverage Dates</div><strong>Jun 15 – Nov 3, 2026</strong></div>
-        <div class="info-row"><div class="label">Provider</div><strong>IMG</strong></div>
-        <div class="info-row"><div class="label">Claims also</div><strong>317-655-9798</strong></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── TRAVELERS ── -->
-  <div class="section">
-    <div class="section-title">👤 Travelers</div>
-    <div class="people-grid">
-      <div class="person-card">
-        <div class="person-name">Eric Elkins</div>
-        <div class="person-detail">
-          All legs<br>
-          eric@widefoc.us<br>
-          <span style="color:#475569">Passport →</span> <span style="color:#64748b;font-style:italic">add below</span>
-        </div>
-      </div>
-      <div class="person-card">
-        <div class="person-name">Joseph</div>
-        <div class="person-detail">
-          Taiwan only<br>
-          Oct 7–18<br>
-          <span style="color:#475569">Passport →</span> <span style="color:#64748b;font-style:italic">add below</span>
-        </div>
-      </div>
-      <div class="person-card" style="grid-column:span 1">
-        <div class="person-name">Rachael</div>
-        <div class="person-detail">
-          Japan + Korea<br>
-          Oct 18–Nov 2<br>
-          🎂 Oct 18
-        </div>
-      </div>
-    </div>
-    <div class="people-grid" style="margin-top:.75rem">
-      <div class="person-card">
-        <div class="person-name">Joan</div>
-        <div class="person-detail">Japan + Korea<br>Oct 17–Nov 2 · 🎂 Oct 29</div>
-      </div>
-      <div class="person-card">
-        <div class="person-name">Matt</div>
-        <div class="person-detail">Japan + Korea<br>~Oct 17–Nov 2 · own room</div>
-      </div>
-      <div class="person-card">
-        <div class="person-name">Phillip</div>
-        <div class="person-detail">Japan + Korea<br>~Oct 17–Nov 2 · own room</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── PASSPORTS ── -->
-  <div class="section">
-    <div class="section-title">🛂 Passports</div>
-    <div class="card slate">
-      <div class="tbd">Passport details not yet added — share numbers, expiry dates, and issuing country when ready</div>
-    </div>
-  </div>
-
-  <!-- ── FLIGHTS ── -->
-  <div class="section">
-    <div class="section-title">✈️ Flights</div>
-
-    <div class="card green">
-      <div class="card-title">DEN → SEA → TPE <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Date</div><strong>Oct 7–9, 2026</strong></div>
-        <div class="info-row"><div class="label">Airlines</div><strong>Alaska + STARLUX</strong></div>
-        <div class="info-row"><div class="label">Eric conf.</div><strong><code>ICQTNV</code></strong> · AS 615 (20A) + JX 31</div>
-        <div class="info-row"><div class="label">Joseph conf.</div><strong><code>FUYSUF</code></strong> · AS 615 (20C) + JX 31</div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">TPE → SEA → DEN (Joseph) <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Date</div><strong>Oct 18, 2026</strong></div>
-        <div class="info-row"><div class="label">Conf.</div><strong><code>EIMGVZ</code></strong></div>
-        <div class="info-row"><div class="label">Flights</div><strong>JX 32 + AS 310 (20F)</strong></div>
-        <div class="info-row"><div class="label">Traveler</div><strong>Joseph only</strong></div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">DEN → NRT (Rachael + Joan) <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Date</div><strong>Fri, Oct 17, 2026</strong></div>
-        <div class="info-row"><div class="label">Flight</div><strong>UA 143 (direct)</strong></div>
-        <div class="info-row"><div class="label">Arrives</div><strong>2:45pm Tokyo Narita (NRT)</strong></div>
-        <div class="info-row"><div class="label">Note</div><strong>One day before Eric joins</strong></div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">TPE → NRT (Eric) <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Date</div><strong>Sat, Oct 18, 2026 (Rachael's birthday)</strong></div>
-        <div class="info-row"><div class="label">Flight</div><strong>Tigerair <code>IT700</code></strong></div>
-        <div class="info-row"><div class="label">Departs</div><strong>3:30 PM · TPE Terminal 1</strong></div>
-        <div class="info-row"><div class="label">Arrives</div><strong>7:55 PM · NRT Terminal 2</strong></div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">ICN → SLC → DEN (Eric + Rachael + Joan) <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Date</div><strong>Mon, Nov 2, 2026</strong></div>
-        <div class="info-row"><div class="label">Total duration</div><strong>16h 35m</strong></div>
-        <div class="info-row"><div class="label">DL0172 · ICN → SLC</div><strong>Departs 6:35pm · A350-900 · seat 3A (Delta One)</strong></div>
-        <div class="info-row"><div class="label">DL1586 · SLC → DEN</div><strong>Arrives 7:10pm · A320 · seat 2D (Delta First)</strong></div>
-        <div class="info-row"><div class="label">SLC layover</div><strong>3h 58m</strong></div>
-        <div class="info-row"><div class="label">Terminal</div><strong>ICN Terminal 2 · DEN TBD</strong></div>
-      </div>
-    </div>
-    <div class="card green">
-      <div class="card-title">KIX → PUS · Osaka → Busan <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Date</div><strong>Sun, Oct 25, 2026</strong></div>
-        <div class="info-row"><div class="label">Flight</div><strong>T'way Air TW322</strong></div>
-        <div class="info-row"><div class="label">Times</div><strong>16:35 → 18:10 (1h 35m, direct)</strong></div>
-        <div class="info-row"><div class="label">Travelers</div><strong>All five (Eric, Rachael, Joan, Matt, Phillip)</strong></div>
-      </div>
-    </div>
-
-    <div class="tbd">Matt &amp; Phillip's transpacific flights — add when confirmed</div>
-  </div>
-
-  <!-- ── HOTELS ── -->
-  <div class="section">
-    <div class="section-title">🏨 Accommodations</div>
-
-    <div class="card green">
-      <div class="card-title">Taipei · Dandy Hotel Da'an Park Branch <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Dates</div><strong>Oct 9–12 (3 nights)</strong></div>
-        <div class="info-row"><div class="label">Guests</div><strong>Eric + Joseph</strong></div>
-        <div class="info-row"><div class="label">Conf. #</div><strong><code>679757917</code></strong> (ZenHotels)</div>
-        <div class="info-row"><div class="label">Total</div><strong>$758.08 · cancel by Oct 5</strong></div>
-        <div class="info-row"><div class="label">Room</div><strong>Standard Double · twin beds · breakfast incl.</strong></div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">Tokyo · Section L Ginza East <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Dates</div><strong>Oct 17–21 (Eric joins Oct 18)</strong></div>
-        <div class="info-row"><div class="label">Conf. #</div><strong><code>6957835566</code></strong> (Booking.com)</div>
-        <div class="info-row"><div class="label">Rooms</div><strong>3 studios · kitchen, washer, lift</strong></div>
-        <div class="info-row"><div class="label">Address</div><strong>1-14-5 Shintomi, Chuo-ku</strong></div>
-        <div class="info-row"><div class="label">Transit</div><strong>Shintomichō (Yūrakuchō) ~3 min · Ginza ~10 min walk</strong></div>
-        <div class="info-row"><div class="label">Note</div><strong>🎂 Rachael's birthday dinner Oct 18, Ginza</strong></div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">Kyoto · Enso Machiya (Nishijin) <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Dates</div><strong>Oct 21–25 (4 nights)</strong></div>
-        <div class="info-row"><div class="label">Conf. #</div><strong><code>6239630722</code></strong> (Booking.com)</div>
-        <div class="info-row"><div class="label">Rooms</div><strong>3 tatami rooms · hinoki tubs · Joan ground-floor</strong></div>
-        <div class="info-row"><div class="label">Address</div><strong>Kita-no-gomon-chō 573, Kamigyō-ku</strong></div>
-        <div class="info-row"><div class="label">Transit</div><strong>City bus nearby · Imadegawa subway ~15–20 min walk</strong></div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">Busan · Grand Josun Busan <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Dates</div><strong>Oct 25–29 (4 nights)</strong></div>
-        <div class="info-row"><div class="label">Res. #</div><strong><code>58655</code></strong> (Josun Hotels, direct)</div>
-        <div class="info-row"><div class="label">Rooms</div><strong>3 King Ocean-View · lift · on Haeundae Beach</strong></div>
-        <div class="info-row"><div class="label">Address</div><strong>292 Haeundae Haebyeon-ro, Haeundae-gu</strong></div>
-        <div class="info-row"><div class="label">Transit</div><strong>Metro Line 2 — Dongbaek/Haeundae ~10–12 min walk</strong></div>
-        <div class="info-row"><div class="label">Note</div><strong>🎂 Joan's birthday dinner Oct 28, ocean view</strong></div>
-      </div>
-    </div>
-
-    <div class="card green">
-      <div class="card-title">Seoul · Myeongdong apartment <span class="badge green">CONFIRMED</span></div>
-      <div class="info-grid">
-        <div class="info-row"><div class="label">Dates</div><strong>Oct 29–Nov 2 (4 nights)</strong></div>
-        <div class="info-row"><div class="label">Conf. #</div><strong><code>HMRNKZZ9WD</code></strong> (Airbnb)</div>
-        <div class="info-row"><div class="label">Rooms</div><strong>Whole 5-bedroom apt · own room each · washer, terrace</strong></div>
-        <div class="info-row"><div class="label">Address</div><strong>45-1 Namsan-dong 2-ga, Jung-gu (Myeongdong)</strong></div>
-        <div class="info-row"><div class="label">Transit</div><strong>Metro Line 4 — Myeongdong ~5 min walk</strong></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── KEY CONTACTS / NUMBERS ── -->
-  <div class="section">
-    <div class="section-title">📞 Key Numbers</div>
-    <div class="card blue">
-      <div class="info-grid three">
-        <div class="info-row"><div class="label">Taiwan emergency</div><strong>110 (police) · 119 (fire/ambulance)</strong></div>
-        <div class="info-row"><div class="label">Japan emergency</div><strong>110 (police) · 119 (fire/ambulance)</strong></div>
-        <div class="info-row"><div class="label">Korea emergency</div><strong>112 (police) · 119 (fire/ambulance)</strong></div>
-        <div class="info-row"><div class="label">US Embassy Taiwan</div><strong>+886-2-2162-2000</strong></div>
-        <div class="info-row"><div class="label">US Embassy Japan</div><strong>+81-3-3224-5000</strong></div>
-        <div class="info-row"><div class="label">US Embassy Korea</div><strong>+82-2-397-4114</strong></div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="footer">
-  Asia 2026 Trip Dossier · Last updated September 16, 2026
-</div>
+<script>
+const _P={salt:"++jhFSVRmTxFCN6zYiH1Fg==",iv:"B/5pzxF/E72RYgRs",ct:"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",iter:200000};
+function b64d(s){const r=atob(s),a=new Uint8Array(r.length);for(let i=0;i<r.length;i++)a[i]=r.charCodeAt(i);return a;}
+async function unlock(){
+  const pw=document.getElementById('pw').value;
+  const err=document.getElementById('err'); err.textContent='';
+  try{
+    const enc=new TextEncoder();
+    const km=await crypto.subtle.importKey('raw',enc.encode(pw),'PBKDF2',false,['deriveKey']);
+    const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64d(_P.salt),iterations:_P.iter,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);
+    const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64d(_P.iv)},key,b64d(_P.ct));
+    const html=new TextDecoder().decode(pt);
+    document.open();document.write('<!DOCTYPE html><html><head><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,\'Segoe UI\',Roboto,sans-serif;background:#0f172a;color:#f1f5f9;line-height:1.6;font-size:16px}/* Header */.header{background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border-bottom:2px solid #334155;padding:2rem 1.5rem}.header-inner{max-width:900px;margin:0 auto}.header h1{font-size:1.8rem;font-weight:900;letter-spacing:-.02em;color:#f8fafc}.header h1 span{color:#f59e0b}.header .sub{font-size:.9rem;color:#94a3b8;margin-top:.3rem}.trip-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}.pill{background:#1e293b;border:1px solid #334155;color:#cbd5e1;font-size:.75rem;font-weight:600;padding:.25rem .75rem;border-radius:20px}.pill.green{border-color:#16a34a;color:#4ade80}.pill.amber{border-color:#d97706;color:#fbbf24}/* Layout */.wrap{max-width:900px;margin:0 auto;padding:2rem 1.5rem}.section{margin-bottom:2.5rem}.section-title{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#64748b;margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem}.section-title::after{content:\'\';flex:1;height:1px;background:#1e293b}/* Cards */.card{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:.75rem}.card.green{border-left:3px solid #16a34a}.card.amber{border-left:3px solid #d97706}.card.blue{border-left:3px solid #3b82f6}.card.purple{border-left:3px solid #8b5cf6}.card.slate{border-left:3px solid #475569}.card-title{font-size:.88rem;font-weight:800;color:#f1f5f9;margin-bottom:.65rem;display:flex;align-items:center;gap:.5rem}.badge{font-size:.65rem;font-weight:800;padding:.15rem .45rem;border-radius:4px;letter-spacing:.03em}.badge.green{background:#16a34a;color:#fff}.badge.amber{background:#d97706;color:#fff}.badge.grey{background:#475569;color:#cbd5e1}/* Grid */.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:.3rem .75rem}.info-grid.three{grid-template-columns:1fr 1fr 1fr}.info-row{font-size:.83rem}.info-row .label{color:#64748b;font-size:.75rem;margin-bottom:.05rem}.info-row strong{color:#f1f5f9}code{background:#0f172a;border:1px solid #334155;color:#a5f3fc;padding:.1rem .4rem;border-radius:4px;font-size:.82rem;font-family:\'SF Mono\',Consolas,monospace}/* Emergency highlight */.emergency{background:#450a0a;border:1px solid #7f1d1d;border-radius:10px;padding:1rem 1.2rem;margin-bottom:.75rem}.emergency-title{font-size:.7rem;font-weight:800;letter-spacing:.1em;color:#fca5a5;text-transform:uppercase;margin-bottom:.6rem}.emergency-grid{display:grid;grid-template-columns:1fr 1fr;gap:.4rem .75rem;font-size:.84rem}.emergency-grid .label{color:#fca5a5;font-size:.74rem}.emergency-grid strong{color:#fecaca}/* Flights */.flight-row{display:grid;grid-template-columns:auto 1fr auto;gap:.4rem 1rem;align-items:center;padding:.6rem 0;border-bottom:1px solid #1e293b}.flight-row:last-child{border-bottom:none}.flight-arrow{color:#f59e0b;font-weight:900;font-size:1rem}.flight-info{font-size:.83rem;color:#94a3b8}.flight-main{font-size:.9rem;font-weight:700;color:#f1f5f9}/* TBD placeholder */.tbd{background:#1a2235;border:1px dashed #334155;border-radius:8px;padding:.75rem 1rem;color:#475569;font-size:.83rem;font-style:italic;text-align:center;margin:.4rem 0}/* Passport */.passport-row{display:grid;grid-template-columns:120px 1fr;gap:.4rem .75rem;font-size:.84rem;padding:.4rem 0;border-bottom:1px solid #1e293b}.passport-row:last-child{border-bottom:none}.passport-name{font-weight:700;color:#f1f5f9}.passport-detail{color:#94a3b8}/* People */.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}.person-card{background:#0f172a;border:1px solid #334155;border-radius:8px;padding:.9rem}.person-name{font-weight:800;font-size:.9rem;color:#f8fafc;margin-bottom:.4rem}.person-detail{font-size:.78rem;color:#94a3b8;line-height:1.5}/* Footer */.footer{border-top:1px solid #1e293b;padding:1.5rem;text-align:center;font-size:.75rem;color:#475569;margin-top:2rem}@media(max-width:600px){  .info-grid,.info-grid.three,.people-grid{grid-template-columns:1fr 1fr}  .emergency-grid{grid-template-columns:1fr}}</style></head><body>'+html+'</body></html>');document.close();
+    try{sessionStorage.setItem('dossier_ok','1');}catch(e){}
+  }catch(e){ err.textContent='Wrong passphrase — try again.'; }
+}
+document.addEventListener('DOMContentLoaded',function(){
+  document.getElementById('pw').addEventListener('keydown',e=>{if(e.key==='Enter')unlock();});
+  document.getElementById('pw').focus();
+});
+</script>
 
 </body>
 </html>
