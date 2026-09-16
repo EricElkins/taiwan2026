@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Eric · Asia 2026 — Master Itinerary</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#241c14;background:#f7f3ec;line-height:1.7;font-size:16px}
+a{color:#b8532b;text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Nav */
+nav{background:#fffdf9;border-bottom:1px solid #e7ded0;position:sticky;top:0;z-index:200;padding:0 1.2rem;box-shadow:0 1px 8px rgba(0,0,0,.05)}
+.nav-inner{max-width:940px;margin:0 auto;display:flex;flex-wrap:wrap;gap:0;align-items:center}
+nav a{display:inline-block;padding:.6rem .6rem;font-size:.76rem;color:#5a5145;font-weight:600;white-space:nowrap;border-bottom:2px solid transparent;letter-spacing:.02em;text-transform:uppercase}
+nav a:hover{color:#b8532b;text-decoration:none;border-bottom-color:#b8532b}
+.nav-logo{font-weight:800;color:#2c1d3a;font-size:.98rem;margin-right:.5rem;padding:.6rem 0;border-bottom:none!important}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#2c1d3a 0%,#4a2340 55%,#7a3320 100%);color:#fff;padding:2.4rem 1.5rem 2rem;border-bottom:3px solid #d97706}
+.hero-inner{max-width:940px;margin:0 auto}
+.hero h1{font-size:2.1rem;font-weight:900;line-height:1.1;letter-spacing:-.02em}
+.hero h1 span{color:#f4b942}
+.hero .sub{color:rgba(255,255,255,.82);font-size:.98rem;margin-top:.5rem}
+.hero-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.hpill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:.76rem;font-weight:600;padding:.25rem .7rem;border-radius:20px}
+
+/* Live clocks */
+.clockbar{background:#2c1d3a;color:#fff;padding:.7rem 1.5rem;border-bottom:1px solid #4a2340}
+.clockbar-inner{max-width:940px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;justify-content:center}
+.clock{text-align:center;font-variant-numeric:tabular-nums}
+.clock .city{font-size:.66rem;text-transform:uppercase;letter-spacing:.08em;color:#c9a5d6}
+.clock .time{font-size:1.05rem;font-weight:800;color:#fff}
+.clock.home .time{color:#f4b942}
+
+/* Layout */
+.wrap{max-width:940px;margin:0 auto;padding:2rem 1.5rem}
+section{margin-bottom:3rem}
+h2{font-size:1.35rem;font-weight:800;margin:1.5rem 0 1rem;color:#2c1d3a;display:flex;align-items:center;gap:.5rem}
+h2::before{content:'';display:inline-block;width:4px;height:1.1em;background:#d97706;border-radius:2px}
+h3{font-size:1.02rem;font-weight:700;margin:1.3rem 0 .5rem;color:#4a2340}
+p{margin-bottom:.8rem}
+
+.card{background:#fffdf9;border:1px solid #e7ded0;border-radius:12px;padding:1.2rem 1.4rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.card.accent{border-left:4px solid #b8532b}
+.card.gold{border-left:4px solid #d97706}
+.card.plum{border-left:4px solid #7a3560}
+
+/* Timeline */
+.tl-row{display:grid;grid-template-columns:96px 1fr;gap:.3rem 1rem;padding:.6rem 0;border-bottom:1px solid #f0e9dc;align-items:start}
+.tl-row:last-child{border-bottom:none}
+.tl-date{font-size:.76rem;color:#8a7d6a;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding-top:.15rem}
+.tl-detail strong{font-weight:700}
+.tl-detail .sub{font-size:.85rem;color:#6a5f50}
+.flag{font-size:.72rem;font-weight:700;padding:.05rem .45rem;border-radius:10px;margin-left:.35rem;vertical-align:middle}
+.flag.tw{background:#fde8e4;color:#a33}
+.flag.jp{background:#fdeede;color:#b06a10}
+.flag.kr{background:#e8eefb;color:#2b4ba3}
+.flag.solo{background:#efe6f2;color:#7a3560}
+
+/* Tables */
+table{width:100%;border-collapse:collapse;font-size:.87rem;margin:.6rem 0}
+th{background:#f3ece0;text-align:left;padding:.5rem .7rem;font-weight:700;border-bottom:2px solid #e7ded0;color:#4a2340;font-size:.76rem;text-transform:uppercase;letter-spacing:.03em}
+td{padding:.55rem .7rem;border-bottom:1px solid #f0e9dc;vertical-align:top}
+tr:last-child td{border-bottom:none}
+code{background:#f3ece0;border:1px solid #e7ded0;color:#7a3560;padding:.08rem .4rem;border-radius:4px;font-size:.82rem;font-family:'SF Mono',Consolas,monospace}
+
+/* Work window callout */
+.work{background:#f0f7f0;border:1px solid #cfe6cf;border-radius:10px;padding:.9rem 1.1rem;margin:.6rem 0;font-size:.9rem}
+.work strong{color:#2f6b32}
+.legwin{display:grid;grid-template-columns:110px 1fr;gap:.3rem 1rem;font-size:.88rem;padding:.5rem 0;border-bottom:1px solid #f0e9dc}
+.legwin:last-child{border-bottom:none}
+.legwin .lw-city{font-weight:800;color:#4a2340}
+
+/* Alert */
+.alert{border-radius:8px;padding:.9rem 1.1rem;font-size:.88rem;margin:.8rem 0;display:flex;gap:.7rem;align-items:flex-start}
+.alert.gold{background:#fdf6e7;border:1px solid #f2dca0}
+.alert.blue{background:#eef3fc;border:1px solid #c6d6f2}
+.alert-icon{font-size:1.1rem;flex-shrink:0}
+.alert p{margin:0}
+
+.pack ul{padding-left:1.2rem;margin:.3rem 0 .8rem}
+.pack li{font-size:.89rem;margin-bottom:.28rem}
+
+.foot{text-align:center;font-size:.78rem;color:#a99;padding:2rem 0 1.4rem;border-top:1px solid #e7ded0;margin-top:1rem}
+.doclinks{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0}
+.doclink{background:#fffdf9;border:1px solid #e7ded0;border-radius:8px;padding:.5rem .9rem;font-size:.85rem;font-weight:600}
+
+@media(max-width:620px){
+  .tl-row{grid-template-columns:74px 1fr}
+  .legwin{grid-template-columns:1fr}
+  nav a{padding:.5rem .4rem;font-size:.68rem}
+  .hero h1{font-size:1.6rem}
+  .clockbar-inner{gap:.9rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">🍁 Eric · Asia 2026</span>
+    <a href="#arc">Arc</a>
+    <a href="#clock">Time &amp; Work</a>
+    <a href="#travel">Travel</a>
+    <a href="#taiwan">Taiwan</a>
+    <a href="#japan">Japan</a>
+    <a href="#korea">Korea</a>
+    <a href="#packing">Packing</a>
+    <a href="#practical">Practical</a>
+    <a href="#docs">Docs</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Eric's Asia 2026 — <span>Master Itinerary</span></h1>
+    <div class="sub">One journey, three countries, 27 days · Taiwan with Joseph → Japan &amp; Korea with Rachael, Joan, Matt &amp; Phillip</div>
+    <div class="hero-pills">
+      <span class="hpill">🗓 Oct 7 – Nov 2, 2026</span>
+      <span class="hpill">🇹🇼 Taiwan · Oct 9–18</span>
+      <span class="hpill">🇯🇵 Japan · Oct 18–25</span>
+      <span class="hpill">🇰🇷 Korea · Oct 25–Nov 2</span>
+      <span class="hpill">🧳 Carry-on only</span>
+    </div>
+  </div>
+</div>
+
+<div class="clockbar">
+  <div class="clockbar-inner" id="clocks">
+    <div class="clock home"><div class="city">Denver 🏠</div><div class="time" id="c-den">—</div></div>
+    <div class="clock"><div class="city">Taipei</div><div class="time" id="c-tpe">—</div></div>
+    <div class="clock"><div class="city">Tokyo</div><div class="time" id="c-tyo">—</div></div>
+    <div class="clock"><div class="city">Seoul</div><div class="time" id="c-sel">—</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ARC -->
+  <section id="arc">
+    <h2>The Whole Arc</h2>
+    <p style="font-size:.9rem;color:#6a5f50">Your personal thread through the trip. Joseph is with you in Taiwan; you split at Taipei airport on the 18th and fly to Tokyo to meet Rachael, Joan, Matt &amp; Phillip — who arrived the day before.</p>
+    <div class="card">
+      <div class="tl-row"><div class="tl-date">Wed Oct 7</div><div class="tl-detail"><strong>Denver → Seattle → Taipei</strong> <span class="flag tw">TAIWAN</span><br><span class="sub">Depart DEN 6:56 PM with Joseph · overnight-ish connection at SEA (Centurion Lounge) · board STARLUX 1:15 AM</span></div></div>
+      <div class="tl-row"><div class="tl-date">Fri Oct 9</div><div class="tl-detail"><strong>Arrive Taipei 4:55 AM</strong><br><span class="sub">Ride to the hotel with Josh (same hotel, arriving around the same time) · Da'an base for 4 nights</span></div></div>
+      <div class="tl-row"><div class="tl-date">Sat Oct 10</div><div class="tl-detail"><strong>🎉 Double Ten Day</strong> — with Josh all weekend<br><span class="sub">Parade, fireworks, night markets, and Bitter Burro</span></div></div>
+      <div class="tl-row"><div class="tl-date">Tue Oct 13</div><div class="tl-detail"><strong>THSR Taipei → Tainan</strong> <span class="sub">· 3 nights · food capital</span></div></div>
+      <div class="tl-row"><div class="tl-date">Fri Oct 16</div><div class="tl-detail"><strong>Train Tainan → Kaohsiung</strong> <span class="sub">· 2 nights · Pier-2 art district</span></div></div>
+      <div class="tl-row"><div class="tl-date">Sun Oct 18</div><div class="tl-detail"><strong>Taipei → Tokyo</strong> <span class="flag jp">JAPAN</span><br><span class="sub">Split from Joseph. Tigerair IT700, TPE 3:30 PM → NRT 7:55 PM. Join Rachael &amp; Joan (arrived Oct 17). 🎂 Rachael's birthday.</span></div></div>
+      <div class="tl-row"><div class="tl-date">Oct 18–21</div><div class="tl-detail"><strong>Tokyo</strong> <span class="sub">· 3 nights (they have 4) · Ginza East</span></div></div>
+      <div class="tl-row"><div class="tl-date">Wed Oct 21</div><div class="tl-detail"><strong>Shinkansen Tokyo → Kyoto</strong> <span class="sub">· 4 nights · Osaka &amp; Nara day trips</span></div></div>
+      <div class="tl-row"><div class="tl-date">Sun Oct 25</div><div class="tl-detail"><strong>Fly Osaka (KIX) → Busan</strong> <span class="flag kr">KOREA</span><br><span class="sub">T'way TW322, KIX 4:35 PM → PUS 6:10 PM · 4 nights on Haeundae Beach</span></div></div>
+      <div class="tl-row"><div class="tl-date">Wed Oct 28</div><div class="tl-detail"><strong>🎂 Joan's birthday dinner</strong> <span class="sub">· Haeundae, ocean view (her birthday is the 29th — the Seoul travel day)</span></div></div>
+      <div class="tl-row"><div class="tl-date">Thu Oct 29</div><div class="tl-detail"><strong>KTX Busan → Seoul</strong> <span class="sub">· 4 nights · Myeongdong</span></div></div>
+      <div class="tl-row"><div class="tl-date">Mon Nov 2</div><div class="tl-detail"><strong>Seoul → home</strong> <span class="flag solo">YOUR OWN FLIGHT</span><br><span class="sub">You fly Delta ICN → Salt Lake City → Denver (arrive 7:10 PM). Rachael &amp; Joan go via San Francisco.</span></div></div>
+    </div>
+  </section>
+
+  <!-- CLOCK / WORK -->
+  <section id="clock">
+    <h2>⏰ Time Difference &amp; Work Windows</h2>
+    <p style="font-size:.9rem;color:#6a5f50">You run WideFoc.us and a meeting can drop mid-trip. Here's when you're actually reachable on Denver hours — and the plain clock math for each leg. The live clocks up top update as you scroll.</p>
+
+    <div class="alert gold">
+      <span class="alert-icon">🕐</span>
+      <p><strong>Daylight-saving flip mid-trip:</strong> Denver falls back to standard time on <strong>Sun, Nov 1</strong> — so Korea goes from 15 hours ahead to <strong>16 hours ahead</strong> for your last two days. Everything before Nov 1 uses the 14h/15h math below.</p>
+    </div>
+
+    <h3>Simple clock — "when it's 9:00 AM in Denver, it's…"</h3>
+    <table>
+      <thead><tr><th>Leg</th><th>Ahead of Denver</th><th>9 AM Denver =</th><th>Noon Denver =</th><th>5 PM Denver =</th></tr></thead>
+      <tbody>
+        <tr><td><strong>🇹🇼 Taiwan</strong> (Oct 9–18)</td><td>14 hours</td><td>11:00 PM same day</td><td>2:00 AM next day</td><td>7:00 AM next day</td></tr>
+        <tr><td><strong>🇯🇵 Japan</strong> (Oct 18–25)</td><td>15 hours</td><td>12:00 AM next day</td><td>3:00 AM next day</td><td>8:00 AM next day</td></tr>
+        <tr><td><strong>🇰🇷 Korea</strong> (to Oct 31)</td><td>15 hours</td><td>12:00 AM next day</td><td>3:00 AM next day</td><td>8:00 AM next day</td></tr>
+        <tr><td><strong>🇰🇷 Korea</strong> (Nov 1–2)</td><td>16 hours</td><td>1:00 AM next day</td><td>4:00 AM next day</td><td>9:00 AM next day</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Your realistic work windows</h3>
+    <p style="font-size:.88rem;color:#6a5f50">A Denver workday (9–5) lands in the dead of your night everywhere on this trip. The overlap that actually works is <strong>early Denver morning = your evening</strong>. Take calls over dinner; block anything past mid-morning Denver.</p>
+    <div class="card">
+      <div class="legwin"><div class="lw-city">🇹🇼 Taiwan</div><div>Your evening <strong>7:00–11:00 PM</strong> = Denver <strong>5:00–9:00 AM</strong>. A 7–8 AM Denver call is 9–10 PM for you — easy after dinner. Anything at/after Denver 10 AM is past midnight your time.</div></div>
+      <div class="legwin"><div class="lw-city">🇯🇵 Japan</div><div>Your evening <strong>8:00 PM–midnight</strong> = Denver <strong>5:00–9:00 AM</strong>. Or catch late-afternoon Denver (4–5 PM) first thing your morning (7–8 AM). Midday-Denver meetings mean a middle-of-the-night call — avoid.</div></div>
+      <div class="legwin"><div class="lw-city">🇰🇷 Korea</div><div>Same as Japan through Oct 31 (evening 8–12 = Denver 5–9 AM). From <strong>Nov 1</strong>, shift one hour later: your <strong>9 PM–1 AM</strong> = Denver 5–9 AM.</div></div>
+    </div>
+    <div class="work">
+      <strong>Wi-Fi for a surprise meeting:</strong> every stay on the Japan/Korea leg has in-unit Wi-Fi and a washer, and the Taiwan hotels all have solid Wi-Fi — so you can take a call from the room. If you're out, the rule that's held up: department-store cafés and hotel lobbies over random street coffee shops (real bandwidth, a quiet corner). Keep the room as the fallback for anything that matters.
+    </div>
+  </section>
+
+  <!-- TRAVEL -->
+  <section id="travel">
+    <h2>✈️ Travel &amp; Transfers — Your Legs</h2>
+    <p style="font-size:.88rem;color:#6a5f50">Every hop that's yours. Confirmation numbers and costs live in the <a href="dossier.html">dossier</a> (kept off this page since it's public).</p>
+
+    <h3>Flights</h3>
+    <table>
+      <thead><tr><th>When</th><th>Route</th><th>Flight</th><th>Times</th></tr></thead>
+      <tbody>
+        <tr><td>Wed Oct 7</td><td>DEN → SEA</td><td>Alaska AS 615 · seat 20A</td><td>6:56 PM → 8:59 PM</td></tr>
+        <tr><td>Thu Oct 8</td><td>SEA → TPE</td><td>STARLUX JX 31</td><td>1:15 AM → 4:55 AM (Fri Oct 9)</td></tr>
+        <tr><td>Sun Oct 18</td><td>TPE → NRT</td><td>Tigerair IT700 · T1→T2</td><td>3:30 PM → 7:55 PM</td></tr>
+        <tr><td>Sun Oct 25</td><td>KIX → PUS</td><td>T'way TW322</td><td>4:35 PM → 6:10 PM</td></tr>
+        <tr><td>Mon Nov 2</td><td>ICN → SLC → DEN</td><td>Delta DL0172 (3A) + DL1586 (2D)</td><td>arrive DEN 7:10 PM</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Trains</h3>
+    <table>
+      <thead><tr><th>When</th><th>Route</th><th>Line</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Tue Oct 13</td><td>Taipei → Tainan</td><td>THSR (high-speed)</td><td>~1h 50m · buy at station or thsrc.com.tw</td></tr>
+        <tr><td>Fri Oct 16</td><td>Tainan → Kaohsiung</td><td>TRA / THSR</td><td>~30 min</td></tr>
+        <tr><td>Wed Oct 21</td><td>Tokyo → Kyoto</td><td>Tōkaidō Shinkansen</td><td>~2h 15m · reserve from ~Sep 21 (opens 1 month out)</td></tr>
+        <tr><td>Thu Oct 29</td><td>Busan → Seoul</td><td>KTX</td><td>~2h 30m · Busan (Bujeon/Gupo) → Seoul Stn</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Airport transfers</h3>
+    <div class="card">
+      <p><strong>Taipei (Oct 18 out):</strong> Taoyuan Airport MRT (purple line) from Taipei Main Station — ~38 min Express, ~NT$150. From Da'an, Metro to Taipei Main, then transfer. See the <a href="index.html#flights">Taiwan planner</a> for the full note.</p>
+      <p><strong>Narita → Tokyo hotel (Oct 18 in):</strong> You land NRT 7:55 PM; Section L Ginza East is ~75–90 min from Narita (Narita Express to Tokyo Stn, then ~10 min taxi, or Keisei Skyliner to Ueno). Realistically in the room ~9:30–10 PM — <strong>plan Rachael's birthday dinner late, or shift the celebration to the 19th.</strong></p>
+      <p><strong>KIX → Busan (Oct 25):</strong> Flight, not a transfer — you're all on T'way TW322 together. Grand Josun is ~10–12 min walk from Dongbaek/Haeundae Metro, right on the beach.</p>
+      <p><strong>ICN departure (Nov 2):</strong> Myeongdong → Incheon on the AREX airport train (~60 min) or a Kakao T taxi. Your Delta flight leaves from ICN Terminal 2.</p>
+    </div>
+  </section>
+
+  <!-- TAIWAN -->
+  <section id="taiwan">
+    <h2>🇹🇼 Taiwan · Oct 9–18 <span style="font-size:.8rem;font-weight:500;color:#8a7d6a">with Joseph</span></h2>
+    <div class="card accent">
+      <p>Full detail lives in your <a href="index.html">Taiwan planner</a> — this is the thumbnail. Taipei (4 nights, Da'an) → Tainan (3 nights, food capital) → Kaohsiung (2 nights, Pier-2 art district). Josh is with you all weekend in Taipei: Double Ten Day, night markets he knows cold, and Bitter Burro.</p>
+      <p style="margin:0"><strong>Your through-line:</strong> eat everything, see great art, no early bedtimes. Beef noodle soup, Raohe &amp; Ningxia night markets, Jiufen day trip, Tainan's coffin bread and beef soup, Kaohsiung seafood at Liuhe. <em>(Pork shows up everywhere in Taiwan — you're flexible there, but it's flagged in the planner where it's the whole dish.)</em></p>
+    </div>
+    <p><a href="index.html">→ Open the full Taiwan planner</a></p>
+  </section>
+
+  <!-- JAPAN -->
+  <section id="japan">
+    <h2>🇯🇵 Japan · Oct 18–25 <span style="font-size:.8rem;font-weight:500;color:#8a7d6a">with Rachael, Joan, Matt &amp; Phillip</span></h2>
+    <p style="font-size:.88rem;color:#6a5f50">Not your first Japan rodeo — skip the tourist 101. Pace is gentler than Taiwan (Joan winds down ~5 PM), so marquee sights are morning/afternoon; evenings are optional and yours. Food note for the group: everyone does chicken/seafood/noodles/tempura; you chase the bolder stuff (pork flagged so it's your call).</p>
+
+    <h3>Tokyo · Oct 18–21 · 🎂 Rachael's birthday</h3>
+    <div class="card plum">
+      <p><strong>Stay:</strong> Section L Ginza East — a studio in Shintomi/Ginza East (Chuo-ku). Yours with Rachael; kitchen + in-unit washer + lift. ~3 min to Shintomichō (Yūrakuchō line), ~10 min walk to Ginza.</p>
+      <p><strong>For you:</strong> teamLab (Planets or Borderless — you love these; timed tickets, book ahead). Omakase sushi counter, real ramen, an izakaya crawl, Toyosu/Tsukiji Outer Market for breakfast sushi, and the Ginza depachika food halls. 🔴 Top sushi/Michelin need 2–4+ weeks via Pocket Concierge / OMAKASE or the hotel concierge.</p>
+      <p style="margin:0"><strong>Birthday night (Oct 18):</strong> you land ~9:30–10 PM — keep it a late Ginza dinner, or roll the celebration to the 19th.</p>
+    </div>
+
+    <h3>Kyoto · Oct 21–25 · Osaka &amp; Nara day trips</h3>
+    <div class="card plum">
+      <p><strong>Stay:</strong> Enso Machiya — restored machiya in Nishijin (Kamigyō). You &amp; Rachael take an upstairs tatami room with a hinoki tub (stairs-only; Joan has the ground-floor room). City buses nearby; taxis are quick.</p>
+      <p><strong>For you:</strong> kaiseki or a kappo counter (reserve 2–4 weeks), yudofu near Nanzen-ji, obanzai, Nishiki Market snacking, matcha sweets. Art-and-craft city with Rachael &amp; Joan — galleries and artisan studios you can actually buy from.</p>
+      <p style="margin:0"><strong>Osaka day trip:</strong> your Dotonbori return — the food run you've been looking forward to. Nara for the other day trip (deer, Tōdai-ji).</p>
+    </div>
+  </section>
+
+  <!-- KOREA -->
+  <section id="korea">
+    <h2>🇰🇷 Korea · Oct 25–Nov 2 <span style="font-size:.8rem;font-weight:500;color:#8a7d6a">your favorite food country</span></h2>
+    <p style="font-size:.88rem;color:#6a5f50">The leg you've been waiting for — Korean is your all-time favorite cuisine. Cooler weather (Seoul down to ~43°F): warm layers on.</p>
+
+    <h3>Busan · Oct 25–29 · 🎂 Joan's birthday (celebrated Oct 28)</h3>
+    <div class="card plum">
+      <p><strong>Stay:</strong> Grand Josun Busan — King Ocean-View room on Haeundae Beach, shared with Rachael. Lift throughout; ~10–12 min walk to Dongbaek/Haeundae Metro (Line 2).</p>
+      <p><strong>For you:</strong> Jagalchi Fish Market (pick your seafood, they cook it upstairs), milmyeon cold noodles, ssiat hotteok at Gukje Market, fresh hoe at Haeundae. Mostly walk-in — go hungry. <em>Dwaeji gukbap is Busan's signature pork-rice soup — flagged for you.</em></p>
+      <p style="margin:0"><strong>Art:</strong> a private Korean painting class in Gamcheon is booked for Wed Oct 28 — pairs with a Gamcheon Culture Village afternoon. Arte Museum (immersive) too.</p>
+    </div>
+
+    <h3>Seoul · Oct 29–Nov 2</h3>
+    <div class="card plum">
+      <p><strong>Stay:</strong> a private 5-bedroom apartment in Myeongdong (near Myeongdong Stn &amp; Namsan) — everyone gets their own room, city-view terrace, washer. ~5 min walk to Line 4.</p>
+      <p><strong>For you:</strong> Korean BBQ (galbi), Gwangjang Market street food (bindaetteok, mayak gimbap), samgyetang (that chicken-soup alley near Gyeongbokgung you found by accident last time), naengmyeon, a proper banchan feast. 🔴 Trendy/Michelin via CatchTable 1–3 weeks out; BBQ &amp; markets are walk-in. <em>Samgyeopsal is pork — your call.</em></p>
+      <p style="margin:0"><strong>Art &amp; more:</strong> teamLab LIFE at DDP, palaces &amp; hanok quarters, Leeum &amp; MMCA, a Sulwhasoo/SPA 1899 spa afternoon (Nov 1). Then Nov 2 you peel off for your own Delta flight home.</p>
+    </div>
+  </section>
+
+  <!-- PACKING -->
+  <section id="packing">
+    <h2>🧳 Packing — One Carry-On, Three Climates</h2>
+    <div class="alert gold">
+      <span class="alert-icon">🌡</span>
+      <p><strong>27 days, no checked bag, ~40°F swing.</strong> Taiwan 75–87°F humid → Japan mid-50s–70°F → Seoul down to ~43°F. Strategy is layering: the tee that works in a Taipei night market goes under everything else in Seoul. Every Japan/Korea stay (and your Taiwan hotels) has laundry, so pack ~5–6 days and wash per leg.</p>
+    </div>
+    <div class="card pack">
+      <h3>👕 Clothing</h3>
+      <ul>
+        <li>5–6 quick-dry tees (carry the whole trip; worn alone in Taiwan, layered up north)</li>
+        <li>2–3 lightweight button-downs / collared shirts (open over a tee in Taiwan; layer in Japan/Korea; doubles for dinners &amp; museums)</li>
+        <li>2 pairs pants (one casual, one nicer) + 1 pair shorts for Taiwan/Kaohsiung</li>
+        <li>Warm mid-layer — packable fleece or light down (the Japan/Korea layer; don't skip)</li>
+        <li>Packable rain shell / windbreaker (Taipei typhoon-tail + autumn showers) — your outer layer up north</li>
+        <li>Scarf + light gloves for the cold Seoul nights</li>
+        <li>One smart-casual outfit for the birthday dinners</li>
+        <li>5–6 quick-dry underwear + socks (sink-wash backup)</li>
+      </ul>
+      <h3>👟 Shoes</h3>
+      <ul>
+        <li>Broken-in walking shoes, ideally <strong>slip-on</strong> — shoes come off constantly at ryokan, temples, machiya &amp; teamLab</li>
+        <li>Thin sandals/flip-flops (Taiwan hot springs, hotel, onsen)</li>
+        <li>Nice socks for teamLab (shoes off) — at Planets you wade through water, so quick-dry or roll-up trousers help</li>
+      </ul>
+      <h3>🔌 Tech &amp; power</h3>
+      <ul>
+        <li>Adapters: Taiwan &amp; Japan are <strong>Type A (same as US — no adapter)</strong>; Korea is <strong>Type C/F</strong> — bring one compact adapter for the Korea leg</li>
+        <li>Power bank (10,000 mAh+), universal charging cable, headphones</li>
+        <li>Laundry kit — a few detergent sheets covers every in-unit washer</li>
+      </ul>
+      <h3>📄 Docs &amp; money</h3>
+      <ul>
+        <li>Passport valid 6+ months past Nov 2; US citizens visa-free for all three (Taiwan/Japan/Korea 90 days)</li>
+        <li><strong>Visit Japan Web</strong> — register before flying, save the QR for immigration/customs</li>
+        <li>No-foreign-fee cards; carry some cash (NT$, ¥, ₩ all still useful at markets/shrines)</li>
+        <li>Travel insurance card + policy number saved in your phone (details in the <a href="dossier.html">dossier</a>)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRACTICAL -->
+  <section id="practical">
+    <h2>📱 Practical Setup</h2>
+    <div class="card">
+      <h3>Phone &amp; data</h3>
+      <p>All three countries are covered by the major US carriers — passes activate on first use abroad (the clock starts then, so don't buy early). Install/sign into your carrier app on home Wi-Fi before you fly. If your plan's international data is thin, a 3-country e-SIM (Airalo/Holafly, ~$20–40 for the stretch) is the clean alternative. Use FaceTime/WhatsApp/Wi-Fi calling for calls home and save the paid pass for days you need a real call.</p>
+      <h3>Transit cards</h3>
+      <p><strong>Taiwan EasyCard</strong> (TPE airport / any 7-Eleven) · <strong>Japan Suica or Pasmo</strong> (add to Apple Wallet — works on all rail + convenience stores) · <strong>Korea T-money</strong> (any CU/GS25; add to Wallet). Load each at the start of its leg.</p>
+      <h3>Apps to grab before you go</h3>
+      <p>Translation: Google Translate (offline JP + KR packs, camera mode) · Papago (best for Korean). Transit: Japan Travel by NAVITIME (Japan) · KakaoMap or Naver Map (Google transit is weak in Korea). Taxis: GO (Japan) · Kakao T (Korea — essential in Busan &amp; Seoul). Food: Tabelog (Japan) · CatchTable + Naver (Korea). Messaging: LINE (Japan) · KakaoTalk (Korea).</p>
+    </div>
+  </section>
+
+  <!-- DOCS -->
+  <section id="docs">
+    <h2>🔗 The Other Docs</h2>
+    <div class="doclinks">
+      <a class="doclink" href="index.html">🇹🇼 Taiwan planner (full)</a>
+      <a class="doclink" href="dossier.html">🛡 Trip dossier (confirmations, insurance, emergency)</a>
+      <a class="doclink" href="https://raecook.github.io/asia2026/" target="_blank">🍁 Rachael's Japan/Korea page ↗</a>
+    </div>
+    <p style="font-size:.85rem;color:#6a5f50;margin-top:.6rem">This page is yours — the personal thread. The dossier holds the sensitive stuff (confirmation numbers, insurance, emergency contacts). Rachael's page is the shared group source of truth for Japan/Korea, with everyone's voting, the daily plans, and the full hotel comparisons.</p>
+  </section>
+
+</div>
+
+<div class="foot">
+  Eric's Asia 2026 · Oct 7 – Nov 2 · built with Claude<br>
+  <span id="foot-ts"></span>
+</div>
+
+<script>
+// Live clocks
+function fmt(tz){
+  try{
+    return new Date().toLocaleTimeString('en-US',{timeZone:tz,hour:'numeric',minute:'2-digit',hour12:true});
+  }catch(e){ return '—'; }
+}
+function tick(){
+  document.getElementById('c-den').textContent = fmt('America/Denver');
+  document.getElementById('c-tpe').textContent = fmt('Asia/Taipei');
+  document.getElementById('c-tyo').textContent = fmt('Asia/Tokyo');
+  document.getElementById('c-sel').textContent = fmt('Asia/Seoul');
+}
+tick(); setInterval(tick, 1000);
+// Footer timestamp
+document.getElementById('foot-ts').textContent = 'Last updated ' + new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+</script>
+
+</body>
+</html>
