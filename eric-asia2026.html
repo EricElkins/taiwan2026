@@ -88,6 +88,17 @@ code{background:#f3ece0;border:1px solid #e7ded0;color:#7a3560;padding:.08rem .4
 .doclinks{display:flex;flex-wrap:wrap;gap:.6rem;margin:.4rem 0}
 .doclink{background:#fffdf9;border:1px solid #e7ded0;border-radius:8px;padding:.5rem .9rem;font-size:.85rem;font-weight:600}
 
+/* Jet-lag plan */
+.jl-phase{display:inline-block;font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:.15rem .6rem;border-radius:10px;margin-bottom:.5rem}
+.jl-phase.delay{background:#e8eefb;color:#2b4ba3}
+.jl-phase.advance{background:#fdeede;color:#b06a10}
+.jl-day{border:1px solid #e7ded0;border-radius:10px;padding:.85rem 1.05rem;margin-bottom:.7rem;background:#fffdf9}
+.jl-day h4{font-size:.92rem;color:#4a2340;margin-bottom:.4rem}
+.jl-line{display:grid;grid-template-columns:24px 1fr;gap:.55rem;font-size:.87rem;padding:.2rem 0;align-items:start}
+.jl-ico{text-align:center;font-size:.95rem}
+.jl-key{display:flex;flex-wrap:wrap;gap:.8rem;font-size:.8rem;color:#6a5f50;margin:.4rem 0 1rem}
+.jl-key span{white-space:nowrap}
+
 @media(max-width:620px){
   .tl-row{grid-template-columns:74px 1fr}
   .legwin{grid-template-columns:1fr}
@@ -104,6 +115,7 @@ code{background:#f3ece0;border:1px solid #e7ded0;color:#7a3560;padding:.08rem .4
     <span class="nav-logo">🍁 Eric · Asia 2026</span>
     <a href="#arc">Arc</a>
     <a href="#clock">Time &amp; Work</a>
+    <a href="#jetlag">Jet Lag</a>
     <a href="#travel">Travel</a>
     <a href="#taiwan">Taiwan</a>
     <a href="#japan">Japan</a>
@@ -189,6 +201,103 @@ code{background:#f3ece0;border:1px solid #e7ded0;color:#7a3560;padding:.08rem .4
     </div>
     <div class="work">
       <strong>Wi-Fi for a surprise meeting:</strong> every stay on the Japan/Korea leg has in-unit Wi-Fi and a washer, and the Taiwan hotels all have solid Wi-Fi — so you can take a call from the room. If you're out, the rule that's held up: department-store cafés and hotel lobbies over random street coffee shops (real bandwidth, a quiet corner). Keep the room as the fallback for anything that matters.
+    </div>
+  </section>
+
+  <!-- JET LAG -->
+  <section id="jetlag">
+    <h2>😴 Jet-Lag Plan — Timeshifter-Style</h2>
+    <p style="font-size:.9rem;color:#6a5f50">Built for your in-between clock (bed ~11:30 PM, up ~7 AM) using light, caffeine and sleep timing — no melatonin, with your ashwagandha / magnesium glycinate / L-theanine wind-down folded in. Two shifts matter: a <strong>10-hour delay</strong> going to Taiwan (staying up later — suits your night-owl trip), and a harder <strong>8-hour advance</strong> coming home. The tiny +1h to Japan and 0h Japan↔Korea you won't feel.</p>
+    <div class="jl-key">
+      <span>☀️ seek bright light</span>
+      <span>🕶️ avoid / dim light</span>
+      <span>☕ coffee window</span>
+      <span>😴 sleep / nap</span>
+    </div>
+
+    <div class="alert blue">
+      <span class="alert-icon">⚠️</span>
+      <p>Modeled guidance, not medical advice — the Timeshifter app itself will give minute-precise timing if you want it. On the <strong>diazepam</strong>: only if your doctor prescribed it, and <strong>never combine it with alcohol</strong> — both are sedatives and the mix is genuinely dangerous. Skip the in-flight wine if you take it.</p>
+    </div>
+
+    <h3><span class="jl-phase delay">Outbound → Taiwan · 10-hour delay</span> <span style="font-size:.8rem;font-weight:500;color:#8a7d6a">(shared with Joseph — same flights)</span></h3>
+
+    <div class="jl-day">
+      <h4>Sun Oct 5 — 2 days before (Denver)</h4>
+      <div class="jl-line"><div class="jl-ico">🕶️</div><div>Keep mornings <strong>dim</strong> — sleep in, sunglasses if you're out early. You're moving your clock <em>later</em>, so no strong morning light.</div></div>
+      <div class="jl-line"><div class="jl-ico">☀️</div><div>Bright light in the <strong>late afternoon &amp; evening</strong> (lights on, screens fine late).</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>Coffee fine morning → early afternoon; <strong>last cup by ~2 PM</strong>.</div></div>
+      <div class="jl-line"><div class="jl-ico">😴</div><div>Push bedtime later: <strong>bed ~1:00 AM, wake ~8:30 AM</strong>.</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>Mon Oct 6 — 1 day before (Denver)</h4>
+      <div class="jl-line"><div class="jl-ico">🕶️</div><div>Dim / sunglasses in the morning again.</div></div>
+      <div class="jl-line"><div class="jl-ico">☀️</div><div>Bright evening light, later into the night.</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>Last cup by <strong>~3 PM</strong>.</div></div>
+      <div class="jl-line"><div class="jl-ico">😴</div><div><strong>Bed ~2:00 AM, wake ~9:30 AM.</strong> You're pre-loading the delay.</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>Tue Oct 7 — travel day · DEN 6:56 PM → SEA</h4>
+      <div class="jl-line"><div class="jl-ico">😴</div><div>Sleep in as late as you can. Depart DEN in the evening.</div></div>
+      <div class="jl-line"><div class="jl-ico">☀️</div><div><strong>Stay awake through the SEA layover</strong> (9 PM–1:15 AM) — keep moving, lights bright. Staying up <em>is</em> the delay.</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>A coffee at SEA (~10–11 PM) is allowed <em>tonight only</em> to stay up for boarding.</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>In-flight — SEA 1:15 AM → TPE 4:55 AM (Oct 8→9)</h4>
+      <div class="jl-line"><div class="jl-ico">😴</div><div>Sleep the <strong>middle of the flight</strong>. This is the long-haul to actually sleep — your wind-down stack, or diazepam if prescribed (<strong>no alcohol</strong>). Eye mask on.</div></div>
+      <div class="jl-line"><div class="jl-ico">🕶️</div><div>Keep the last 2–3 hours before landing dark — it's still Taipei pre-dawn.</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>No coffee in the back half of the flight.</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>Fri Oct 9 — arrival, Day 1 (Taipei, land 4:55 AM)</h4>
+      <div class="jl-line"><div class="jl-ico">🕶️</div><div>Land pre-dawn: keep it mellow, sunglasses once the sun's up. Hotel, drop bags, ride in with Josh.</div></div>
+      <div class="jl-line"><div class="jl-ico">☀️</div><div>From <strong>~9–10 AM get outside in daylight</strong> and stay active outdoors through the afternoon — your biggest adaptation lever.</div></div>
+      <div class="jl-line"><div class="jl-ico">😴</div><div>Wrecked? <strong>One nap ≤ 30 min, before 3 PM.</strong> No long afternoon sleep.</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>Mid-morning coffee helps; <strong>cut off ~2–3 PM</strong>.</div></div>
+      <div class="jl-line"><div class="jl-ico">🌙</div><div>Enjoy the evening, but night 1 keep the very late hours dimmer — wind down ~midnight rather than chasing a 2 AM scene. Bed ~12:30 AM (already near Taipei-normal).</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>Oct 10–11 — basically adapted</h4>
+      <div class="jl-line"><div class="jl-ico">✅</div><div>Living local closes the delay fast. Daylight by day, coffee before ~3 PM, sleep ~11:30 PM–7:30 AM. By Double Ten evening you're clear to enjoy the fireworks and the full night out with Josh.</div></div>
+    </div>
+
+    <p style="font-size:.85rem;color:#6a5f50"><strong>Taipei → Tokyo (Oct 18, +1h)</strong> and Japan↔Korea (0h) need nothing — just shift everything one hour earlier in Japan and forget about it.</p>
+
+    <h3 style="margin-top:1.6rem"><span class="jl-phase advance">Homecoming → Denver · 8-hour advance</span> <span style="font-size:.8rem;font-weight:500;color:#8a7d6a">(you only — the hard direction)</span></h3>
+    <p style="font-size:.86rem;color:#6a5f50">Advances are tougher than delays and fight the Seoul nightlife a little, so this is the "hit the ground running at home" version — light pre-shifting in Seoul is optional but pays off. Bonus: <strong>Denver falls back for DST on Nov 1</strong>, gifting you a free hour of advance.</p>
+
+    <div class="jl-day">
+      <h4>Oct 31 – Nov 1 — optional pre-advance (Seoul)</h4>
+      <div class="jl-line"><div class="jl-ico">☀️</div><div>Bright light <strong>right after waking</strong> — get outside early.</div></div>
+      <div class="jl-line"><div class="jl-ico">🕶️</div><div>Dim the evenings; wind down earlier than the trip's been running.</div></div>
+      <div class="jl-line"><div class="jl-ico">😴</div><div>Nudge bed ~1h earlier each night (say 10:30 PM → 9:30 PM), wake earlier. Even one night of this helps — your call against the Seoul evenings.</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>Coffee early only; <strong>last cup by ~11 AM</strong>.</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>Mon Nov 2 — travel day · ICN → SLC → DEN (land ~7:10 PM)</h4>
+      <div class="jl-line"><div class="jl-ico">😴</div><div><strong>Sleep the ICN→SLC leg</strong> — it leaves in your Seoul evening, so it's your biological night. Wind-down stack or prescribed diazepam (<strong>no alcohol</strong>).</div></div>
+      <div class="jl-line"><div class="jl-ico">☀️</div><div>At SLC and on SLC→DEN, <strong>get bright light and stay awake</strong> — you're landing into Denver evening and need to reach a real bedtime.</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>Afternoon coffee at SLC is fine today to stay up into the evening.</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>Nov 2 night — home (Denver ~7:10 PM)</h4>
+      <div class="jl-line"><div class="jl-ico">😴</div><div><strong>Stay up to ~10–11 PM</strong> — don't crash at 8 or you'll be wide awake at 3 AM. Wind-down stack an hour before bed as usual.</div></div>
+      <div class="jl-line"><div class="jl-ico">🕶️</div><div>Keep the evening calm and dim after landing; no bright screens right at bed.</div></div>
+    </div>
+
+    <div class="jl-day">
+      <h4>Nov 3–5 — resetting at home</h4>
+      <div class="jl-line"><div class="jl-ico">☀️</div><div><strong>Bright light first thing every morning</strong> — step outside even if it's cold. This is the key advance lever; Denver autumn sun is your friend.</div></div>
+      <div class="jl-line"><div class="jl-ico">☕</div><div>Coffee early with the morning light; last cup by ~noon while you readjust.</div></div>
+      <div class="jl-line"><div class="jl-ico">🕶️</div><div>Dim the late evenings; wind down.</div></div>
+      <div class="jl-line"><div class="jl-ico">😴</div><div>Bed ~10:30–11:30 PM, up ~7 AM. Expect early waking the first 2–3 mornings — get up <em>with</em> light rather than fighting it. Normal within ~3–5 days (advances take a little longer than delays).</div></div>
     </div>
   </section>
 
